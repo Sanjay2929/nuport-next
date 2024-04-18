@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const MakeSomething = () => {
   return (
-    <div class=" grid lg:gap-6 gap-3 row-auto col-auto container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5 md:pb-[167px] sm:pb-[100px] pb-20 overflow-hidden relative rounded-xl">
+    <div className=" grid lg:gap-6 gap-3 row-auto col-auto container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5 md:pb-[167px] sm:pb-[100px] pb-20 overflow-hidden relative rounded-xl">
       {" "}
       <Image
         className="w-full min-w-[405px] pointer-events-none absolute top-[50%] start-[50%] translate-x-[-50%] translate-y-[-50%]"

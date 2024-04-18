@@ -11,7 +11,7 @@ const Platform = () => {
         {platformNav.map((subvalue, subIndex) => {
           return (
             <Link
-              href={subvalue.url || "#"}
+              href={subvalue.url}
               key={subIndex}
               className="p-4 h-[146px] w-[185px] border group border-mischka relative hover:border-tealBlue duration-300 rounded-xl "
             >

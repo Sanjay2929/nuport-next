@@ -469,12 +469,13 @@ export const socialIconList = [
 export const platformNav = [
   {
     link: "E-Commerce",
-    url: "#",
+    url: "/e-commerce",
     imagePosition: "right-4",
     img: "/assets/images/common/navbar/ecommerce.png",
   },
   {
     link: "Enterprise",
+    url: "/enterprise",
     imagePosition: "right-0",
     img: "/assets/images/common/navbar/enterprise.png",
   },
@@ -534,7 +535,7 @@ export const CompanyNav = [
       {
         title: "About us",
         paragraph: "What we are, team, culture",
-        url: "/",
+        url: "/about",
         icon: <AboutUs />,
       },
       {
