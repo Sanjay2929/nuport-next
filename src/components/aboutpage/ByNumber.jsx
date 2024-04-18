@@ -48,7 +48,7 @@ const ByNumber = () => {
   }, [isIntersecting]);
   return (
     <div
-      className=" md:mb-[160px] mb-20 container mx-auto 2xl:max-w-[1500px] 2xl:px-0 px-5"
+      className=" md:mb-[160px] mb-20 container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5"
       ref={sectionRef}
     >
       <div className=" flex flex-wrap justify-between">
@@ -58,12 +58,10 @@ const ByNumber = () => {
               Brands We Serve
             </p>
             <h2 className=" !leading-[110%] md:max-w-[500px] lg:max-w-[731px] sm:text-4xl text-[32px] md:text-5xl lg:text-6xl xl:text-7xl font-plus font-extrabold pt-3 text-shark ">
-              Trusted by <span className="text-garyMedium">brands</span>
+              By the <span className="text-garyMedium">numbers</span>
             </h2>
             <p className="text-riverBed text-base lg:text-xl !leading-[140%] max-w-[560px] font-medium pt-5 md:pt-6 lg:pt-7">
-              We&apos;re trusted by leading brands for our top-tier supply chain
-              solutions. Join our list of happy customers and experience the
-              difference.
+              Let the numbers speak for themselves.
             </p>
           </div>
         </div>

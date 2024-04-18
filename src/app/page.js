@@ -35,20 +35,26 @@ export default function Home() {
       <OurProduct />
       <AboutUs />
       <OurWork />
-      <Ecommerce />
-      <BrandServe />
-      <TestimonialsVideo />
-      <SupplyChain />
+      <div className="bg-white">
+        <Ecommerce />
+        <BrandServe />
+        <TestimonialsVideo />
+        <SupplyChain />
+      </div>
       <FasterDecision />
-      <IncreaseEfficiency />
-      <NetworkPart />
+      <div className="bg-white">
+        <IncreaseEfficiency />
+        <NetworkPart />
+      </div>
       <AchieveBusinessGoals />
-      <Faq />
-      <SuccessFullStart
-        description=" Reach out to us about your business operation or supply chain
+      <div className="bg-white">
+        <Faq />
+        <SuccessFullStart
+          description=" Reach out to us about your business operation or supply chain
                 issues. Our expert team will help you overcome your challenges
                 and guide your online business toward success."
-      />
+        />
+      </div>
     </div>
   );
 }
