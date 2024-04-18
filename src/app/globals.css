@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.yellow_gradient {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 176, 0, 0.2) 0%,
+    rgba(255, 176, 0, 0) 100%
+  );
+}
+
+body,
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth !important  ;
+}
+/* OUR PRODUCT  */
+.product_gradient_shadow {
+  background: linear-gradient(
+    236.15deg,
+    #0f1523 5.74%,
+    rgba(133, 155, 232, 0.8) 66.46%
+  );
+}
+
+.fast_decision_faq {
+  background: linear-gradient(180deg, #288ea5 0%, rgba(40, 142, 165, 0) 100%);
+}
+
+/* NETWORK SLIDER ARROW  */
+.network_arrow:hover svg path {
+  stroke: #464d61;
+}
+/* ACHIEVE SLIDER ARROW  */
+.achieve_arrow:hover svg path {
+  stroke: white;
+}
+.gradient_border {
+  border-image-source: radial-gradient(
+    49.58% 266.85% at 50.42% 0%,
+    #d3d8e3 0%,
+    rgba(226, 230, 240, 0) 100%
+  );
+  border-image-slice: 1; /* Ensure the entire border is covered */
+  border-image-repeat: stretch; /* Stretch the gradient to fill the border */
+}
+.mobile_navbar ::-webkit-scrollbar {
+  width: 6px !important;
+  display: none;
+}
+
+/* BE PART OF OUR NETWORK SLIDER */
+
+.network_part_slider .slick-track {
+  display: flex !important;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.network_part_slider .slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+.network_part_slider .slick-slide > div {
+  display: flex;
+}
+
+.common_btn:hover,
+.common_btn:focus {
+  animation: pulse 0.3s ease-in-out;
+  box-shadow: 0px -3px 23px 5px rgba(255, 117, 40, 0.5);
+  outline: 0px solid transparent;
+  outline-offset: -10px;
+}
+
+@keyframes pulse {
+  50% {
+    outline: 8px solid rgba(255, 166, 0, 0.253);
+  }
+  100% {
+    outline-offset: 10px;
+    outline: 0px solid rgba(255, 166, 0, 0.116);
+  }
+}
+.book_demo_btn:hover {
+  box-shadow: 0px 0px 10px 1px rgba(255, 117, 40, 0.5);
+  animation: demobtn 0.2s ease-out;
+}
+
+@keyframes demobtn {
+  0% {
+    box-shadow: inset 0px 0px 20px 30px rgba(255, 115, 40, 0.308);
+  }
+  90% {
+    box-shadow: inset 0px 0px 20px 2px rgba(255, 115, 40, 0.555),
+      0px 0px 20px 3px rgba(255, 117, 40, 0.5);
+  }
+}
+
+/* GRADIENT TEXT STROKE */
+.gradient_text_stroke::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 135, 159, 0.6) 17.19%,
+    rgba(24, 135, 159, 0.06) 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px transparent;
+  color: white;
+}
