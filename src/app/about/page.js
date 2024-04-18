@@ -10,16 +10,13 @@ import ByNumber from "@/components/aboutpage/ByNumber";
 export default function Home() {
   return (
     <>
-      <div className=" bg-darkBlue">
-        <Navbar />
-        <Hero />
-        <MakeSomething />
+      <Hero />
+      <MakeSomething />
+      <div className="bg-white">
+        <Trusted />
+        <ByNumber />
+        <SuccessFullStart description="Book a FREE call with us about your business operation or supply chain issues. Our expert team will help dissect the issue, optimize processes and set your organization up on a growth journey." />
       </div>
-      <Trusted />
-      <ByNumber />
-      <SuccessFullStart description="Book a FREE call with us about your business operation or supply chain issues. Our expert team will help dissect the issue, optimize processes and set your organization up on a growth journey." />
-      <Footer />
-      <BackToTop />
     </>
   );
 }

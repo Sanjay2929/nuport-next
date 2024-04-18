@@ -30,7 +30,6 @@ export default function Home() {
   }, []);
   return (
     <div className="overflow-x-clip">
-      <Navbar />
       <Hero />
       <TrustedBy />
       <OurProduct />
@@ -50,8 +49,6 @@ export default function Home() {
                 issues. Our expert team will help you overcome your challenges
                 and guide your online business toward success."
       />
-      <Footer />
-      <BackToTop />
     </div>
   );
 }
