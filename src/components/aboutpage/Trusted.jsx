@@ -1,8 +1,61 @@
+"use client";
 import React from "react";
 import { trustedBrand, trustedPartners } from "../common/Helper";
 import Image from "next/image";
+import Slider from "react-slick";
 
 const Trusted = () => {
+  //   SLIDER SETTINGS
+  var trusted = {
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 4000,
+        settings: "unslick",
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          infinite: true,
+          slidesToShow: 5,
+          autoplay: true,
+          autoplaySpeed: 0,
+          arrows: false,
+          speed: 5000,
+          pauseOnHover: false,
+          cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 0,
+          arrows: false,
+          speed: 5000,
+          pauseOnHover: false,
+          cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 0,
+          arrows: false,
+          speed: 5000,
+          pauseOnHover: false,
+          cssEase: "linear",
+        },
+      },
+    ],
+  };
   return (
     <div className=" md:mb-[120px] sm:mb-20 mb-10 md:pt-[160px] sm:pt-20 pt-10 container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5 border-b border-mischka md:pb-[120px]  sm:pb-20 pb-10 overflow-hidden">
       <div className=" flex flex-wrap justify-between items-center">
@@ -41,8 +94,11 @@ const Trusted = () => {
             })}
           </div>
 
-          <div className="relative h-[60px] w-full lg:hidden my-5">
-            <div className="flex justify-between lg:gap-x-8 gap-x-3 items-center trusted_slider absolute left-0 top-1/2 -translate-y-1/2">
+          <div className="relative h-[60px] w-full lg:hidden mt-10">
+            <Slider
+              {...trusted}
+              className="flex justify-between lg:gap-x-8 gap-x-3 items-center trusted_slider absolute left-0 top-1/2 -translate-y-1/2"
+            >
               {trustedPartners.map((value, index) => {
                 return (
                   <div
@@ -59,7 +115,7 @@ const Trusted = () => {
                   </div>
                 );
               })}
-            </div>
+            </Slider>
           </div>
         </div>
       </div>

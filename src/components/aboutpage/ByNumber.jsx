@@ -66,20 +66,20 @@ const ByNumber = () => {
           </div>
         </div>
         <div className=" lg:w-5/12 w-full pt-[35px]">
-          <div className=" flex flex-wrap sm:gap-y-[88px] gap-y-10 lg:gap-x-0 sm:gap-x-10  h-full">
+          <div className=" flex flex-wrap sm:gap-y-[88px] gap-y-10 lg:gap-x-0 sm:gap-x-5 h-full">
             {byNumberList.map((value, index) => {
               return (
                 <div
-                  className={` ps-3 flex items-center ${
+                  className={` lg:ps-3 flex items-center ${
                     index === 0
-                      ? "justify-end 2xl:me-24 lg:me-12"
+                      ? "justify-end 2xl:me-24 xl:me-12 lg:me-7"
                       : index === 3
-                      ? "justify-end 2xl:ms-20 lg:ms-10"
+                      ? "justify-end 2xl:ms-20 xl:ms-10 lg:ms-7"
                       : "justify-start"
                   } ${index === 1 && "ms-3"}`}
                   key={index}
                 >
-                  <div className={`px-1`}>
+                  <div className={`sm:px-1`}>
                     <h3 className="text-[32px] min-w-[145px] text-start !leading-[110%] sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-plus text-shark">
                       {isIntersecting ? counts[index] : 0}
                       {index === 0 ? "+" : index === 1 ? "" : "K+"}

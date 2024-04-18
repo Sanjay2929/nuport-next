@@ -411,7 +411,7 @@ export const increaseEfficiency = [
 export const footerCompanyList = [
   {
     title: "About us",
-    link: "#aboutus",
+    link: "/about",
   },
   {
     title: "Career",
