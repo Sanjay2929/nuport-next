@@ -18,7 +18,6 @@ const Hero = () => {
         <div className="lg:w-8/12 w-full flex flex-col items-end pt-[50px]">
           <div>
             <span className="mb-[23px]">
-              {" "}
               <Comma />
             </span>
             <p className=" text-offWhite font-plus text-[32px]  sm:text-4xl md:text-5xl font-bold lg:max-w-[739px] !leading-[140%]">

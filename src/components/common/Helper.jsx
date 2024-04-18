@@ -813,49 +813,4 @@ export const trustedKnownPartners = [
     title: "maarij",
     width: "140",
   },
-  {
-    image: "/assets/images/productpage/trusted-by-known/naruro.png",
-    title: "autorific",
-    width: "177",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/yummy.png",
-    title: "autorific",
-    width: "177",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/raaw-food.png",
-    title: "british-american",
-    width: "91",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/atal-food.png",
-    title: "atal-food",
-    width: "59",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/muslin.png",
-    title: "lg",
-    width: "129",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/orgagenic.png",
-    title: "orgagenic",
-    width: "111",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/confidence.png",
-    title: "confidence",
-    width: "182",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/ma-arij.png",
-    title: "maarij",
-    width: "140",
-  },
-  {
-    image: "/assets/images/productpage/trusted-by-known/naruro.png",
-    title: "autorific",
-    width: "177",
-  },
 ];

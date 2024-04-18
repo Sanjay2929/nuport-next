@@ -13,15 +13,12 @@ import TrustedByKnown from "@/components/product/TrustedByKnown";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <ProductHero />
       <TrustedByKnown />
       <DiscoverSolutions />
       <AutomatedInventory />
       <DiscoverFaq />
       <SuccessFullStart />
-      <Footer />
-      <BackToTop />
     </>
   );
 }
