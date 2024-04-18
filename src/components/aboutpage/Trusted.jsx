@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Trusted = () => {
   return (
-    <div className=" md:mb-[120px] sm:mb-20 mb-10 md:mt-[160px] sm:mt-20 mt-10 container mx-auto 2xl:max-w-[1500px] 2xl:px-0 px-5 border-b border-mischka md:pb-[120px]  sm:pb-20 pb-10 overflow-hidden">
+    <div className=" md:mb-[120px] sm:mb-20 mb-10 md:mt-[160px] sm:mt-20 mt-10 container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5 border-b border-mischka md:pb-[120px]  sm:pb-20 pb-10 overflow-hidden">
       <div className=" flex flex-wrap justify-between items-center">
         <div className="lg:w-7/12 w-full">
           <div className="order-2 pt-12 md:pt-0">
@@ -30,7 +30,7 @@ const Trusted = () => {
                   key={index}
                 >
                   <Image
-                    className={`hover:scale-110 duration-300  object-contain`}
+                    className={`hover:scale-110 duration-300 w-full  object-contain ${value.maxWidth}`}
                     width={value.width}
                     height={80}
                     src={value.image}

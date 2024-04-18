@@ -258,30 +258,36 @@ export const trustedBrand = [
     image: "/assets/images/homepage/trusted-by/british-american.png",
     title: "british-american",
     width: "146",
+    maxWidth: "max-w-[146px]",
   },
   {
     image: "/assets/images/homepage/trusted-by/lg.png",
     title: "lg",
     width: "129",
+    maxWidth: "max-w-[129px]",
   },
   {
     image: "/assets/images/homepage/trusted-by/autorific.png",
     title: "autorific",
     width: "177",
+    maxWidth: "max-w-[177px]",
   },
   {
     image: "/assets/images/homepage/trusted-by/orgagenic.png",
     title: "orgagenic",
+    maxWidth: "max-w-[111px]",
     width: "111",
   },
   {
     image: "/assets/images/homepage/trusted-by/atal-food.png",
     title: "atal-food",
+    maxWidth: "max-w-[59px]",
     width: "59",
   },
   {
     image: "/assets/images/homepage/trusted-by/maarij.png",
     title: "maarij",
+    maxWidth: "max-w-[140px]",
     width: "140",
   },
 ];

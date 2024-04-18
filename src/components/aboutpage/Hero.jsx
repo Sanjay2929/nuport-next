@@ -3,7 +3,7 @@ import { CircleArrow, Comma } from "../common/Icons";
 
 const Hero = () => {
   return (
-    <div className=" mt-[160px] container mx-auto 2xl:max-w-[1500px] 2xl:px-0 px-5 relative">
+    <div className=" mt-[160px] container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5 relative">
       <div className=" flex flex-wrap justify-between md:mb-[162px] sm:mb-[100px] mb-20">
         <div className=" lg:w-4/12 w-full">
           <div className="sticky top-3 flex justify-start items-start flex-col">
