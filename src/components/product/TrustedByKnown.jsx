@@ -78,7 +78,7 @@ const TrustedByKnown = ({ laptopimg , trustedpartners }) => {
                 return (
                   <div key={index} className=" !flex justify-center">
                     <Image
-                      className={`w-[80px] sm:w-[100px] object-contain h-[40px] sm:h-[50px] ${value.customWidth}`}
+                      className={`w-[80px] sm:w-[120px] object-contain h-[40px] sm:h-[50px] ${value.customWidth}`}
                       width={value.width}
                       height={50}
                       src={value.image}

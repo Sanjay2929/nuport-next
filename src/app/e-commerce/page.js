@@ -9,7 +9,7 @@ import Footer from "@/components/common/Footer";
 import BackToTop from "@/components/common/BackToTop";
 import ProductHero from "@/components/product/ProductHero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
-import { trustedKnownPartners } from "@/components/common/Helper";
+import { empowerings, trustedKnownPartners } from "@/components/common/Helper";
 
 export default function Home() {
   return (
@@ -30,7 +30,15 @@ export default function Home() {
         laptopimg="/assets/images/productpage/trusted-by-known/mac-book-pro.webp"
         trustedpartners={trustedKnownPartners}
       />
-      <DiscoverSolutions />
+      <DiscoverSolutions
+        heading={
+          <>
+            Empowering effortless
+            <span className="text-garyMedium"> e-commerce growth </span>
+          </>
+        }
+        solutionCards={empowerings}
+      />
       <AutomatedInventory />
       <DiscoverFaq />
       <SuccessFullStart />

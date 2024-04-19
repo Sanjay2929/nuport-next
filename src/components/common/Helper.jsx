@@ -1,10 +1,12 @@
 import {
   AboutUs,
+  AutomatedArrow,
   BangladeshFlag,
+  BigSquareCube,
+  BusinessGrowth,
   Career,
   CaseStudy,
   Courier,
-  BusinessGrowth,
   CourierBusIcon,
   Delivery,
   DeliveryTruck,
@@ -15,24 +17,24 @@ import {
   IndianFlag,
   Industry,
   Instagram,
+  Integrated,
+  IntegratedPlatform,
+  Inventory,
   Linkedin,
   LocationGoogle,
   LocationIcon,
   MapLocation,
+  Omnichannel,
   Order,
   OrderIcon,
   RoleUsers,
   ScanIcon,
+  Setting,
   ShoppingCart,
   SquareCube,
   Twitter,
   UseCase,
   Video,
-  Omnichannel,
-  Inventory,
-  Integrated,
-  Automated,
-  AutomatedArrow,
 } from "./Icons";
 import Company from "./Navbar/Company";
 import Integrations from "./Navbar/Integrations";
@@ -627,6 +629,30 @@ export const empowerings = [
       "Ship your orders at lightning-fast speed with an integrated environment with the top couriers in your area.",
   },
 ];
+// Discover solution enterprise
+export const enterpriseSolutions = [
+  {
+    icon: <BigSquareCube />,
+    title: "Expertise & Supply Chain Consulting",
+    widthTitle: "max-w-[300px]",
+    description:
+      "With the team’s combined experience of over 20 years in operational logistics, we will give you the best customer-centric supply chain.",
+  },
+  {
+    icon: <IntegratedPlatform />,
+    title: "Integrated Platform",
+    widthTitle: "max-w-[170px]",
+    description:
+      "Nuport’s Cloud Supply Chain Platform delivers an integrated ecosystem to excel at everything you need within your company’s supply chain.",
+  },
+  {
+    icon: <Setting />,
+    widthTitle: "max-w-[170px]",
+    title: "Automation & Insights",
+    description:
+      "We pride ourselves of building an ecosystem with strong emphasis on API integrations and automations to do more with less.",
+  },
+];
 export const discoverYourFasqs = [
   {
     title: "Why do online businesses need Nuport?",
@@ -813,5 +839,42 @@ export const trustedKnownPartners = [
     image: "/assets/images/productpage/trusted-by-known/ma-arij.png",
     title: "maarij",
     width: "140",
+  },
+];
+export const enterprisePartners = [
+  {
+    image: "/assets/images/homepage/trusted-by/confidence.png",
+    title: "confidence",
+    width: "200",
+  },
+  {
+    image: "/assets/images/enterprise/steeltech.png",
+    title: "steeltech",
+    width: "117",
+  },
+  {
+    image: "/assets/images/enterprise/fashol.png",
+    title: "fashol",
+    width: "118",
+  },
+  {
+    image: "/assets/images/homepage/trusted-by/british-american.png",
+    title: "british-american",
+    width: "83",
+  },
+  {
+    image: "/assets/images/homepage/trusted-by/lg.png",
+    title: "lg",
+    width: "123",
+  },
+  {
+    image: "/assets/images/productpage/trusted-by-known/confidence.png",
+    title: "confidence",
+    width: "182",
+  },
+  {
+    image: "/assets/images/enterprise/steeltech-style.png",
+    title: "steeltech",
+    width: "148",
   },
 ];

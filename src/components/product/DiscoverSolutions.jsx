@@ -2,7 +2,7 @@ import React from "react";
 import BookDemo from "../common/BookDemo";
 import { empowerings } from "../common/Helper";
 
-const DiscoverSolutions = () => {
+const DiscoverSolutions = ({ heading, solutionCards }) => {
   return (
     <>
       <div className="container 2xl:max-w-[1285px] px-5 2xl:px-0 mx-auto mt-[59px] mb-16 md:mb-24 lg:mb-[128px] xl:mb-[160px]">
@@ -12,8 +12,7 @@ const DiscoverSolutions = () => {
               Discover your solutions
             </p>
             <h2 className="font-plus text-gray-900 text-[32px] lg:text-5xl xl:text-7xl font-extrabold max-w-[848px] mx-auto">
-              Empowering effortless
-              <span className="text-garyMedium"> e-commerce growth </span>
+              {heading}
             </h2>
           </div>
           <div className="text-center xl:text-start mt-8 xl:mt-0">
@@ -21,7 +20,7 @@ const DiscoverSolutions = () => {
           </div>
         </div>
         <div className=" flex flex-wrap justify-center xl:justify-between mt-10 lg:mt-[88px]">
-          {empowerings.map((value, index) => (
+          {solutionCards.map((value, index) => (
             <div
               key={index}
               className=" w-full sm:w-6/12 lg:w-4/12 px-3 lg:px-2 xl:px-3 pt-6 xl:pt-0 transition-all ease-in-out duration-300 hover:-translate-y-2"

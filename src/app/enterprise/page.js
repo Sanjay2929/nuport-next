@@ -1,9 +1,13 @@
-import { trustedKnownPartners } from "@/components/common/Helper";
+import {
+  enterprisePartners,
+  enterpriseSolutions,
+} from "@/components/common/Helper";
 import SuccessFullStart from "@/components/homepage/SuccessFullStart";
+import AutomatedInventory from "@/components/product/AutomatedInventory";
 import DiscoverFaq from "@/components/product/DiscoverFaq";
+import DiscoverSolutions from "@/components/product/DiscoverSolutions";
 import ProductHero from "@/components/product/ProductHero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
-import React from "react";
 
 const page = () => {
   return (
@@ -21,9 +25,19 @@ const page = () => {
         topbtn="Elevate your supply chain experience"
       />
       <TrustedByKnown
-        laptopimg="/assets/images/productpage/trusted-by-known/mac-book-pro.webp"
-        trustedpartners={trustedKnownPartners}
+        laptopimg="/assets/images/enterprise/mac_book.webp"
+        trustedpartners={enterprisePartners}
       />
+      <DiscoverSolutions
+        heading={
+          <>
+            Empowering effortless
+            <span className="text-garyMedium"> e-commerce growth </span>
+          </>
+        }
+        solutionCards={enterpriseSolutions}
+      />
+      <AutomatedInventory />
       <DiscoverFaq />
       <SuccessFullStart />
     </>
