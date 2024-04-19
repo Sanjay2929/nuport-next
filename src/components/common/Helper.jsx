@@ -30,6 +30,7 @@ import {
   RoleUsers,
   ScanIcon,
   Setting,
+  ShoppingBag,
   ShoppingCart,
   SquareCube,
   Twitter,
@@ -421,7 +422,7 @@ export const footerCompanyList = [
   },
   {
     title: "Blog",
-    link: "#blog",
+    link: "/blogs",
   },
   {
     title: "Videos",
@@ -627,6 +628,27 @@ export const empowerings = [
     title: "Integrated Shipping",
     description:
       "Ship your orders at lightning-fast speed with an integrated environment with the top couriers in your area.",
+  },
+];
+// Enterprise work process
+export const workProcess = [
+  {
+    icon: <ShoppingBag />,
+    title: "Supply Chain Consulting",
+    description:
+      "Dedicated experts with decades of experience in supply chain that deploy, and scale tailored solutions.",
+  },
+  {
+    icon: <LocationIcon />,
+    title: "Supply chain platform",
+    description:
+      "Complete and fully integrated port - to - porch logistics for B2B and B2C - from freight to warehousing to fulfillment.",
+  },
+  {
+    icon: <SquareCube />,
+    title: "Networked logistics experience",
+    description:
+      "A single platform that connects your entire supply, so you can orchestrate and optimize with ease.",
   },
 ];
 // Discover solution enterprise

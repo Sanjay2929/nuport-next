@@ -8,6 +8,7 @@ import DiscoverFaq from "@/components/product/DiscoverFaq";
 import DiscoverSolutions from "@/components/product/DiscoverSolutions";
 import ProductHero from "@/components/product/ProductHero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
+import WorkProcess from "@/components/product/WorkProcess";
 
 const page = () => {
   return (
@@ -38,6 +39,7 @@ const page = () => {
         solutionCards={enterpriseSolutions}
       />
       <AutomatedInventory />
+      <WorkProcess />
       <DiscoverFaq />
       <SuccessFullStart />
     </>
