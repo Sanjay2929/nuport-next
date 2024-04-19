@@ -90,7 +90,7 @@ const AutomatedInventory = () => {
           </div>
           <div className="lg:w-6/12 flex justify-end">
             <Image
-              className=" h-[400px]"
+              className="box-2 h-[400px]"
               src="/assets/images/productpage/automated-inventory/automated.webp"
               width={521}
               height={502}
