@@ -906,3 +906,29 @@ export const enterprisePartners = [
     width: "148",
   },
 ];
+export const automateImage = [
+  {
+    class: "img1",
+    src: "/assets/images/productpage/automated-inventory/automated.webp",
+  },
+  {
+    class: "img2",
+    src: "/assets/images/productpage/automated-inventory/supplier.png",
+  },
+  {
+    class: "img3",
+    src: "/assets/images/productpage/automated-inventory/order.png",
+  },
+  {
+    class: "img4",
+    src: "/assets/images/productpage/automated-inventory/portal.png",
+  },
+  {
+    class: "img5",
+    src: "/assets/images/productpage/automated-inventory/partner.png",
+  },
+  {
+    class: "img6",
+    src: "/assets/images/productpage/automated-inventory/data.png",
+  },
+];
