@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { maximizingYourEfficiency } from "../common/Helper";
+import { automateImage, maximizingYourEfficiency } from "../common/Helper";
 import { AutomatedArrow } from "../common/Icons";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -59,7 +59,7 @@ const AutomatedInventory = () => {
         trigger: ".img5",
         start: "center center",
         end: "center 15%",
-        markers: true,
+        // markers: true,
         scrub: true,
       },
     });
@@ -68,7 +68,7 @@ const AutomatedInventory = () => {
         trigger: ".img6",
         start: "top center",
         end: "center 10%",
-        markers: true,
+        // markers: true,
         scrub: true,
       },
     });
@@ -174,58 +174,20 @@ const AutomatedInventory = () => {
             ))}
           </div>
           <div className="lg:w-6/12 flex justify-end">
-            <div className=" box-2 w-full sticky">
-              <Image
-                className="img1 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%]"
-                src="/assets/images/productpage/automated-inventory/automated.webp"
-                width={521}
-                height={502}
-                alt="inventory"
-              />
-              <Image
-                className="img2 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
-                src="/assets/images/productpage/automated-inventory/supplier.png"
-                width={521}
-                height={502}
-                alt="inventory"
-              />
-              <Image
-                className="img3 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
-                src="/assets/images/productpage/automated-inventory/order.png"
-                width={521}
-                height={502}
-                alt="inventory"
-              />
-              <Image
-                className="img4 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
-                src="/assets/images/productpage/automated-inventory/portal.png"
-                width={521}
-                height={502}
-                alt="inventory"
-              />
-              <Image
-                className="img5 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
-                src="/assets/images/productpage/automated-inventory/partner.png"
-                width={521}
-                height={502}
-                alt="inventory"
-              />
-              <Image
-                className="img6 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
-                src="/assets/images/productpage/automated-inventory/data.png"
-                width={521}
-                height={502}
-                alt="inventory"
-              />
-              {/* <div className="img1 h-[400px] transition-all ease-in-out duration-300 bg_100 bg-no-repeat bg-[url('/assets/images/productpage/automated-inventory/automated.webp')] w-full"></div> */}
+            <div className=" box-2 w-full">
+              {automateImage.map((content, index) => {
+                return (
+                  <Image
+                    key={index}
+                    className={`${content.class} h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%]`}
+                    src={content.src}
+                    width={521}
+                    height={502}
+                    alt={content.class}
+                  />
+                );
+              })}
             </div>
-            {/* <Image
-              className="box-3 hidden"
-              src="/assets/images/productpage/automated-inventory/data.png"
-              width={521}
-              height={502}
-              alt="inventory"
-            /> */}
           </div>
         </div>
       </div>

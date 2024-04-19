@@ -742,6 +742,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    section: "section_2",
   },
   {
     icon: <AutomatedArrow />,
@@ -754,6 +755,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    section: "section_3",
   },
   {
     icon: <AutomatedArrow />,
@@ -766,6 +768,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    section: "section_3",
   },
   {
     icon: <AutomatedArrow />,
@@ -778,6 +781,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    section: "section_4",
   },
   {
     icon: <AutomatedArrow />,
@@ -790,6 +794,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    section: "section_5",
   },
   {
     icon: <AutomatedArrow />,
@@ -802,6 +807,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    section: "section_6 ",
   },
 ];
 export const trustedKnownPartners = [
@@ -876,5 +882,31 @@ export const enterprisePartners = [
     image: "/assets/images/enterprise/steeltech-style.png",
     title: "steeltech",
     width: "148",
+  },
+];
+export const automateImage = [
+  {
+    class: "img1",
+    src: "/assets/images/productpage/automated-inventory/automated.webp",
+  },
+  {
+    class: "img2",
+    src: "/assets/images/productpage/automated-inventory/supplier.png",
+  },
+  {
+    class: "img3",
+    src: "/assets/images/productpage/automated-inventory/order.png",
+  },
+  {
+    class: "img4",
+    src: "/assets/images/productpage/automated-inventory/portal.png",
+  },
+  {
+    class: "img5",
+    src: "/assets/images/productpage/automated-inventory/partner.png",
+  },
+  {
+    class: "img6",
+    src: "/assets/images/productpage/automated-inventory/data.png",
   },
 ];
