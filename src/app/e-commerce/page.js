@@ -9,12 +9,27 @@ import Footer from "@/components/common/Footer";
 import BackToTop from "@/components/common/BackToTop";
 import ProductHero from "@/components/product/ProductHero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
+import { trustedKnownPartners } from "@/components/common/Helper";
 
 export default function Home() {
   return (
     <>
-      <ProductHero />
-      <TrustedByKnown />
+      <ProductHero
+        heading={
+          <>
+            Automate & scale{" "}
+            <span className=" text-offWhite">
+              your entire e-commerce business
+            </span>
+          </>
+        }
+        description="A platform that connects to every e-commerce entity, automates repetitive tasks, increases visibility, and speeds up transactions."
+        topbtn="Create happy customers"
+      />
+      <TrustedByKnown
+        laptopimg="/assets/images/productpage/trusted-by-known/mac-book-pro.webp"
+        trustedpartners={trustedKnownPartners}
+      />
       <DiscoverSolutions />
       <AutomatedInventory />
       <DiscoverFaq />

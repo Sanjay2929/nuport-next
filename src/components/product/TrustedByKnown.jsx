@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import React from "react";
-import { trustedKnownPartners } from "../common/Helper";
 import Image from "next/image";
 import Slider from "react-slick";
 
-const TrustedByKnown = () => {
+const TrustedByKnown = ({ laptopimg , trustedpartners }) => {
   var settings = {
     slidesToShow: 7,
     slidesToScroll: 1,
@@ -62,7 +61,7 @@ const TrustedByKnown = () => {
           width={1380}
           height={841}
           className="w-full 2xl:px-0 px-5 max-w-[1380px] lg:mt-[-330px] sm:mt-[-150px] mt-[-100px] relative z-30"
-          src="/assets/images/productpage/trusted-by-known/mac-book-pro.webp"
+          src={laptopimg}
           alt="laptop"
         />
         <div className="overflow-hidden lg:pb-[72px] sm:pb-5">
@@ -75,7 +74,7 @@ const TrustedByKnown = () => {
               className="flex justify-between lg:gap-x-8 gap-x-3 items-center"
             >
               {/*  Mapping over the trustedPartners array to render each partner's image */}
-              {trustedKnownPartners.map((value, index) => {
+              {trustedpartners.map((value, index) => {
                 return (
                   <div key={index} className=" !flex justify-center">
                     <Image
