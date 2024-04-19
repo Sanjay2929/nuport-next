@@ -22,7 +22,7 @@ const AutomatedInventory = () => {
         trigger: ".box-2",
         start: "top top",
         end: "bottom 0%",
-        markers: true,
+        // markers: true,
         scrub: true,
       },
     });
@@ -31,7 +31,7 @@ const AutomatedInventory = () => {
         trigger: ".box-3",
         start: "100% top",
         end: "+=500% 20%",
-        markers: false,
+        // markers: false,
         scrub: true,
       },
     });
@@ -41,12 +41,28 @@ const AutomatedInventory = () => {
         // background: "blue",
         // backgroundImage:
         // "url(/assets/images/productpage/automated-inventory/automated.webp)",
-        opacity: 100,
+        opacity: 1,
+        zIndex: 10,
       },
       {
         // background: "red",
         // backgroundImage: "url(/assets/images/homepage/about-us/drone.webp)",
         opacity: 0,
+        zIndex: -1,
+      }
+    );
+    t2.fromTo(
+      ".box-3",
+      {
+        // background: "blue",
+        // backgroundImage:
+        // "url(/assets/images/productpage/automated-inventory/automated.webp)",
+        opacity: 0,
+      },
+      {
+        // background: "red",
+        // backgroundImage: "url(/assets/images/homepage/about-us/drone.webp)",
+        opacity: 1,
       }
     );
     return () => {
@@ -88,21 +104,21 @@ const AutomatedInventory = () => {
               </div>
             ))}
           </div>
-          <div className="lg:w-6/12 flex justify-end">
+          <div className="lg:w-6/12 flex justify-end relative">
             <Image
-              className="box-2 h-[400px]"
+              className="box-2 h-[400px] absolute top-0"
               src="/assets/images/productpage/automated-inventory/automated.webp"
               width={521}
               height={502}
               alt="inventory"
             />
-            {/* <Image
-              className="box-3 hidden"
-              src="/assets/images/homepage/about-us/drone.webp"
+            <Image
+              className="box-3 absolute top-0 h-[400px]"
+              src="/assets/images/productpage/automated-inventory/data.png"
               width={521}
               height={502}
               alt="inventory"
-            /> */}
+            />
           </div>
         </div>
       </div>

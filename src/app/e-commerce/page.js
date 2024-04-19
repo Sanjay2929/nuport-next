@@ -10,6 +10,7 @@ import BackToTop from "@/components/common/BackToTop";
 import ProductHero from "@/components/product/ProductHero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
 import { empowerings, trustedKnownPartners } from "@/components/common/Helper";
+import Actionanimation from "@/components/product/Actionanimation";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
         solutionCards={empowerings}
       />
       <AutomatedInventory />
+      {/* <Actionanimation /> */}
       <DiscoverFaq />
       <SuccessFullStart />
     </>
