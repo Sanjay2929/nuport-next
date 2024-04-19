@@ -8,9 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const AutomatedInventory = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
     const tl = ScrollTrigger.create({
       trigger: ".trigger",
-      pin: ".trigger .box-2",
+      // pin: ".trigger .box-2",
       start: "top top",
       markers: false,
       end: "bottom center",
@@ -19,34 +20,118 @@ const AutomatedInventory = () => {
     });
     let t1 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".box-2",
-        start: "top top",
-        end: "bottom 0%",
-        markers: true,
+        trigger: ".img1",
+        start: "center center",
+        end: "center 5%",
+        // markers: true,
         scrub: true,
       },
     });
     let t2 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".box-3",
-        start: "100% top",
-        end: "+=500% 20%",
-        markers: false,
+        trigger: ".img2",
+        start: "center 60%",
+        end: "center 10%",
+        // markers: true,
         scrub: true,
       },
     });
-    t1.fromTo(
-      ".box-2",
+    let t3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".img2",
+        start: "top 10%",
+        end: "bottom -10%",
+        // markers: true,
+        scrub: true,
+      },
+    });
+    let t4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".img4",
+        start: "top 60%",
+        end: "bottom 20%",
+        // markers: true,
+        scrub: true,
+      },
+    });
+    let t5 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".img5",
+        start: "center center",
+        end: "center 15%",
+        markers: true,
+        scrub: true,
+      },
+    });
+    let t6 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".img6",
+        start: "top center",
+        end: "center 10%",
+        markers: true,
+        scrub: true,
+      },
+    });
+    t2.fromTo(
+      ".img2",
       {
-        // background: "blue",
-        // backgroundImage:
-        // "url(/assets/images/productpage/automated-inventory/automated.webp)",
-        opacity: 100,
+        opacity: 0,
       },
       {
-        // background: "red",
-        // backgroundImage: "url(/assets/images/homepage/about-us/drone.webp)",
+        opacity: 1,
+      }
+    ).to(".img2", {
+      opacity: 0,
+    });
+    t4.fromTo(
+      ".img4",
+      {
         opacity: 0,
+      },
+      {
+        opacity: 1,
+      }
+    ).to(".img4", {
+      opacity: 0,
+    });
+    t1.fromTo(
+      ".img1",
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+      }
+    );
+    t3.fromTo(
+      ".img3",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      }
+    ).to(".img3", {
+      opacity: 0,
+    });
+    t5.fromTo(
+      ".img5",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      }
+    ).to(".img5", {
+      opacity: 0,
+    });
+    t6.fromTo(
+      ".img6",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
       }
     );
     return () => {
@@ -89,16 +174,54 @@ const AutomatedInventory = () => {
             ))}
           </div>
           <div className="lg:w-6/12 flex justify-end">
-            <Image
-              className="box-2 h-[400px]"
-              src="/assets/images/productpage/automated-inventory/automated.webp"
-              width={521}
-              height={502}
-              alt="inventory"
-            />
+            <div className=" box-2 w-full sticky">
+              <Image
+                className="img1 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%]"
+                src="/assets/images/productpage/automated-inventory/automated.webp"
+                width={521}
+                height={502}
+                alt="inventory"
+              />
+              <Image
+                className="img2 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
+                src="/assets/images/productpage/automated-inventory/supplier.png"
+                width={521}
+                height={502}
+                alt="inventory"
+              />
+              <Image
+                className="img3 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
+                src="/assets/images/productpage/automated-inventory/order.png"
+                width={521}
+                height={502}
+                alt="inventory"
+              />
+              <Image
+                className="img4 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
+                src="/assets/images/productpage/automated-inventory/portal.png"
+                width={521}
+                height={502}
+                alt="inventory"
+              />
+              <Image
+                className="img5 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
+                src="/assets/images/productpage/automated-inventory/partner.png"
+                width={521}
+                height={502}
+                alt="inventory"
+              />
+              <Image
+                className="img6 h-[400px] transition-all ease-in-out duration-300 bg-cover bg-no-repeat sticky top-[30%] opacity-0"
+                src="/assets/images/productpage/automated-inventory/data.png"
+                width={521}
+                height={502}
+                alt="inventory"
+              />
+              {/* <div className="img1 h-[400px] transition-all ease-in-out duration-300 bg_100 bg-no-repeat bg-[url('/assets/images/productpage/automated-inventory/automated.webp')] w-full"></div> */}
+            </div>
             {/* <Image
               className="box-3 hidden"
-              src="/assets/images/homepage/about-us/drone.webp"
+              src="/assets/images/productpage/automated-inventory/data.png"
               width={521}
               height={502}
               alt="inventory"

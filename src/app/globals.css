@@ -24,7 +24,9 @@ html {
     rgba(133, 155, 232, 0.8) 66.46%
   );
 }
-
+.bg_100 {
+  background-size: 100% 100%;
+}
 .fast_decision_faq {
   background: linear-gradient(180deg, #288ea5 0%, rgba(40, 142, 165, 0) 100%);
 }
