@@ -117,3 +117,6 @@ html {
   -webkit-text-stroke: 1px transparent;
   color: white;
 }
+.scrollbar_hidden::-webkit-scrollbar {
+  display: none !important;
+}
