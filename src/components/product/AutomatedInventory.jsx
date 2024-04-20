@@ -22,7 +22,7 @@ const AutomatedInventory = () => {
       scrollTrigger: {
         trigger: ".img1",
         start: "center center",
-        end: "center 5%",
+        end: "center -35%",
         // markers: true,
         scrub: true,
       },
@@ -30,8 +30,8 @@ const AutomatedInventory = () => {
     let t2 = gsap.timeline({
       scrollTrigger: {
         trigger: ".img2",
-        start: "center 60%",
-        end: "center 10%",
+        start: "center 40%",
+        end: "center -110%",
         // markers: true,
         scrub: true,
       },
@@ -39,8 +39,8 @@ const AutomatedInventory = () => {
     let t3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".img2",
-        start: "top 10%",
-        end: "bottom -10%",
+        start: "center -90%",
+        end: "center -220%",
         // markers: true,
         scrub: true,
       },
@@ -48,8 +48,8 @@ const AutomatedInventory = () => {
     let t4 = gsap.timeline({
       scrollTrigger: {
         trigger: ".img4",
-        start: "top 60%",
-        end: "bottom 20%",
+        start: "center -120%",
+        end: "center -250%",
         // markers: true,
         scrub: true,
       },
@@ -57,8 +57,8 @@ const AutomatedInventory = () => {
     let t5 = gsap.timeline({
       scrollTrigger: {
         trigger: ".img5",
-        start: "center center",
-        end: "center 15%",
+        start: "center -150%",
+        end: "center -340%",
         // markers: true,
         scrub: true,
       },
@@ -66,8 +66,8 @@ const AutomatedInventory = () => {
     let t6 = gsap.timeline({
       scrollTrigger: {
         trigger: ".img6",
-        start: "top center",
-        end: "center 10%",
+        start: "center -240%",
+        end: "center -300%",
         // markers: true,
         scrub: true,
       },
@@ -146,7 +146,11 @@ const AutomatedInventory = () => {
             {maximizingYourEfficiency.map((value, index) => (
               <div
                 key={index}
-                className={`${index !== 0 ? " mt-14 lg:mt-[120px]" : "mt-0"}`}
+                className={`${
+                  index !== maximizingYourEfficiency.length - 1
+                    ? "min-h-screen"
+                    : ""
+                } ${index !== 0 ? " mt-14 lg:mt-[120px]" : "mt-0"}`}
               >
                 <p className=" font-plus font-blod text-base text-orangeDark">
                   {value.title}
