@@ -15,7 +15,7 @@ const AutomatedInventory = () => {
       start: "top top",
       markers: false,
       end: "bottom center",
-      scroller: "body",
+      // scroller: "body",
       scrub: true,
     });
     let t1 = gsap.timeline({
