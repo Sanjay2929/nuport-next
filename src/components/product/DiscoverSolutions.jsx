@@ -4,7 +4,6 @@ import { empowerings } from "../common/Helper";
 
 const DiscoverSolutions = ({ heading, solutionCards }) => {
   return (
-    <>
       <div className="container 2xl:max-w-[1285px] px-5 2xl:px-0 mx-auto mt-[59px] mb-16 md:mb-24 lg:mb-[128px] xl:mb-[160px]">
         <div className=" flex justify-center flex-wrap xl:justify-between items-end">
           <div className="text-center xl:text-start">
@@ -42,7 +41,6 @@ const DiscoverSolutions = ({ heading, solutionCards }) => {
           ))}
         </div>
       </div>
-    </>
   );
 };
 
