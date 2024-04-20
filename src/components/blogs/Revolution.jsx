@@ -3,7 +3,7 @@ import React from "react";
 
 const Revolution = ({ date, content, btn, img }) => {
   return (
-    <div className=" border-2 border-tealBlue rounded-xl bg-lightTeal mb-[24px] overflow-hidden">
+    <div className=" border-2 border-tealBlue rounded-xl bg-lightTeal mb-[24px] overflow-hidden min-h-[321px] transition-all ease-in-out duration-300 shadow-lg hover:shadow-tealBlue ">
       <div className="flex flex-wrap">
         <div className=" sm:w-7/12 w-full py-[26px] px-[19px] flex flex-col justify-between items-start">
           <div className=" mb-5">
@@ -14,7 +14,7 @@ const Revolution = ({ date, content, btn, img }) => {
               {content}
             </p>
           </div>
-          <button className=" rounded-lg py-2 px-3 bg-darkGray text-offWhite font-plus font-semibold text-sm">
+          <button className=" rounded-lg py-2 px-3 bg-darkGray text-offWhite font-plus font-semibold text-sm common_btn">
             {btn}
           </button>
         </div>

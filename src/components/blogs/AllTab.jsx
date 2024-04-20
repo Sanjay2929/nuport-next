@@ -60,9 +60,9 @@ const AllTab = () => {
       </div>
       <div className="flex items-center justify-center text-offWhite font-semibold font-plus text-base mt-4 mb-[160px]">
         {filteredCards.length > 4 && (
-          <div className="flex items-center justify-center text-offWhite font-semibold font-plus text-base mt-4 mb-[160px]">
+          <div className="flex items-center justify-center text-offWhite font-semibold font-plus text-base mt-4">
             <button
-              className={`bg-tealBlue py-[15px] px-5 rounded-full text-center`}
+              className={`bg-tealBlue border border-tealBlue transition-all ease-in-out duration-300 py-[15px] px-5 rounded-full text-center common_btn group`}
               onClick={showMoreHandler}
             >
               {showMore ? "Show Less" : "Show More"}
