@@ -765,6 +765,7 @@ export const maximizingYourEfficiency = [
       "Track and plan your inventory the way you like",
     ],
     section: "section_2",
+    src: "/assets/images/productpage/automated-inventory/automated.webp",
   },
   {
     icon: <AutomatedArrow />,
@@ -777,6 +778,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/supplier.png",
     section: "section_3",
   },
   {
@@ -790,6 +792,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/order.png",
     section: "section_3",
   },
   {
@@ -803,6 +806,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/portal.png",
     section: "section_4",
   },
   {
@@ -817,6 +821,7 @@ export const maximizingYourEfficiency = [
       "Track and plan your inventory the way you like",
     ],
     section: "section_5",
+    src: "/assets/images/productpage/automated-inventory/partner.png",
   },
   {
     icon: <AutomatedArrow />,
@@ -829,6 +834,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/data.png",
     section: "section_6 ",
   },
 ];
