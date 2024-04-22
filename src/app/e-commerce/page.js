@@ -4,7 +4,10 @@ import DiscoverFaq from "@/components/product/DiscoverFaq";
 import SuccessFullStart from "@/components/homepage/SuccessFullStart";
 import ProductHero from "@/components/product/ProductHero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
-import { empowerings, trustedKnownPartners } from "@/components/common/Helper";
+import { dynamicOrder, empowerings, maximizingYourEfficiency, trustedKnownPartners } from "@/components/common/Helper";
+import AutomativeResponsive from "@/components/product/AutomativeResponsive";
+import Dynamic from "@/components/e-commerce/Dynamic";
+import DynamicResponsive from "@/components/e-commerce/DynamicResponsive";
 
 export default function Home() {
   return (
@@ -34,7 +37,14 @@ export default function Home() {
         }
         solutionCards={empowerings}
       />
-      <AutomatedInventory />
+      <div className=" lg:block hidden">
+        {" "}
+        <Dynamic />
+      </div>
+      <div className=" lg:hidden bg-darkBlue">
+        {" "}
+        <DynamicResponsive mapFunction={dynamicOrder} />
+      </div>
       <DiscoverFaq />
       <SuccessFullStart />
     </>
