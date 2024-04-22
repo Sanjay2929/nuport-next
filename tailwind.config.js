@@ -33,7 +33,12 @@ module.exports = {
         mischka: "#D5D8E0",
         gray: "#6A758F",
         extraLightGray: "#F3F5F7",
-        lightTeal: "#141A29",
+        lightBlue: "#141A29",
+        blue: "#2E59CC",
+        graynormal: "#545D75",
+        lightTeal: "#19B0B0",
+        green: "#1DBD5D",
+        orange: "#D28B21",
       },
       fontFamily: {
         plus: ["Plus Jakarta Sans", "sans-serif"],

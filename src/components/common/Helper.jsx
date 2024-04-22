@@ -1296,3 +1296,39 @@ export const videoContent = [
     time: "2:20m",
   },
 ];
+
+// open jobs
+export const openJobs = [
+  {
+    department: "Marketing",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
+  },
+  {
+    department: "Product",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
+  },
+  {
+    department: "UX Designer",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
+  },
+  {
+    department: "Developer",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
+  },
+];
