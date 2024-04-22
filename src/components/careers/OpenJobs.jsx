@@ -147,7 +147,8 @@ const OpenJobs = () => {
       <div className="max-w-[1065px] mx-auto">
         {openJobs.length === 0 ? (
           <div className="max-w-[399px] mx-auto flex flex-col items-center md:pt-0 pt-14">
-            <Image className="sm:w-[170px] w-[158px]"
+            <Image
+              className="sm:w-[170px] w-[158px]"
               width={170}
               height={144}
               src="/assets/images/careers/warehouse.png"
@@ -174,7 +175,7 @@ const OpenJobs = () => {
                 <span
                   className={`px-2.5 py-[5px] rounded-md font-medium sm:text-sm text-xs text-offWhite inline-block  ${
                     value.department == "Marketing" && "bg-blue"
-                  } ${value.department == "Product" && "bg-lightTeal"} ${
+                  } ${value.department == "Product" && "bg-teal"} ${
                     value.department == "UX Designer" && "bg-orange"
                   } ${value.department == "Developer" && "bg-green"}`}
                 >

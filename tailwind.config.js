@@ -36,9 +36,10 @@ module.exports = {
         lightBlue: "#141A29",
         blue: "#2E59CC",
         graynormal: "#545D75",
-        lightTeal: "#19B0B0",
+        teal: "#19B0B0",
         green: "#1DBD5D",
         orange: "#D28B21",
+        lightTeal: "#141A29", 
       },
       fontFamily: {
         plus: ["Plus Jakarta Sans", "sans-serif"],
