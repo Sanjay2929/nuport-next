@@ -6,15 +6,18 @@ import {
   BusinessGrowth,
   Career,
   CaseStudy,
+  Computer,
   Courier,
   CourierBusIcon,
   Delivery,
   DeliveryTruck,
+  Design,
   Documentation,
   Ecommerce,
   Enterprise,
   Facebook,
   FasterOrder,
+  FinanceDollor,
   IndianFlag,
   IndustrialSupplies,
   Industry,
@@ -28,10 +31,13 @@ import {
   LocationGoogle,
   LocationIcon,
   MapLocation,
+  MarketingGraph,
   Omnichannel,
   Order,
   OrderIcon,
+  Plus,
   RoleUsers,
+  SalesGraph,
   ScanIcon,
   Setting,
   ShoppingBag,
@@ -769,6 +775,7 @@ export const maximizingYourEfficiency = [
       "Track and plan your inventory the way you like",
     ],
     section: "section_2",
+    src: "/assets/images/productpage/automated-inventory/automated.webp",
   },
   {
     icon: <AutomatedArrow />,
@@ -781,6 +788,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/supplier.png",
     section: "section_3",
   },
   {
@@ -794,6 +802,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/order.png",
     section: "section_3",
   },
   {
@@ -807,6 +816,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/portal.png",
     section: "section_4",
   },
   {
@@ -821,6 +831,7 @@ export const maximizingYourEfficiency = [
       "Track and plan your inventory the way you like",
     ],
     section: "section_5",
+    src: "/assets/images/productpage/automated-inventory/partner.png",
   },
   {
     icon: <AutomatedArrow />,
@@ -833,6 +844,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
+    src: "/assets/images/productpage/automated-inventory/data.png",
     section: "section_6 ",
   },
 ];
@@ -1050,5 +1062,177 @@ export const solution = [
   {
     icons: <LastDelivery />,
     title: "Last Mile Delivery",
+  },
+];
+// dynamic
+export const dynamicOrder = [
+  {
+    title: "Maximizing Your Efficiency",
+    description: "Dynamic order ",
+    descriptionCo: "management",
+    subDescription: [
+      {
+        title: "Dynamic Control",
+        subTitle:
+          "More dynamic control over the field sales force with the mobile order management system.",
+      },
+      {
+        title: "Simple Interface",
+        subTitle:
+          "Simple and intuitive interface of order entry templatized for every industry for faster onboarding.",
+      },
+      {
+        title: "Live Updates",
+        subTitle:
+          "Live update any change in the delivery locations simply using the GPS from the mobile device.",
+      },
+    ],
+    src: "/assets/images/e-commerce/img1.png",
+  },
+  {
+    title: "Maximizing Your Efficiency",
+    description: "Automated",
+    descriptionCo: " distribution planning",
+    subDescription: [
+      {
+        title: "Automated Plans",
+        subTitle:
+          "Get automated route plans created instantly from approved orders.",
+      },
+      {
+        title: "Efficient Planning",
+        subTitle:
+          "Automatically determine the number of vehicles necessary for distribution per plan.",
+      },
+      {
+        title: "More Control",
+        subTitle:
+          "Dispatch automatically to delivery partners and have more control of the goods on the road.",
+      },
+    ],
+    src: "/assets/images/e-commerce/img2.png",
+  },
+  {
+    title: "Maximizing Your Efficiency",
+    description: "Smart",
+    descriptionCo: " warehousing",
+    subDescription: [
+      {
+        title: "Easy Scan",
+        subTitle: "Easy scan-in & scan out for all your SKU movements.",
+      },
+      {
+        title: "Superior Traceability",
+        subTitle: "Superior traceability of SKU across all geographies.",
+      },
+      {
+        title: "Smarter Mapping",
+        subTitle: "Smarter mapping of your warehouse for total visibility.",
+      },
+    ],
+    src: "/assets/images/e-commerce/img3.png",
+  },
+  {
+    title: "Maximizing Your Efficiency",
+    description: "Transport ",
+    descriptionCo: " management system",
+    subDescription: [
+      {
+        title: "Fleet Management",
+        subTitle:
+          "Segregated Regular & Unfit Fleet, Expense Calculation, Document Management, Live Tracking.",
+      },
+      {
+        title: "Analytics & Reporting",
+        subTitle:
+          "Arrival & Departure time tracking, Weight/Volume utilization, Trip summary, Cost Analysis.",
+      },
+      {
+        title: "Transport Vendors",
+        subTitle:
+          "Onboard Transport Vendor, Integrate with 3PL Vendor, Transport Deed and Quotation Management, Vendor's Trip history.",
+      },
+    ],
+    src: "/assets/images/e-commerce/img4.png",
+  },
+  {
+    title: "Maximizing Your Efficiency",
+    description: "Supply chain  ",
+    descriptionCo: " intelligence",
+    subDescription: [
+      {
+        title: "End-To-End Data Insights",
+        subTitle:
+          "Our integrated cloud-based supply-chain platform enables data connectivity across multiple verticals & leverage data insights.",
+      },
+      {
+        title: "Analytics & ReportiQuick Product Tracing",
+        subTitle:
+          "Experience significant time reduction needed to trace items from store to farm from days to seconds.",
+      },
+      {
+        title: "Reduce Administrative Costs",
+        subTitle:
+          "Reduce the administrative costs of handling dispute resolutions due to superior visibility.",
+      },
+    ],
+    src: "/assets/images/e-commerce/img4.png",
+  },
+];
+export const dynamicImage = [
+  {
+    class: "img1",
+    src: "/assets/images/e-commerce/img1.png",
+  },
+  {
+    class: "img2",
+    src: "/assets/images/e-commerce/img2.png",
+  },
+  {
+    class: "img3",
+    src: "/assets/images/e-commerce/img3.png",
+  },
+  {
+    class: "img4",
+    src: "/assets/images/e-commerce/img4.png",
+  },
+  {
+    class: "img6",
+    src: "/assets/images/e-commerce/img5.png",
+  },
+];
+
+export const OurTeamCareer = [
+  {
+    icon: <Setting width="md:w-[32px] w-[24px]" />,
+    heading: "Engineering",
+  },
+  {
+    icon: <SquareCube />,
+    heading: "Product",
+  },
+  {
+    icon: <Design />,
+    heading: "Design",
+  },
+  {
+    icon: <Plus />,
+    heading: "Implementation",
+  },
+  {
+    icon: <SalesGraph />,
+    heading: "Sales",
+  },
+  {
+    icon: <MarketingGraph />,
+    heading: "Marketing",
+  },
+  {
+    icon: <FinanceDollor />,
+    heading: "Finance",
+  },
+  {
+    icon: <Computer />,
+    heading: "Account Management",
   },
 ];
