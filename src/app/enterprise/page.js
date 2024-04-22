@@ -1,6 +1,7 @@
 import {
   enterprisePartners,
   enterpriseSolutions,
+  maximizingYourEfficiency,
 } from "@/components/common/Helper";
 import SuccessFullStart from "@/components/homepage/SuccessFullStart";
 import AutomatedInventory from "@/components/product/AutomatedInventory";
@@ -45,7 +46,7 @@ const page = () => {
       </div>
       <div className=" lg:hidden bg-darkBlue">
         {" "}
-        <AutomativeResponsive />
+        <AutomativeResponsive mapFunction={maximizingYourEfficiency} />
       </div>
       <WorkProcess />
       <DiscoverFaq />

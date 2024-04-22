@@ -2,7 +2,7 @@ import React from "react";
 import { AutomatedArrow } from "../common/Icons";
 import Image from "next/image";
 
-const AutomativeResponsive = ({ mapFunction }) => {
+const DynamicResponsive = ({ mapFunction }) => {
   return (
     <div className="container 2xl:max-w-[1285px] px-5 2xl:px-0 mx-auto py-16 md:py-24 lg:py-[128px] xl:py-[160px]">
       {mapFunction.map((value, index) => (
@@ -19,10 +19,19 @@ const AutomativeResponsive = ({ mapFunction }) => {
               <div className="mt-6 lg:mt-10">
                 {value.subDescription.map((subContent, index) => {
                   return (
-                    <div className=" flex gap-3 mt-[18px]" key={index}>
-                      <AutomatedArrow />
+                    <div
+                      className={` pb-[28px] mb-[28px] max-w-[540px] ${
+                        index === value.subDescription.length - 1
+                          ? ""
+                          : " border-b border-darkGray"
+                      }`}
+                      key={index}
+                    >
                       <p className="max-w-[390px] font-plus text-base sm:text-lg font-semibold text-offWhite mt-[-2px]">
-                        {subContent}
+                        {subContent.title}
+                      </p>
+                      <p className=" font-plus font-normal md:text-lg text-base text-lightGray">
+                        {subContent.subTitle}
                       </p>
                     </div>
                   );
@@ -45,4 +54,4 @@ const AutomativeResponsive = ({ mapFunction }) => {
   );
 };
 
-export default AutomativeResponsive;
+export default DynamicResponsive;
