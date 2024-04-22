@@ -4,6 +4,7 @@ import {
 } from "@/components/common/Helper";
 import SuccessFullStart from "@/components/homepage/SuccessFullStart";
 import AutomatedInventory from "@/components/product/AutomatedInventory";
+import AutomativeResponsive from "@/components/product/AutomativeResponsive";
 import DiscoverFaq from "@/components/product/DiscoverFaq";
 import DiscoverSolutions from "@/components/product/DiscoverSolutions";
 import ProductHero from "@/components/product/ProductHero";
@@ -38,7 +39,14 @@ const page = () => {
         }
         solutionCards={enterpriseSolutions}
       />
-      <AutomatedInventory />
+      <div className=" lg:block hidden">
+        {" "}
+        <AutomatedInventory />
+      </div>
+      <div className=" lg:hidden bg-darkBlue">
+        {" "}
+        <AutomativeResponsive />
+      </div>
       <WorkProcess />
       <DiscoverFaq />
       <SuccessFullStart />
