@@ -544,7 +544,7 @@ export const CompanyNav = [
       {
         title: "Careers",
         paragraph: "Build with us",
-        url: "/",
+        url: "/careers",
         icon: <Career />,
       },
     ],
