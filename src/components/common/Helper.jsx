@@ -567,7 +567,7 @@ export const CompanyNav = [
       {
         title: "Documentation",
         paragraph: "Product integration docs and info ",
-        url: "/",
+        url: "/blogs",
         icon: <Documentation />,
       },
     ],

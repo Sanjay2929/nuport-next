@@ -1,5 +1,6 @@
 import CareerWithUs from "@/components/careers/CareerWithUs";
 import Hero from "@/components/careers/Hero";
+import OurTeam from "@/components/careers/OurTeam";
 import React from "react";
 
 const page = () => {
@@ -7,6 +8,7 @@ const page = () => {
     <>
       <Hero />
       <CareerWithUs />
+      <OurTeam />
     </>
   );
 };
