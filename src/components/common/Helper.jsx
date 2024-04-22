@@ -1236,3 +1236,63 @@ export const OurTeamCareer = [
     heading: "Account Management",
   },
 ];
+export const videoContent = [
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title:
+      "Introducing Nuport for E-Commerce Automation | ই -কমার্স উদ্যোক্তাদের জন্য নিউপোর্ট অটোমেশন",
+    time: "0:15m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title:
+      "Success story fueled by Automation | ই-কমার্স অটোমেশনের প্রয়োজনীয়তাঃ শেষের পাতা'র সফলতার গল্প",
+    time: "2:26m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title: "Automating Vendor Management With Nuport",
+    time: "0:39m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title: "What is Automated Inventory Fulfillment?",
+    time: "0:42m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title: "Nuport Ecommerce Suite for Ecommerce Businesses",
+    time: "1:30m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title: "Nuport Ecommerce Suite for Ecommerce Businesses (Bangla)",
+    time: "1:39m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title: "Nuport E-Commerce Suite for Online Businesses",
+    time: "0:49m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title:
+      "Manage Online Business from Single Platform | অনলাইন বিজনেসের সবকিছু, এক জায়গায়",
+    time: "0:20m",
+  },
+  {
+    video: "/assets/video/video.mp4",
+    thumbnail: "/assets/images/videopage/img1.png",
+    title:
+      "Client Testimonial: Natural Nutrifood । Nuport কিভাবে ই-কমার্স বিজনেসের গ্রোথ নিশ্চিত করে?",
+    time: "2:20m",
+  },
+];
