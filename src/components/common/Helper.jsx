@@ -565,7 +565,7 @@ export const CompanyNav = [
       {
         title: "Video",
         paragraph: "Testimonials, Product Videos, Promos",
-        url: "/",
+        url: "/video",
         icon: <Video />,
       },
       {
