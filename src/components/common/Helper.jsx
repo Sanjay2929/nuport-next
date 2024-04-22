@@ -6,14 +6,17 @@ import {
   BusinessGrowth,
   Career,
   CaseStudy,
+  Computer,
   Courier,
   CourierBusIcon,
   Delivery,
   DeliveryTruck,
+  Design,
   Documentation,
   Enterprise,
   Facebook,
   FasterOrder,
+  FinanceDollor,
   IndianFlag,
   Industry,
   Instagram,
@@ -24,10 +27,13 @@ import {
   LocationGoogle,
   LocationIcon,
   MapLocation,
+  MarketingGraph,
   Omnichannel,
   Order,
   OrderIcon,
+  Plus,
   RoleUsers,
+  SalesGraph,
   ScanIcon,
   Setting,
   ShoppingBag,
@@ -1032,5 +1038,39 @@ export const tabCard = [
       "Level up your Customer Experience with Real-Time SMS on Order Status Updates",
     btn: "VRP",
     img: "/assets/images/blogpage/mobile12.png",
+  },
+];
+export const OurTeamCareer = [
+  {
+    icon: <Setting width="md:w-[32px] w-[24px]" />,
+    heading: "Engineering",
+  },
+  {
+    icon: <SquareCube />,
+    heading: "Product",
+  },
+  {
+    icon: <Design />,
+    heading: "Design",
+  },
+  {
+    icon: <Plus />,
+    heading: "Implementation",
+  },
+  {
+    icon: <SalesGraph />,
+    heading: "Sales",
+  },
+  {
+    icon: <MarketingGraph />,
+    heading: "Marketing",
+  },
+  {
+    icon: <FinanceDollor />,
+    heading: "Finance",
+  },
+  {
+    icon: <Computer />,
+    heading: "Account Management",
   },
 ];
