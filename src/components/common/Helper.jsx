@@ -11,16 +11,20 @@ import {
   Delivery,
   DeliveryTruck,
   Documentation,
+  Ecommerce,
   Enterprise,
   Facebook,
   FasterOrder,
   IndianFlag,
+  IndustrialSupplies,
   Industry,
   Instagram,
   Integrated,
   IntegratedPlatform,
   Inventory,
+  LastDelivery,
   Linkedin,
+  Location,
   LocationGoogle,
   LocationIcon,
   MapLocation,
@@ -487,19 +491,19 @@ export const solutionNav = [
   {
     title: "By Industry",
     paragraph: "Distribution and supply chain management",
-    url: "/",
+    url: "/industry",
     icon: <Industry />,
   },
   {
     title: "By Use Case",
     paragraph: "Manufacturing, distribution or warehousing business",
-    url: "/",
+    url: "/use-case",
     icon: <UseCase />,
   },
   {
     title: "By Role",
     paragraph: "Your supply chain solution by roles",
-    url: "/",
+    url: "/role",
     icon: <RoleUsers />,
   },
 ];
@@ -1026,5 +1030,25 @@ export const tabCard = [
       "Level up your Customer Experience with Real-Time SMS on Order Status Updates",
     btn: "VRP",
     img: "/assets/images/blogpage/mobile12.png",
+  },
+];
+
+// Industry
+export const solution = [
+  {
+    icons: <Location />,
+    title: "FMCG",
+  },
+  {
+    icons: <IndustrialSupplies />,
+    title: "Industrial Supplies",
+  },
+  {
+    icons: <Ecommerce />,
+    title: "E-Commerce",
+  },
+  {
+    icons: <LastDelivery />,
+    title: "Last Mile Delivery",
   },
 ];

@@ -120,3 +120,8 @@ html {
 .scrollbar_hidden::-webkit-scrollbar {
   display: none !important;
 }
+/* INDUSTRY  */
+.group:hover svg path {
+  fill: white;
+  transition: all 0.3s ease-in-out !important;
+}
