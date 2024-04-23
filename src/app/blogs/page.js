@@ -11,8 +11,8 @@ const Page = () => {
     const fetchData = async () => {
       try {
         const response = await api.posts.browse({
-          page: 2,
-          limit: 5,
+          page: 1,
+          limit: 12,
           order: ["published_at DESC"],
         });
         setBlogList(response);
