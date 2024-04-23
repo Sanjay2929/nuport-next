@@ -1,8 +1,8 @@
 "use client"
 import AllTab from "@/components/blogs/AllTab";
-import ProductHero from "@/components/product/ProductHero";
 import React, { useEffect, useState } from "react";
 import { api } from "../../../utils/fetch";
+import Hero from "@/components/common/Hero";
 
 const Page = () => {
   const [blogList, setBlogList] = useState([]);
@@ -28,7 +28,7 @@ const Page = () => {
 
   return (
     <div className="bg-darkBlue overflow-hidden">
-      <ProductHero
+      <Hero
         type="search"
         heading={
           <>

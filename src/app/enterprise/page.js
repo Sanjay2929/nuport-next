@@ -8,14 +8,14 @@ import AutomatedInventory from "@/components/product/AutomatedInventory";
 import AutomativeResponsive from "@/components/product/AutomativeResponsive";
 import DiscoverFaq from "@/components/product/DiscoverFaq";
 import DiscoverSolutions from "@/components/product/DiscoverSolutions";
-import ProductHero from "@/components/product/ProductHero";
+import Hero from "@/components/common/Hero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
 import WorkProcess from "@/components/product/WorkProcess";
 
 const page = () => {
   return (
     <>
-      <ProductHero
+      <Hero
         heading={
           <>
             <span className=" text-offWhite">
