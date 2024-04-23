@@ -6,9 +6,12 @@ const DynamicResponsive = ({ mapFunction }) => {
   return (
     <div className="container 2xl:max-w-[1285px] px-5 2xl:px-0 mx-auto py-16 md:py-24 lg:py-[128px] xl:py-[160px]">
       {mapFunction.map((value, index) => (
-        <div className=" flex justify-between flex-col-reverse lg:flex-row flex-wrap">
-          <div className="w-full my-10" key={index}>
-            <div key={index}>
+        <div
+          className=" flex justify-between flex-col-reverse lg:flex-row flex-wrap"
+          key={index}
+        >
+          <div className="w-full my-10">
+            <div>
               <p className=" font-plus font-blod text-base text-orangeDark">
                 {value.title}
               </p>
@@ -17,7 +20,7 @@ const DynamicResponsive = ({ mapFunction }) => {
                 <span className="text-garyMedium"> {value.descriptionCo}</span>
               </h3>
               <div className="mt-6 lg:mt-10">
-                {value.subDescription.map((subContent, index) => {
+                {value.subDescription.map((subContent, i) => {
                   return (
                     <div
                       className={` pb-[28px] mb-[28px] max-w-[540px] ${
@@ -25,7 +28,7 @@ const DynamicResponsive = ({ mapFunction }) => {
                           ? ""
                           : " border-b border-darkGray"
                       }`}
-                      key={index}
+                      key={i}
                     >
                       <p className="max-w-[390px] font-plus text-base sm:text-lg font-semibold text-offWhite mt-[-2px]">
                         {subContent.title}
