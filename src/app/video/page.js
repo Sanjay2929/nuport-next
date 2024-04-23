@@ -1,11 +1,11 @@
-import ProductHero from "@/components/product/ProductHero";
+import Hero from "@/components/common/Hero";
 import Video from "@/components/video-page/Video";
 
 const page = () => {
   return (
     <>
       <div className="bg-darkBlue">
-        <ProductHero
+        <Hero
           type="toggle"
           heading={
             <>

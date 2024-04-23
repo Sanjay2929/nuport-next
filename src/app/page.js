@@ -1,6 +1,5 @@
 "use client";
-import Hero from "@/components/common/Hero";
-import Navbar from "@/components/common/Navbar/Navbar";
+import Hero from "@/components/homepage/Hero";
 import BrandServe from "@/components/homepage/BrandServe";
 import Ecommerce from "@/components/homepage/Ecommerce";
 import OurProduct from "@/components/homepage/OurProduct";
@@ -13,9 +12,7 @@ import SuccessFullStart from "@/components/homepage/SuccessFullStart";
 import NetworkPart from "@/components/homepage/NetworkPart";
 import FasterDecision from "@/components/homepage/FasterDecision";
 import IncreaseEfficiency from "@/components/homepage/IncreaseEfficiency";
-import Footer from "@/components/common/Footer";
 import AchieveBusinessGoals from "@/components/homepage/AchieveBusinessGoals";
-import BackToTop from "@/components/common/BackToTop";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

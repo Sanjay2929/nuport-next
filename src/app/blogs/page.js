@@ -1,11 +1,11 @@
 import AllTab from "@/components/blogs/AllTab";
-import ProductHero from "@/components/product/ProductHero";
+import Hero from "@/components/common/Hero";
 import React from "react";
 
 const page = () => {
   return (
     <div className="bg-darkBlue overflow-hidden">
-      <ProductHero
+      <Hero
         type="search"
         heading={
           <>
