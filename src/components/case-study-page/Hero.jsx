@@ -7,8 +7,8 @@ const Hero = () => {
     <>
       <div className="bg-darkBlue">
         <div className="xl:max-w-[1324px] px-5 mx-auto container py-20">
-          <div className="flex gap-[60px]">
-            <div className="w-1/2">
+          <div className="flex lg:flex-row flex-col gap-[60px]">
+            <div className="lg:w-1/2 w-full">
               <div className="border-b border-darkGray">
                 <div className="flex gap-3 items-center">
                   <p className="font-plus font-semibold text-lg leading-[140%] text-lightGray">
@@ -21,7 +21,7 @@ const Hero = () => {
                     iFarmer
                   </p>
                 </div>
-                <h2 className="pt-8 font-plus font-bold text-[60px] leading-[120%] tracking-[1.2px] text-white">
+                <h2 className="pt-8 font-plus font-bold lg:text-[60px] md:text-5xl text-4xl leading-[120%] tracking-[1.2px] text-white">
                   How iFarmer transformed it’s supply chain in a efficient way
                 </h2>
                 <p className="text-lightGray max-w-[513px] font-plus pt-4 font-medium text-lg leading-[140%] pb-10 ">
@@ -32,7 +32,7 @@ const Hero = () => {
                   risus.
                 </p>
               </div>
-              <div className="pt-10 flex items-start gap-[57.25px]">
+              <div className="pt-10 sm:flex items-start lg:gap-[57.25px] sm:gap-10 gap-5">
                 <div>
                   <p className="font-plus font-bold text-[36px] leading-[122%] tracking-[0.72px] text-center text-easternBlue">
                     100K+
@@ -41,16 +41,16 @@ const Hero = () => {
                     Locations Delivered
                   </p>
                 </div>
-                <div>
+                <div className=" sm:contents hidden  w-[1px]">
                   <Image
-                    className="h-[126px]"
+                    className="h-[126px] w-[1px]"
                     src="/assets/images/case-study/iframe-gradient-line.png"
                     height={126}
                     width={1}
                     alt="jamil akbar profile"
                   />
                 </div>
-                <div>
+                <div className=" sm:my-0 my-5">
                   <p className="font-plus font-bold text-[36px] leading-[122%] tracking-[0.72px] text-center text-easternBlue">
                     5K+
                   </p>
@@ -58,9 +58,9 @@ const Hero = () => {
                     Orders Per Day
                   </p>
                 </div>
-                <div>
+                <div className=" sm:contents hidden  w-[1px]">
                   <Image
-                    className="h-[126px]"
+                    className="h-[126px] w-[1px]"
                     src="/assets/images/case-study/iframe-gradient-line.png"
                     height={126}
                     width={1}
@@ -77,8 +77,8 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2">
-              <div className="flex justify-end">
+            <div className="lg:w-1/2 w-full">
+              <div className="flex lg:justify-end justify-center">
                 <Image
                 className=""
                 src="/assets/images/case-study/ifarmer.png"
