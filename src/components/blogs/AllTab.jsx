@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { blogTabHeading, tabCard } from "../common/Helper";
+import { blogTabHeading } from "../common/Helper";
 import Revolution from "./Revolution";
 import LatestBlog from "./LatestBlog";
 import { useRouter } from "next/navigation";
