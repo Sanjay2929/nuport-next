@@ -47,7 +47,7 @@ const CareerWithUs = () => {
               data-aos="fade-left"
               data-aos-delay="300"
               className="md:max-w-[521px] max-w-[400px] w-full object-cover"
-              src="/assets/images/careers/nuport-desk.png"
+              src="/assets/images/careers/nuport-desk.webp"
               height={606}
               width={521}
               alt="nuport desk"

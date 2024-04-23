@@ -31,7 +31,7 @@ const LatestBlog = () => {
         </div>
         <div className=" lg:w-5/12 w-full">
           <Image
-            src="/assets/images/blog-page/saas-mana.webp"
+            src="/assets/images/blog-page/saas-man.webp"
             className=" lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg:max-w-[559px] w-full h-full lg:max-h-[100%] max-h-[435px] object-cover"
             width={559}
             height={429}

@@ -986,7 +986,7 @@ export const dynamicOrder = [
           "Live update any change in the delivery locations simply using the GPS from the mobile device.",
       },
     ],
-    src: "/assets/images/e-commerce/img1.png",
+    src: "/assets/images/e-commerce/img1.webp",
   },
   {
     title: "Maximizing Your Efficiency",
@@ -1009,7 +1009,7 @@ export const dynamicOrder = [
           "Dispatch automatically to delivery partners and have more control of the goods on the road.",
       },
     ],
-    src: "/assets/images/e-commerce/img2.png",
+    src: "/assets/images/e-commerce/img2.webp",
   },
   {
     title: "Maximizing Your Efficiency",
@@ -1029,7 +1029,7 @@ export const dynamicOrder = [
         subTitle: "Smarter mapping of your warehouse for total visibility.",
       },
     ],
-    src: "/assets/images/e-commerce/img3.png",
+    src: "/assets/images/e-commerce/img3.webp",
   },
   {
     title: "Maximizing Your Efficiency",
@@ -1052,7 +1052,7 @@ export const dynamicOrder = [
           "Onboard Transport Vendor, Integrate with 3PL Vendor, Transport Deed and Quotation Management, Vendor's Trip history.",
       },
     ],
-    src: "/assets/images/e-commerce/img4.png",
+    src: "/assets/images/e-commerce/img4.webp",
   },
   {
     title: "Maximizing Your Efficiency",
@@ -1075,29 +1075,29 @@ export const dynamicOrder = [
           "Reduce the administrative costs of handling dispute resolutions due to superior visibility.",
       },
     ],
-    src: "/assets/images/e-commerce/img4.png",
+    src: "/assets/images/e-commerce/img4.webp",
   },
 ];
 export const dynamicImage = [
   {
     class: "img1",
-    src: "/assets/images/e-commerce/img1.png",
+    src: "/assets/images/e-commerce/img1.webp",
   },
   {
     class: "img2",
-    src: "/assets/images/e-commerce/img2.png",
+    src: "/assets/images/e-commerce/img2.webp",
   },
   {
     class: "img3",
-    src: "/assets/images/e-commerce/img3.png",
+    src: "/assets/images/e-commerce/img3.webp",
   },
   {
     class: "img4",
-    src: "/assets/images/e-commerce/img4.png",
+    src: "/assets/images/e-commerce/img4.webp",
   },
   {
     class: "img6",
-    src: "/assets/images/e-commerce/img5.png",
+    src: "/assets/images/e-commerce/img5.webp",
   },
 ];
 

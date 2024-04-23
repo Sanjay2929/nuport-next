@@ -151,7 +151,7 @@ const OpenJobs = () => {
               className="sm:w-[170px] w-[158px]"
               width={170}
               height={144}
-              src="/assets/images/careers/warehouse.png"
+              src="/assets/images/careers/warehouse.webp"
               alt="warehouse"
             />
             <h3 className="text-center font-bold md:text-2xl sm:text-xl text-base pb-2.5 pt-8">
