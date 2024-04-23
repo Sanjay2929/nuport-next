@@ -1,18 +1,20 @@
 import DiscoverSolutions from "@/components/product/DiscoverSolutions";
-import AutomatedInventory from "@/components/product/AutomatedInventory";
 import DiscoverFaq from "@/components/product/DiscoverFaq";
 import SuccessFullStart from "@/components/homepage/SuccessFullStart";
-import ProductHero from "@/components/product/ProductHero";
+import Hero from "@/components/common/Hero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
-import { dynamicOrder, empowerings, maximizingYourEfficiency, trustedKnownPartners } from "@/components/common/Helper";
-import AutomativeResponsive from "@/components/product/AutomativeResponsive";
+import {
+  dynamicOrder,
+  empowerings,
+  trustedKnownPartners,
+} from "@/components/common/Helper";
 import Dynamic from "@/components/e-commerce/Dynamic";
 import DynamicResponsive from "@/components/e-commerce/DynamicResponsive";
 
 export default function Home() {
   return (
     <>
-      <ProductHero
+      <Hero
         heading={
           <>
             Automate & scale{" "}

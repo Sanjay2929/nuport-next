@@ -1,13 +1,17 @@
 import CareerWithUs from "@/components/careers/CareerWithUs";
-import Hero from "@/components/careers/Hero";
 import OpenJobs from "@/components/careers/OpenJobs";
 import OurTeam from "@/components/careers/OurTeam";
 import React from "react";
+import SimpleHero from "@/components/common/SimpleHero";
 
 const page = () => {
   return (
     <>
-      <Hero />
+      <SimpleHero
+        topBtn="Build with us"
+        heading="Careers"
+        description="Become a critical part of our team."
+      />
       <CareerWithUs />
       <OurTeam />
       <OpenJobs />

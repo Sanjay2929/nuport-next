@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { WhiteArrow } from "../common/Icons";
 
-const Saas = () => {
+const LatestBlog = () => {
   return (
     <div className="mb-6">
       <div className=" w-full rounded-xl bg-tealBlue flex flex-wrap overflow-hidden">
@@ -32,7 +32,7 @@ const Saas = () => {
         <div className=" lg:w-5/12 w-full">
           <Image
             src="/assets/images/blogpage/saas-mana.png"
-            className=" lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg:max-w-[559px] w-full h-full object-cover"
+            className=" lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg:max-w-[559px] w-full h-full lg:max-h-[100%] max-h-[435px] object-cover"
             width={559}
             height={429}
             alt="saas man"
@@ -43,4 +43,4 @@ const Saas = () => {
   );
 };
 
-export default Saas;
+export default LatestBlog;

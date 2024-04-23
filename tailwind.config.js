@@ -39,7 +39,8 @@ module.exports = {
         teal: "#19B0B0",
         green: "#1DBD5D",
         orange: "#D28B21",
-        lightTeal: "#141A29", 
+        lightTeal: "#141A29",
+        easternBlue: "#3799AF",
       },
       fontFamily: {
         plus: ["Plus Jakarta Sans", "sans-serif"],
