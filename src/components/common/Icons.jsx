@@ -1271,7 +1271,7 @@ export const ShoppingBag = () => {
 };
 export const WhiteArrow = () => {
   return (
-    <svg
+    <svg className="mt-0.5"
       width="16"
       height="12"
       viewBox="0 0 16 12"
