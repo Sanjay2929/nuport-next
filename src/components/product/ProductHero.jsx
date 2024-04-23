@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ArrowUpward, CircleArrow } from "../common/Icons";
+import { ArrowUpward, CircleArrow, SearchIcon } from "../common/Icons";
 const ProductHero = ({ heading, description, topbtn, type }) => {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -17,9 +17,13 @@ const ProductHero = ({ heading, description, topbtn, type }) => {
           <h1 className="font-extrabold xl:text-[96px] lg:text-[80px] sm:text-5xl text-garyMedium text-[36px] text-center max-w-[1141px] mx-auto leading-[110%] pt-4">
             {heading}
           </h1>
-          <p className="max-w-[747px] mx-auto md:text-xl text-base font-medium text-center text-lightGray md:pt-7 pt-3 md:pb-14 pb-10">
-            {description}
-          </p>
+          {description === undefined ? (
+            ""
+          ) : (
+            <p className="max-w-[747px] mx-auto md:text-xl text-base font-medium text-center text-lightGray md:pt-7 pt-3 md:pb-14 pb-10">
+              {description}
+            </p>
+          )}
           {type === "toggle" ? (
             <div className=" flex items-center justify-center mt-[-12px] md:mb-[120px] mb-20 gap-3">
               <p className=" font-plus font-medium text-xl text-center text-offWhite">
@@ -38,6 +42,19 @@ const ProductHero = ({ heading, description, topbtn, type }) => {
                 ></div>
               </div>
             </div>
+          ) : type === "search" ? (
+            <label
+              htmlFor="search"
+              className=" border border-gray rounded-full ps-5 flex items-center max-w-[400px] mb-[120px] w-full mt-12"
+            >
+              <SearchIcon />
+              <input
+                type="text"
+                className=" bg-transparent text-offWhite placeholder:text-offWhite font-plus w-full pe-3 font-normal text-sm border-0 focus-visible:outline-none ms-2 py-4"
+                id="search"
+                placeholder="Search blog"
+              />
+            </label>
           ) : (
             <div className="flex items-center sm:flex-row flex-col md:gap-6 gap-4 lg:pb-[415px] sm:pb-[200px] pb-32">
               <button className="bg-tealBlue flex items-center gap-2 px-5 pt-3.5 pb-4 rounded-full md:text-base text-sm font-semibold group text-white hover:border-tealBlue group hover:text-tealBlue border border-transparent duration-300 hover:bg-transparent">
