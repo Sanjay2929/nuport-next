@@ -575,7 +575,7 @@ export const CompanyNav = [
       {
         title: "Case Study",
         paragraph: "Client use cases per industry",
-        url: "/",
+        url: "/case-study",
         icon: <CaseStudy />,
       },
       {
