@@ -1377,3 +1377,25 @@ export const openJobs = [
     deadline: " Jul 25, 2023",
   },
 ];
+// caseStudyIntro
+export const caseStudyIntro = [
+  {
+    heading: "Introduction",
+    description:
+      " Lorem ipsum dolor sit amet consectetur. Dolor tristique vulputate diam tristique pellentesque bibendum eget. Ac aliquam sit ornare dapibus leo quis. Tellus sed iaculis purus quis. Commodo et rhoncus arcu ipsum est porttitor quis quis risus.Lorem ipsum dolor sit amet consectetur. Dolor tristique vulputate diam tristique pellentesque bibendum eget. Ac  aliquam sit ornare dapibus leo quis. Tellus sed iaculis purus quis. Commodo et rhoncus arcu ipsum est porttitor quis quis risus.Lorem ipsum dolor sit amet consectetur. Dolor tristique vulputate diam tristique pellentesque bibendum eget. Ac aliquam sit ornare dapibus leo quis. Tellus sed iaculis purus quis.",
+  },
+  {
+    heading: "iFarmer before Nuport",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Dolor tristique vulputate diam tristique pellentesque bibendum eget. Ac aliquam sit ornare dapibus leo quis. Tellus sed iaculis purus quis. Commodo et rhoncus arcu ipsum est porttitor quis quis risus.Lorem ipsum dolor sit amet consectetur. Dolor tristique vulputate diam tristique pellentesque bibendum eget. Ac aliquam sit ornare dapibus leo quis. Tellus sed iaculis purus quis. Commodo et rhoncus arcu ipsum est porttitor quis quis risus.Lorem ipsum dolor sit amet consectetur. Dolor tristique vulputate diam tristique pellentesque bibendum eget. Ac aliquam sit ornare dapibus leo quis. Tellus sed iaculis purus quis. ",
+  },
+];
+// valueSuggest
+export const valueSuggest = [
+  "Values details goes here",
+  "Values details goes here",
+  "Values details goes here",
+  "Values details goes here",
+  "Values details goes here",
+  "Values details goes here",
+];
