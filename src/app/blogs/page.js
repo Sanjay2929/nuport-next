@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import AllTab from "@/components/blogs/AllTab";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { api } from "../../../utils/fetch";
 import Hero from "@/components/common/Hero";
 
@@ -24,7 +24,7 @@ const Page = () => {
     fetchData();
   }, []);
 
-  console.log(blogList ,"blogList"); // Log blogList for debugging
+  console.log(blogList, "blogList"); // Log blogList for debugging
 
   return (
     <div className="bg-darkBlue overflow-hidden">
@@ -37,7 +37,9 @@ const Page = () => {
         }
         topbtn="Know us better"
       />
-      <AllTab blogList={blogList} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <AllTab blogList={blogList} />
+      </Suspense>
     </div>
   );
 };

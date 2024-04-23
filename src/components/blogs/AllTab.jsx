@@ -1,18 +1,28 @@
 "use client";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { blogTabHeading } from "../common/Helper";
 import LatestBlog from "./LatestBlog";
 import Revolution from "./Revolution";
 
 const AllTab = ({ blogList }) => {
   const router = useRouter();
+  const param = useSearchParams();
 
+  const [activeTab, setActiveTab] = useState("");
   const formatBlogDate = (dateString) => {
     const date = new Date(dateString);
     const options = { month: "short", day: "2-digit", year: "numeric" };
     return date.toLocaleDateString("en-US", options);
   };
+  useEffect(() => {
+    if (param.get("tab") === null) {
+      setActiveTab("all");
+    } else {
+      // If tab query parameter is not present, set the default active tab to "All"
+      setActiveTab(param.get("tab"));
+    }
+  }, [param]);
   const handleClick = (tab) => {
     const formattedTab = tab.toLowerCase().replace(/\s+/g, "-");
     // Construct the URL with the query parameter
@@ -21,8 +31,6 @@ const AllTab = ({ blogList }) => {
     // Redirect to the constructed URL
     router.push(urlWithQueryParam);
   };
-  const param = useSearchParams();
-
   console.log(param.get("tab"), "hello");
   return (
     <div className="container 2xl:max-w-[1285px] px-5 2xl:px-0 mx-auto">
@@ -34,7 +42,7 @@ const AllTab = ({ blogList }) => {
               key={index}
               onClick={() => handleClick(tab)}
               className={`font-plus transition-all ease-in-out duration-300 font-medium text-base relative after:absolute after:h-[2px] after:bg-tealBlue after:start-0 hover:text-tealBlue after:bottom-[-20px] text-nowrap ${
-                formattedTab == param.get("tab")
+                formattedTab == activeTab
                   ? "text-tealBlue  after:w-full"
                   : "text-offWhite"
               }`}
