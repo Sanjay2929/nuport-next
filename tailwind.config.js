@@ -41,6 +41,7 @@ module.exports = {
         orange: "#D28B21",
         lightTeal: "#141A29",
         easternBlue: "#3799AF",
+        leafyGreen: "#45B649",
       },
       fontFamily: {
         plus: ["Plus Jakarta Sans", "sans-serif"],

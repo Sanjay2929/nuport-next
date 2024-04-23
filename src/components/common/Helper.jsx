@@ -513,7 +513,7 @@ export const solutionNav = [
   {
     title: "By Role",
     paragraph: "Your supply chain solution by roles",
-    url: "/role",
+    url: "/roles",
     icon: <RoleUsers />,
   },
 ];
@@ -1246,6 +1246,23 @@ export const nuport = [
     title: "Easily Accommodate",
     description:
       "Easily accommodate last minute orders via Nuport’s dynamic dispatch planning tool.",
+  },
+];
+export const field = [
+  {
+    title: "Manage Daily Orders",
+    description:
+      "Manage daily geo-coded orders from the hundreds of distributors effectively.",
+  },
+  {
+    title: "Automated Receipts & Invoices",
+    description:
+      "Enhance customer service with automated order receipts and invoices.",
+  },
+  {
+    title: "Better Management",
+    description:
+      "Communicate live with the delivery and warehouse managers to better manage fulfillment.",
   },
 ];
 export const orderManage = [
