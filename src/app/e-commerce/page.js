@@ -1,6 +1,6 @@
 import DiscoverSolutions from "@/components/product/DiscoverSolutions";
 import DiscoverFaq from "@/components/product/DiscoverFaq";
-import SuccessFullStart from "@/components/homepage/SuccessFullStart";
+import SuccessFullStart from "@/components/home-page/SuccessFullStart";
 import Hero from "@/components/common/Hero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
 import {

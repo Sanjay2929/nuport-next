@@ -1,22 +1,22 @@
 "use client";
-import Hero from "@/components/homepage/Hero";
-import BrandServe from "@/components/homepage/BrandServe";
-import Ecommerce from "@/components/homepage/Ecommerce";
-import OurProduct from "@/components/homepage/OurProduct";
-import TrustedBy from "@/components/homepage/TrustedBy";
-import SupplyChain from "@/components/homepage/SupplyChain";
-import TestimonialsVideo from "@/components/homepage/TestimonialsVideo";
-import AboutUs from "@/components/homepage/AboutUs";
-import OurWork from "@/components/homepage/OurWork";
-import SuccessFullStart from "@/components/homepage/SuccessFullStart";
-import NetworkPart from "@/components/homepage/NetworkPart";
-import FasterDecision from "@/components/homepage/FasterDecision";
-import IncreaseEfficiency from "@/components/homepage/IncreaseEfficiency";
-import AchieveBusinessGoals from "@/components/homepage/AchieveBusinessGoals";
+import Hero from "@/components/home-page/Hero";
+import BrandServe from "@/components/home-page/BrandServe";
+import Ecommerce from "@/components/home-page/Ecommerce";
+import OurProduct from "@/components/home-page/OurProduct";
+import TrustedBy from "@/components/home-page/TrustedBy";
+import SupplyChain from "@/components/home-page/SupplyChain";
+import TestimonialsVideo from "@/components/home-page/TestimonialsVideo";
+import AboutUs from "@/components/home-page/AboutUs";
+import OurWork from "@/components/home-page/OurWork";
+import SuccessFullStart from "@/components/home-page/SuccessFullStart";
+import NetworkPart from "@/components/home-page/NetworkPart";
+import FasterDecision from "@/components/home-page/FasterDecision";
+import IncreaseEfficiency from "@/components/home-page/IncreaseEfficiency";
+import AchieveBusinessGoals from "@/components/home-page/AchieveBusinessGoals";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Faq from "@/components/homepage/Faq";
+import Faq from "@/components/home-page/Faq";
 
 export default function Home() {
   useEffect(() => {

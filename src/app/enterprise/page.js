@@ -3,7 +3,7 @@ import {
   enterpriseSolutions,
   maximizingYourEfficiency,
 } from "@/components/common/Helper";
-import SuccessFullStart from "@/components/homepage/SuccessFullStart";
+import SuccessFullStart from "@/components/home-page/SuccessFullStart";
 import AutomatedInventory from "@/components/product/AutomatedInventory";
 import AutomativeResponsive from "@/components/product/AutomativeResponsive";
 import DiscoverFaq from "@/components/product/DiscoverFaq";
