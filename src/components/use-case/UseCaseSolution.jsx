@@ -53,12 +53,12 @@ const UseCaseSolution = () => {
               <div
                 key={index}
                 onClick={() => setActiveTab(index)} // Set active tab on click
-                className={`bg-lightTeal group transition-all duration-300 ease-in-out flex gap-3 items-center md:rounded-[16px_16px_0px_0px] rounded-2xl border-darkGray md:py-4 py-3 sm:px-5 px-4 border md:w-[250px] h-[48px] sm:h-auto ${
+                className={`bg-lightTeal group transition-all duration-300 ease-in-out flex gap-3 items-center md:rounded-[16px_16px_0px_0px] rounded-2xl border-darkGray md:py-4 py-3 sm:px-5 px-4 border md:w-[250px] h-[48px] sm:h-auto w-full whitespace-nowrap md:whitespace-normal ${
                   activeTab === index ? "bg-tealBlue" : "bg-lightTeal"
                 }`}
               >
                 <span>{tab.icons}</span>
-                <p className="font-plus font-semibold text-white text-base lg:text-lg xl:text-xl !leading-[140%]">
+                <p className="font-plus font-semibold text-white text-base lg:text-lg xl:text-xl !leading-[140%] md:max-w-[158px]">
                   {tab.title}
                 </p>
               </div>
