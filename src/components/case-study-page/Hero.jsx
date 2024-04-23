@@ -24,7 +24,7 @@ const Hero = () => {
                 <h2 className="pt-8 font-plus font-bold lg:text-[60px] md:text-5xl text-4xl leading-[120%] tracking-[1.2px] text-white">
                   How iFarmer transformed it’s supply chain in a efficient way
                 </h2>
-                <p className="text-lightGray max-w-[513px] font-plus pt-4 font-medium text-lg leading-[140%] pb-10 ">
+                <p className="text-lightGray max-w-[513px] font-plus pt-4 font-medium md:text-lg text-base leading-[140%] pb-10 ">
                   Lorem ipsum dolor sit amet consectetur. Dolor tristique
                   vulputate diam tristique pellentesque bibendum eget. Ac
                   aliquam sit ornare dapibus leo quis. Tellus sed iaculis purus
@@ -34,10 +34,10 @@ const Hero = () => {
               </div>
               <div className="pt-10 sm:flex items-start lg:gap-[57.25px] sm:gap-10 gap-5">
                 <div>
-                  <p className="font-plus font-bold text-[36px] leading-[122%] tracking-[0.72px] text-center text-easternBlue">
+                  <p className="font-plus font-bold md:text-4xl text-3xl leading-[122%] tracking-[0.72px] text-center text-easternBlue">
                     100K+
                   </p>
-                  <p className="pt-5 font-plus text-center text-gray font-medium text-base leading-[140%]">
+                  <p className="md:pt-5 pt-2 font-plus text-center md:text-base text-sm text-gray font-medium leading-[140%]">
                     Locations Delivered
                   </p>
                 </div>
@@ -51,10 +51,10 @@ const Hero = () => {
                   />
                 </div>
                 <div className=" sm:my-0 my-5">
-                  <p className="font-plus font-bold text-[36px] leading-[122%] tracking-[0.72px] text-center text-easternBlue">
+                  <p className="font-plus font-bold md:text-4xl text-3xl leading-[122%] tracking-[0.72px] text-center text-easternBlue">
                     5K+
                   </p>
-                  <p className="pt-5 font-plus text-center text-gray font-medium text-base leading-[140%]">
+                  <p className="md:pt-5 pt-2 font-plus text-center md:text-base text-sm text-gray font-medium leading-[140%]">
                     Orders Per Day
                   </p>
                 </div>
@@ -68,10 +68,10 @@ const Hero = () => {
                   />
                 </div>
                 <div>
-                  <p className="font-plus font-bold text-[36px] leading-[122%] tracking-[0.72px] text-center text-easternBlue">
+                  <p className="font-plus font-bold md:text-4xl text-3xl leading-[122%] tracking-[0.72px] text-center text-easternBlue">
                     150K+
                   </p>
-                  <p className="pt-5 font-plus text-center text-gray font-medium text-base leading-[140%]">
+                  <p className="md:pt-5 pt-2 font-plus text-center md:text-base text-sm text-gray font-medium leading-[140%]">
                     End Users Served
                   </p>
                 </div>
