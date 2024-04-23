@@ -41,7 +41,7 @@ const AllTab = () => {
       <div className="w-[200vw] bg-darkGray h-[1px]  mb-7 translate-x-[-26%]"></div>
 
       <Saas />
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap items-start">
         {filteredCards.slice(0, displayedCards).map((value, index) => (
           <div
             className={`lg:w-6/12 w-full ${

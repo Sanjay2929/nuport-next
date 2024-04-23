@@ -1,6 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { ArrowUpward, CircleArrow } from "../common/Icons";
-const ProductHero = ({ heading, description, topbtn }) => {
+const ProductHero = ({ heading, description, topbtn, type }) => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleToggle = () => {
+    setIsChecked(!isChecked);
+  };
   return (
     <div>
       <div className="overflow-hidden bg-darkBlue">
@@ -14,14 +20,34 @@ const ProductHero = ({ heading, description, topbtn }) => {
           <p className="max-w-[747px] mx-auto md:text-xl text-base font-medium text-center text-lightGray md:pt-7 pt-3 md:pb-14 pb-10">
             {description}
           </p>
-          <div className="flex items-center sm:flex-row flex-col md:gap-6 gap-4 lg:pb-[415px] sm:pb-[200px] pb-32">
-            <button className="bg-tealBlue flex items-center gap-2 px-5 pt-3.5 pb-4 rounded-full md:text-base text-sm font-semibold group text-white hover:border-tealBlue group hover:text-tealBlue border border-transparent duration-300 hover:bg-transparent">
-              Schedule a Demo <ArrowUpward />
-            </button>
-            <p className="text-lightWhite text-base font-medium">
-              No credit card required
-            </p>
-          </div>
+          {type === "toggle" ? (
+            <div className=" flex items-center justify-center mt-[-12px] md:mb-[120px] mb-20 gap-3">
+              <p className=" font-plus font-medium text-xl text-center text-offWhite">
+                Enterprise
+              </p>
+              <div
+                className={`w-12 h-6 rounded-xl bg-easternBlue p-1 relative ${
+                  isChecked === false && " !bg-white"
+                }`}
+                onClick={handleToggle}
+              >
+                <div
+                  className={`bg-white w-4 h-4 rounded-full absolute transition-all ease-in-out duration-300 end-1 ${
+                    isChecked === false && "end-[56%] bg-easternBlue"
+                  }`}
+                ></div>
+              </div>
+            </div>
+          ) : (
+            <div className="flex items-center sm:flex-row flex-col md:gap-6 gap-4 lg:pb-[415px] sm:pb-[200px] pb-32">
+              <button className="bg-tealBlue flex items-center gap-2 px-5 pt-3.5 pb-4 rounded-full md:text-base text-sm font-semibold group text-white hover:border-tealBlue group hover:text-tealBlue border border-transparent duration-300 hover:bg-transparent">
+                Schedule a Demo <ArrowUpward />
+              </button>
+              <p className="text-lightWhite text-base font-medium">
+                No credit card required
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
