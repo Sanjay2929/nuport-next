@@ -14,8 +14,8 @@ const AllTab = ({ blogList }) => {
   // Filter cards based on active tab
   const filteredCards =
     activeTab === "All"
-      ? tabCard
-      : tabCard.filter((card) => card.btn === activeTab);
+      ? blogList
+      : blogList.filter((card) => card.btn === activeTab);
 
   // Function to handle "Show More" button click
   const showMoreHandler = () => {
@@ -76,7 +76,7 @@ const AllTab = ({ blogList }) => {
         ))}
       </div>
       <div className="flex items-center justify-center text-offWhite font-semibold font-plus text-base mt-4 mb-[160px]">
-        {filteredCards.length > 4 && (
+        {blogList.length > 4 && (
           <div className="flex items-center justify-center text-offWhite font-semibold font-plus text-base mt-4">
             <button
               className={`bg-tealBlue border border-tealBlue transition-all ease-in-out duration-300 py-[15px] px-5 rounded-full text-center common_btn group`}

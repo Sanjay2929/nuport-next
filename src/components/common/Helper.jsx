@@ -963,91 +963,91 @@ export const blogTabHeading = [
   "E-commerce",
   "Enterprise",
 ];
-export const tabCard = [
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Revolutionizing Bangladeshi E-Commerce Landscape: Nuport E-Commerce Suite",
-    btn: "Nuport",
-    img: "/assets/images/blog-page/revulition-man.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description: "Unlock Customer Tagging for Targeted Marketing",
-    btn: "Distribution management",
-    img: "/assets/images/blog-page/man2.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Seamless Product Sync With Shopify & WooCommerce: Elevate Your Online Business With Integration",
-    btn: "Supply chain management",
-    img: "/assets/images/blog-page/seam3.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Manage Expenses with Precision: Introducing Customizable Expense Types for Detailed Financial Insights",
-    btn: "Business intelligence",
-    img: "/assets/images/blog-page/finance4.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Empowering Bangladeshi Online Businesses: How Nuport Adds Value",
-    btn: "VRP",
-    img: "/assets/images/blog-page/power5.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Scaling Up Success: Empowering Businesses with Nuport's Cutting-Edge Solutions",
-    btn: "Eid",
-    img: "/assets/images/blog-page/same6.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Streamline Production with Nuport’s Advanced Bill of Material (BOM)",
-    btn: "Business intelligence",
-    img: "/assets/images/blog-page/sameline7.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Seamless Collaboration: Empower Business with Two-Way Communication with 3PL Partners",
-    btn: "Supply chain management",
-    img: "/assets/images/blog-page/hand8.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Unlocking Business Growth: Leverage the Power of Nuport's Advanced Sales Forecasting",
-    btn: "Eid",
-    img: "/assets/images/blog-page/man9.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Introducing Product Variant Management: Gateway To Effortless Inventory System",
-    btn: "Distribution management",
-    img: "/assets/images/blog-page/man10.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Streamline Your Online Business with Courier Management Software",
-    btn: "Business intelligence",
-    img: "/assets/images/blog-page/man11.webp",
-  },
-  {
-    date: " Sep 22, 2023",
-    description:
-      "Level up your Customer Experience with Real-Time SMS on Order Status Updates",
-    btn: "VRP",
-    img: "/assets/images/blog-page/mobile12.webp",
-  },
-];
+// export const tabCard = [
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Revolutionizing Bangladeshi E-Commerce Landscape: Nuport E-Commerce Suite",
+//     btn: "Nuport",
+//     img: "/assets/images/blog-page/revulition-man.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description: "Unlock Customer Tagging for Targeted Marketing",
+//     btn: "Distribution management",
+//     img: "/assets/images/blog-page/man2.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Seamless Product Sync With Shopify & WooCommerce: Elevate Your Online Business With Integration",
+//     btn: "Supply chain management",
+//     img: "/assets/images/blog-page/seam3.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Manage Expenses with Precision: Introducing Customizable Expense Types for Detailed Financial Insights",
+//     btn: "Business intelligence",
+//     img: "/assets/images/blog-page/finance4.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Empowering Bangladeshi Online Businesses: How Nuport Adds Value",
+//     btn: "VRP",
+//     img: "/assets/images/blog-page/power5.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Scaling Up Success: Empowering Businesses with Nuport's Cutting-Edge Solutions",
+//     btn: "Eid",
+//     img: "/assets/images/blog-page/same6.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Streamline Production with Nuport’s Advanced Bill of Material (BOM)",
+//     btn: "Business intelligence",
+//     img: "/assets/images/blog-page/sameline7.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Seamless Collaboration: Empower Business with Two-Way Communication with 3PL Partners",
+//     btn: "Supply chain management",
+//     img: "/assets/images/blog-page/hand8.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Unlocking Business Growth: Leverage the Power of Nuport's Advanced Sales Forecasting",
+//     btn: "Eid",
+//     img: "/assets/images/blog-page/man9.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Introducing Product Variant Management: Gateway To Effortless Inventory System",
+//     btn: "Distribution management",
+//     img: "/assets/images/blog-page/man10.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Streamline Your Online Business with Courier Management Software",
+//     btn: "Business intelligence",
+//     img: "/assets/images/blog-page/man11.webp",
+//   },
+//   {
+//     date: " Sep 22, 2023",
+//     description:
+//       "Level up your Customer Experience with Real-Time SMS on Order Status Updates",
+//     btn: "VRP",
+//     img: "/assets/images/blog-page/mobile12.webp",
+//   },
+// ];
 
 // dynamic
 export const dynamicOrder = [
