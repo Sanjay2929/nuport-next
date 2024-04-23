@@ -21,7 +21,7 @@ const Revolution = ({ date, content, btn, img }) => {
         <div className=" sm:w-5/12 w-full">
           <Image
             src={img}
-            className=" lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg:max-w-[559px] w-full h-full flex sm:max-h-[100%] max-h-[225px] object-cover object-top"
+            className=" lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg:max-w-[559px] w-full h-full flex sm:max-h-[100%] max-h-[225px] object-cover object-[80%]"
             width={559}
             height={449}
             alt="saas man"
