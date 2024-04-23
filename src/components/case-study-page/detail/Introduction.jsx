@@ -1,7 +1,7 @@
 "use client";
+import { caseStudyIntro, valueSuggest } from "@/components/common/Helper";
+import { Calender, ValueTick, VideoPlay } from "@/components/common/Icons";
 import React, { useRef, useState } from "react";
-import { caseStudyIntro, valueSuggest } from "../common/Helper";
-import { Calender, ValueTick, VideoPlay } from "../common/Icons";
 
 const Introduction = () => {
   const [isPlaying, setIsPlaying] = useState(false); // State to track if the video is playing

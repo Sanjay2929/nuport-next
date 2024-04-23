@@ -1,5 +1,5 @@
 import React from "react";
-import { RightArrow } from "../common/Icons";
+import { RightArrow } from "../../common/Icons";
 import Image from "next/image";
 
 const Hero = () => {
