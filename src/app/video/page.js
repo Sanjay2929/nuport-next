@@ -6,6 +6,7 @@ const page = () => {
     <>
       <div className="bg-darkBlue">
         <ProductHero
+          type="toggle"
           heading={
             <>
               <span className=" text-offWhite">Nuport </span> videos
