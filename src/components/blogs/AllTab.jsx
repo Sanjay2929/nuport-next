@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { blogTabHeading, tabCard } from "../common/Helper";
-import Saas from "./Saas";
 import Revolution from "./Revolution";
+import LatestBlog from "./LatestBlog";
 
 const AllTab = () => {
   const [activeTab, setActiveTab] = useState("All");
@@ -40,7 +40,7 @@ const AllTab = () => {
       </div>
       <div className="w-[200vw] bg-darkGray h-[1px]  mb-7 translate-x-[-26%]"></div>
 
-      <Saas />
+      <LatestBlog />
       <div className="flex flex-wrap items-start">
         {filteredCards.slice(0, displayedCards).map((value, index) => (
           <div

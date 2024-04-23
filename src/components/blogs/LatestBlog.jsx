@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { WhiteArrow } from "../common/Icons";
 
-const Saas = () => {
+const LatestBlog = () => {
   return (
     <div className="mb-6">
       <div className=" w-full rounded-xl bg-tealBlue flex flex-wrap overflow-hidden">
@@ -43,4 +43,4 @@ const Saas = () => {
   );
 };
 
-export default Saas;
+export default LatestBlog;
