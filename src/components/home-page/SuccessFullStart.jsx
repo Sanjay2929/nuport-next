@@ -32,7 +32,7 @@ const SuccessFullStart = ({ description }) => {
           <Image
             height={449}
             width={474}
-            src="/assets/images/homepage/success-start/truck-parcel-image.webp"
+            src="/assets/images/home-page/success-start/truck-parcel-image.webp"
             alt="parcel-truck"
           />
         </div>

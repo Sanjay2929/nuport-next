@@ -61,7 +61,7 @@ const SupplyChain = () => {
             className="md:sticky top-40"
             height={648}
             width={630}
-            src="/assets/images/homepage/supply-chain/supply-chain-order-image.webp"
+            src="/assets/images/home-page/supply-chain/supply-chain-order-image.webp"
             alt="supply-chain"
           />
         </div>

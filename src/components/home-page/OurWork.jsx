@@ -48,7 +48,7 @@ const OurWork = () => {
                 loop={true}
                 muted
                 controls={isPlaying}
-                poster="/assets/images/homepage/our-work/our-work-people.webp"
+                poster="/assets/images/home-page/our-work/our-work-people.webp"
                 onClick={handleClickOnVideo}
               >
                 <source src="/assets/video/video.mp4" type="video/mp4" />

@@ -187,21 +187,21 @@ export const testimonialsVideoList = [
     spantitle: " Is Not Enough",
     video: "/assets/video/video.mp4",
     image:
-      "/assets/images/homepage/testimonials-video/test-video-image-one.webp",
+      "/assets/images/home-page/testimonials-video/test-video-image-one.webp",
   },
   {
     title: "Nuport Ecommerce Suite for",
     spantitle: " Ecommerce Businesses (Bangla)",
     video: "/assets/video/video.mp4",
     image:
-      "/assets/images/homepage/testimonials-video/test-video-image-two.webp",
+      "/assets/images/home-page/testimonials-video/test-video-image-two.webp",
   },
   {
     title: "Nuport E-Commerce Suite for ",
     spantitle: "Online Businesses",
     video: "/assets/video/video.mp4",
     image:
-      "/assets/images/homepage/testimonials-video/test-video-image-three.webp",
+      "/assets/images/home-page/testimonials-video/test-video-image-three.webp",
   },
 ];
 export const mobileNavbar = [
@@ -228,43 +228,43 @@ export const mobileNavbar = [
 ];
 export const trustedPartners = [
   {
-    image: "/assets/images/homepage/trusted-by/autorific.png",
+    image: "/assets/images/home-page/trusted-by/autorific.png",
     title: "autorific",
     width: 177,
     customWidth: "xl:w-[177px]",
   },
   {
-    image: "/assets/images/homepage/trusted-by/british-american.png",
+    image: "/assets/images/home-page/trusted-by/british-american.png",
     title: "british-american",
     customWidth: "xl:w-[91px]",
     width: 91,
   },
   {
-    image: "/assets/images/homepage/trusted-by/atal-food.png",
+    image: "/assets/images/home-page/trusted-by/atal-food.png",
     title: "atal-food",
     width: 59,
     customWidth: "xl:w-[59px]",
   },
   {
-    image: "/assets/images/homepage/trusted-by/lg.png",
+    image: "/assets/images/home-page/trusted-by/lg.png",
     title: "lg",
     customWidth: "xl:w-[129px]",
     width: 129,
   },
   {
-    image: "/assets/images/homepage/trusted-by/orgagenic.png",
+    image: "/assets/images/home-page/trusted-by/orgagenic.png",
     title: "orgagenic",
     customWidth: "xl:w-[111px]",
     width: 111,
   },
   {
-    image: "/assets/images/homepage/trusted-by/confidence.png",
+    image: "/assets/images/home-page/trusted-by/confidence.png",
     title: "confidence",
     customWidth: "xl:w-[182px]",
     width: 182,
   },
   {
-    image: "/assets/images/homepage/trusted-by/maarij.png",
+    image: "/assets/images/home-page/trusted-by/maarij.png",
     title: "maarij",
     customWidth: "xl:w-[140px]",
     width: 140,
@@ -272,37 +272,37 @@ export const trustedPartners = [
 ];
 export const trustedBrand = [
   {
-    image: "/assets/images/homepage/trusted-by/british-american.png",
+    image: "/assets/images/home-page/trusted-by/british-american.png",
     title: "british-american",
     width: "146",
     maxWidth: "max-w-[146px]",
   },
   {
-    image: "/assets/images/homepage/trusted-by/lg.png",
+    image: "/assets/images/home-page/trusted-by/lg.png",
     title: "lg",
     width: "129",
     maxWidth: "max-w-[129px]",
   },
   {
-    image: "/assets/images/homepage/trusted-by/autorific.png",
+    image: "/assets/images/home-page/trusted-by/autorific.png",
     title: "autorific",
     width: "177",
     maxWidth: "max-w-[177px]",
   },
   {
-    image: "/assets/images/homepage/trusted-by/orgagenic.png",
+    image: "/assets/images/home-page/trusted-by/orgagenic.png",
     title: "orgagenic",
     maxWidth: "max-w-[111px]",
     width: "111",
   },
   {
-    image: "/assets/images/homepage/trusted-by/atal-food.png",
+    image: "/assets/images/home-page/trusted-by/atal-food.png",
     title: "atal-food",
     maxWidth: "max-w-[59px]",
     width: "59",
   },
   {
-    image: "/assets/images/homepage/trusted-by/maarij.png",
+    image: "/assets/images/home-page/trusted-by/maarij.png",
     title: "maarij",
     maxWidth: "max-w-[140px]",
     width: "140",
@@ -341,36 +341,36 @@ export const faqList = [
 // NETWORK PART CARD LIST
 export const networkPartCards = [
   {
-    image: "/assets/images/homepage/network-part/rashedul-islam.png",
+    image: "/assets/images/home-page/network-part/rashedul-islam.png",
     companyImageStyle: "w-[50px] sm:w-[63px] h-[50px] sm:h-[56px]",
     companyImage:
-      "/assets/images/homepage/network-part/hf-food-service-logo.png",
+      "/assets/images/home-page/network-part/hf-food-service-logo.png",
     name: "Md Rashedul Islam",
     role: "Founder, CEO at Halal Food Service",
     description:
       '"Order tracking is super easy with Nuport and we save a lot of time via courier integrations."',
   },
   {
-    image: "/assets/images/homepage/network-part/jamil-akbar.png",
+    image: "/assets/images/home-page/network-part/jamil-akbar.png",
     companyImageStyle: "w-[75px] sm:w-[83px] h-[30px] sm:h-[36px]",
-    companyImage: "/assets/images/homepage/network-part/i-farmer-logo.png",
+    companyImage: "/assets/images/home-page/network-part/i-farmer-logo.png",
     name: "Jamil Akbar",
     role: "COO at iFARMER",
     description:
       "“Nuport is indeed an incredible platform for turning the whole process of supply chain businesses into automation. This platform has made a significant change in our supply chain by automating agricultural distribution planning.”",
   },
   {
-    image: "/assets/images/homepage/network-part/moshaddik.png",
+    image: "/assets/images/home-page/network-part/moshaddik.png",
     companyImageStyle: "w-[57px] h-[50px] sm:w-[63px] sm:h-[56px]",
-    companyImage: "/assets/images/homepage/network-part/steeltech.png",
+    companyImage: "/assets/images/home-page/network-part/steeltech.png",
     name: "Md. Mosaddik Hossain",
     role: "Head of IT, Steeltech Industries",
     description: `"Almost 90% of our planning time has been reduced through Nuport's automation which we did manually before."`,
   },
   {
-    image: "/assets/images/homepage/network-part/anit.png",
+    image: "/assets/images/home-page/network-part/anit.png",
     companyImageStyle: "w-[85px] h-[40px] sm:w-[95px] sm:h-[46px]",
-    companyImage: "/assets/images/homepage/network-part/munchies.png",
+    companyImage: "/assets/images/home-page/network-part/munchies.png",
     name: "Anit Kumar",
     role: "COO, Munchies",
     description: `"Nuport’s core competency lies in it’s strong technology team and domain expertise"`,
@@ -382,28 +382,28 @@ export const fastDecisionFaq = [
     title: "Complete supply chain visibility",
     description:
       "With a vertically integrated suite of supply chain apps, you can get company-wide visibility from one dashboard.",
-    image: "/assets/images/homepage/faster-decision/modular-dashboard.webp",
+    image: "/assets/images/home-page/faster-decision/modular-dashboard.webp",
   },
   {
     icon: <MapLocation />,
     title: "Effortless geocoded integration",
     description:
       "Maintain location consistency and reduce errors due to manual input with fully automated address picking directly from 3rd party order forms. ",
-    image: "/assets/images/homepage/faster-decision/geocoded.webp",
+    image: "/assets/images/home-page/faster-decision/geocoded.webp",
   },
   {
     icon: <LocationGoogle />,
     title: "Keep track of inventory",
     description:
       " Keep your inventory on autopilot with operator-friendly scanning and tracing applications along with predictive fulfillment analytics.",
-    image: "/assets/images/homepage/faster-decision/track-inventory.webp",
+    image: "/assets/images/home-page/faster-decision/track-inventory.webp",
   },
   {
     icon: <DeliveryTruck />,
     title: "Instant delivery planning",
     description:
       "Save 85% percent of planning time by integrating geocoded order management, vehicle management and a powerful routing engine.",
-    image: "/assets/images/homepage/faster-decision/instant-delivery.webp",
+    image: "/assets/images/home-page/faster-decision/instant-delivery.webp",
   },
 ];
 
@@ -779,7 +779,7 @@ export const maximizingYourEfficiency = [
       "Track and plan your inventory the way you like",
     ],
     section: "section_2",
-    src: "/assets/images/productpage/automated-inventory/automated.webp",
+    src: "/assets/images/product-page/automated-inventory/automated.webp",
   },
   {
     icon: <AutomatedArrow />,
@@ -792,7 +792,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
-    src: "/assets/images/productpage/automated-inventory/supplier.png",
+    src: "/assets/images/product-page/automated-inventory/supplier.png",
     section: "section_3",
   },
   {
@@ -806,7 +806,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
-    src: "/assets/images/productpage/automated-inventory/order.png",
+    src: "/assets/images/product-page/automated-inventory/order.png",
     section: "section_3",
   },
   {
@@ -820,7 +820,7 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
-    src: "/assets/images/productpage/automated-inventory/portal.png",
+    src: "/assets/images/product-page/automated-inventory/portal.png",
     section: "section_4",
   },
   {
@@ -835,7 +835,7 @@ export const maximizingYourEfficiency = [
       "Track and plan your inventory the way you like",
     ],
     section: "section_5",
-    src: "/assets/images/productpage/automated-inventory/partner.png",
+    src: "/assets/images/product-page/automated-inventory/partner.png",
   },
   {
     icon: <AutomatedArrow />,
@@ -848,50 +848,50 @@ export const maximizingYourEfficiency = [
       "Upload batch/serial number effortlessly",
       "Track and plan your inventory the way you like",
     ],
-    src: "/assets/images/productpage/automated-inventory/data.png",
+    src: "/assets/images/product-page/automated-inventory/data.png",
     section: "section_6 ",
   },
 ];
 export const trustedKnownPartners = [
   {
-    image: "/assets/images/productpage/trusted-by-known/yummy.png",
+    image: "/assets/images/product-page/trusted-by-known/yummy.png",
     title: "autorific",
     width: "177",
   },
   {
-    image: "/assets/images/productpage/trusted-by-known/raaw-food.png",
+    image: "/assets/images/product-page/trusted-by-known/raaw-food.png",
     title: "british-american",
     width: "91",
   },
   {
-    image: "/assets/images/productpage/trusted-by-known/atal-food.png",
+    image: "/assets/images/product-page/trusted-by-known/atal-food.png",
     title: "atal-food",
     width: "59",
   },
   {
-    image: "/assets/images/productpage/trusted-by-known/muslin.png",
+    image: "/assets/images/product-page/trusted-by-known/muslin.png",
     title: "lg",
     width: "129",
   },
   {
-    image: "/assets/images/productpage/trusted-by-known/orgagenic.png",
+    image: "/assets/images/product-page/trusted-by-known/orgagenic.png",
     title: "orgagenic",
     width: "111",
   },
   {
-    image: "/assets/images/productpage/trusted-by-known/confidence.png",
+    image: "/assets/images/product-page/trusted-by-known/confidence.png",
     title: "confidence",
     width: "182",
   },
   {
-    image: "/assets/images/productpage/trusted-by-known/ma-arij.png",
+    image: "/assets/images/product-page/trusted-by-known/ma-arij.png",
     title: "maarij",
     width: "140",
   },
 ];
 export const enterprisePartners = [
   {
-    image: "/assets/images/homepage/trusted-by/confidence.png",
+    image: "/assets/images/home-page/trusted-by/confidence.png",
     title: "confidence",
     width: "200",
   },
@@ -906,17 +906,17 @@ export const enterprisePartners = [
     width: "118",
   },
   {
-    image: "/assets/images/homepage/trusted-by/british-american.png",
+    image: "/assets/images/home-page/trusted-by/british-american.png",
     title: "british-american",
     width: "83",
   },
   {
-    image: "/assets/images/homepage/trusted-by/lg.png",
+    image: "/assets/images/home-page/trusted-by/lg.png",
     title: "lg",
     width: "123",
   },
   {
-    image: "/assets/images/productpage/trusted-by-known/confidence.png",
+    image: "/assets/images/product-page/trusted-by-known/confidence.png",
     title: "confidence",
     width: "182",
   },
@@ -929,27 +929,27 @@ export const enterprisePartners = [
 export const automateImage = [
   {
     class: "img1",
-    src: "/assets/images/productpage/automated-inventory/automated.webp",
+    src: "/assets/images/product-page/automated-inventory/automated.webp",
   },
   {
     class: "img2",
-    src: "/assets/images/productpage/automated-inventory/supplier.png",
+    src: "/assets/images/product-page/automated-inventory/supplier.png",
   },
   {
     class: "img3",
-    src: "/assets/images/productpage/automated-inventory/order.png",
+    src: "/assets/images/product-page/automated-inventory/order.png",
   },
   {
     class: "img4",
-    src: "/assets/images/productpage/automated-inventory/portal.png",
+    src: "/assets/images/product-page/automated-inventory/portal.png",
   },
   {
     class: "img5",
-    src: "/assets/images/productpage/automated-inventory/partner.png",
+    src: "/assets/images/product-page/automated-inventory/partner.png",
   },
   {
     class: "img6",
-    src: "/assets/images/productpage/automated-inventory/data.png",
+    src: "/assets/images/product-page/automated-inventory/data.png",
   },
 ];
 export const blogTabHeading = [
@@ -969,83 +969,83 @@ export const tabCard = [
     description:
       "Revolutionizing Bangladeshi E-Commerce Landscape: Nuport E-Commerce Suite",
     btn: "Nuport",
-    img: "/assets/images/blogpage/revulition-man.png",
+    img: "/assets/images/blog-page/revulition-man.png",
   },
   {
     date: " Sep 22, 2023",
     description: "Unlock Customer Tagging for Targeted Marketing",
     btn: "Distribution management",
-    img: "/assets/images/blogpage/man2.png",
+    img: "/assets/images/blog-page/man2.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Seamless Product Sync With Shopify & WooCommerce: Elevate Your Online Business With Integration",
     btn: "Supply chain management",
-    img: "/assets/images/blogpage/seam3.png",
+    img: "/assets/images/blog-page/seam3.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Manage Expenses with Precision: Introducing Customizable Expense Types for Detailed Financial Insights",
     btn: "Business intelligence",
-    img: "/assets/images/blogpage/finance4.png",
+    img: "/assets/images/blog-page/finance4.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Empowering Bangladeshi Online Businesses: How Nuport Adds Value",
     btn: "VRP",
-    img: "/assets/images/blogpage/power5.png",
+    img: "/assets/images/blog-page/power5.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Scaling Up Success: Empowering Businesses with Nuport's Cutting-Edge Solutions",
     btn: "Eid",
-    img: "/assets/images/blogpage/same6.png",
+    img: "/assets/images/blog-page/same6.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Streamline Production with Nuport’s Advanced Bill of Material (BOM)",
     btn: "Business intelligence",
-    img: "/assets/images/blogpage/sameline7.png",
+    img: "/assets/images/blog-page/sameline7.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Seamless Collaboration: Empower Business with Two-Way Communication with 3PL Partners",
     btn: "Supply chain management",
-    img: "/assets/images/blogpage/hand8.png",
+    img: "/assets/images/blog-page/hand8.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Unlocking Business Growth: Leverage the Power of Nuport's Advanced Sales Forecasting",
     btn: "Eid",
-    img: "/assets/images/blogpage/man9.png",
+    img: "/assets/images/blog-page/man9.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Introducing Product Variant Management: Gateway To Effortless Inventory System",
     btn: "Distribution management",
-    img: "/assets/images/blogpage/man10.png",
+    img: "/assets/images/blog-page/man10.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Streamline Your Online Business with Courier Management Software",
     btn: "Business intelligence",
-    img: "/assets/images/blogpage/man11.png",
+    img: "/assets/images/blog-page/man11.png",
   },
   {
     date: " Sep 22, 2023",
     description:
       "Level up your Customer Experience with Real-Time SMS on Order Status Updates",
     btn: "VRP",
-    img: "/assets/images/blogpage/mobile12.png",
+    img: "/assets/images/blog-page/mobile12.png",
   },
 ];
 
@@ -1301,58 +1301,58 @@ export const ourSolution = [
 export const videoContent = [
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/video-page/img1.png",
     title:
       "Introducing Nuport for E-Commerce Automation | ই -কমার্স উদ্যোক্তাদের জন্য নিউপোর্ট অটোমেশন",
     time: "0:15m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/video-page/img1.png",
     title:
       "Success story fueled by Automation | ই-কমার্স অটোমেশনের প্রয়োজনীয়তাঃ শেষের পাতা'র সফলতার গল্প",
     time: "2:26m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img2.png",
+    thumbnail: "/assets/images/video-page/img2.png",
     title: "Automating Vendor Management With Nuport",
     time: "0:39m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img3.png",
+    thumbnail: "/assets/images/video-page/img3.png",
     title: "What is Automated Inventory Fulfillment?",
     time: "0:42m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img4.png",
+    thumbnail: "/assets/images/video-page/img4.png",
     title: "Nuport Ecommerce Suite for Ecommerce Businesses",
     time: "1:30m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img5.png",
+    thumbnail: "/assets/images/video-page/img5.png",
     title: "Nuport Ecommerce Suite for Ecommerce Businesses (Bangla)",
     time: "1:39m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img6.png",
+    thumbnail: "/assets/images/video-page/img6.png",
     title: "Nuport E-Commerce Suite for Online Businesses",
     time: "0:49m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img7.png",
+    thumbnail: "/assets/images/video-page/img7.png",
     title:
       "Manage Online Business from Single Platform | অনলাইন বিজনেসের সবকিছু, এক জায়গায়",
     time: "0:20m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img8.png",
+    thumbnail: "/assets/images/video-page/img8.png",
     title:
       "Client Testimonial: Natural Nutrifood । Nuport কিভাবে ই-কমার্স বিজনেসের গ্রোথ নিশ্চিত করে?",
     time: "2:20m",

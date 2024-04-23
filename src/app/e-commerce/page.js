@@ -27,7 +27,7 @@ export default function Home() {
         topbtn="Create happy customers"
       />
       <TrustedByKnown
-        laptopimg="/assets/images/productpage/trusted-by-known/mac-book-pro.webp"
+        laptopimg="/assets/images/product-page/trusted-by-known/mac-book-pro.webp"
         trustedpartners={trustedKnownPartners}
       />
       <DiscoverSolutions

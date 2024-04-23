@@ -40,7 +40,7 @@ const AboutUs = () => {
               data-aos="fade-left"
               data-aos-delay="300"
               className="md:max-w-[540px] max-w-[400px] w-full"
-              src="/assets/images/homepage/about-us/drone.webp"
+              src="/assets/images/home-page/about-us/drone.webp"
               height={516}
               width={540}
               alt="drone image"
