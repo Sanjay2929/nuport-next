@@ -33,35 +33,35 @@ const Hero = () => {
           className="absolute 3xl:right-auto lg:w-[80px] sm:w-[60px] w-10  lg:right-0 right-7  3xl:left-full sm:top-[57%] top-[60%]"
           width={80}
           height={68}
-          src="/assets/images/homepage/hero/documents.png"
+          src="/assets/images/home-page/hero/documents.png"
           alt="documents"
         />
         <Image
           className="absolute 3xl:left-auto lg:w-[138px] w-[40px] sm:w-[70px] left-0 3xl:right-full lg:bottom-24 bottom-[100px]"
           width={138}
           height={119}
-          src="/assets/images/homepage/hero/laugage.png"
+          src="/assets/images/home-page/hero/laugage.png"
           alt="laugage"
         />
         <Image
           className="absolute 3xl:left-auto xl:w-[366px] md:w-[200px] sm:w-[120px] w-[65px]  left-0 md:-translate-x-1/2 -translate-x-1/3 3xl:translate-x-0 3xl:right-full md:top-[40%] top-[60%]"
           width={366}
           height={358}
-          src="/assets/images/homepage/hero/loading-machine.png"
+          src="/assets/images/home-page/hero/loading-machine.png"
           alt="loading-machine"
         />
         <Image
           className="absolute 3xl:right-auto xl:w-[168px] w-[100px] sm:w-[130px]  right-0 3xl:left-full md:top-[36%] top-[45%] translate-x-2/3 lg:translate-x-1/2"
           width={168}
           height={132}
-          src="/assets/images/homepage/hero/small-drone.png"
+          src="/assets/images/home-page/hero/small-drone.png"
           alt="drone"
         />
         <Image
           className="absolute 3xl:right-auto xl:w-[611px]  sm:w-[300px] w-[200px]  right-0 3xl:left-full translate-x-2/3 3xl:translate-x-0 sm:-bottom-10 bottom-14"
           width={611}
           height={472}
-          src="/assets/images/homepage/hero/truck.png"
+          src="/assets/images/home-page/hero/truck.png"
           alt="truck"
         />
       </div>

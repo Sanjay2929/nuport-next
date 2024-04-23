@@ -28,7 +28,7 @@ const page = () => {
         topbtn="Elevate your supply chain experience"
       />
       <TrustedByKnown
-        laptopimg="/assets/images/enterprise/mac_book.webp"
+        laptopimg="/assets/images/enterprise/mac-book.webp"
         trustedpartners={enterprisePartners}
       />
       <DiscoverSolutions

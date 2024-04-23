@@ -13,7 +13,7 @@ module.exports = {
       backgroundImage: {
         "yellow-linear-gradient":
           "(270deg, rgba(255, 176, 0, 0.2) 0%, rgba(255, 176, 0, 0) 100%)",
-        gradient: "url(/assets/images/homepage/brandserve/dark-gradient.png)",
+        gradient: "url(/assets/images/home-page/brand-serve/dark-gradient.png)",
         "steps-heading-gradients":
           "linear-gradient(180.16deg, rgba(24, 135, 159, 0.48) 0.14%, rgba(55, 153, 175, 0) 124.79%)",
       },

@@ -46,7 +46,7 @@ const Hero = ({ heading, description, topbtn, type }) => {
               >
                 <div
                   className={`bg-white w-4 h-4 rounded-full absolute transition-all ease-in-out duration-300 end-1 ${
-                    isChecked === false && "end-[56%] bg-easternBlue"
+                    isChecked === false && "end-[56%] !bg-easternBlue"
                   }`}
                 ></div>
               </div>
