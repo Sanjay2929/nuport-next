@@ -1253,44 +1253,44 @@ export const videoContent = [
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/videopage/img2.png",
     title: "Automating Vendor Management With Nuport",
     time: "0:39m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/videopage/img3.png",
     title: "What is Automated Inventory Fulfillment?",
     time: "0:42m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/videopage/img4.png",
     title: "Nuport Ecommerce Suite for Ecommerce Businesses",
     time: "1:30m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/videopage/img5.png",
     title: "Nuport Ecommerce Suite for Ecommerce Businesses (Bangla)",
     time: "1:39m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/videopage/img6.png",
     title: "Nuport E-Commerce Suite for Online Businesses",
     time: "0:49m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/videopage/img7.png",
     title:
       "Manage Online Business from Single Platform | অনলাইন বিজনেসের সবকিছু, এক জায়গায়",
     time: "0:20m",
   },
   {
     video: "/assets/video/video.mp4",
-    thumbnail: "/assets/images/videopage/img1.png",
+    thumbnail: "/assets/images/videopage/img8.png",
     title:
       "Client Testimonial: Natural Nutrifood । Nuport কিভাবে ই-কমার্স বিজনেসের গ্রোথ নিশ্চিত করে?",
     time: "2:20m",
