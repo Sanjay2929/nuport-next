@@ -1,3 +1,7 @@
+import ECommerce from "../industry/ECommerce";
+import Fmcg from "../industry/Fmcg";
+import IndustrialSupply from "../industry/IndustrialSupply";
+import LastMileDelivery from "../industry/LastMileDelivery";
 import {
   AboutUs,
   AutomatedArrow,
@@ -565,7 +569,7 @@ export const CompanyNav = [
       {
         title: "Video",
         paragraph: "Testimonials, Product Videos, Promos",
-        url: "/",
+        url: "/video",
         icon: <Video />,
       },
       {
@@ -1045,25 +1049,6 @@ export const tabCard = [
   },
 ];
 
-// Industry
-export const solution = [
-  {
-    icons: <Location />,
-    title: "FMCG",
-  },
-  {
-    icons: <IndustrialSupplies />,
-    title: "Industrial Supplies",
-  },
-  {
-    icons: <Ecommerce />,
-    title: "E-Commerce",
-  },
-  {
-    icons: <LastDelivery />,
-    title: "Last Mile Delivery",
-  },
-];
 // dynamic
 export const dynamicOrder = [
   {
@@ -1236,6 +1221,66 @@ export const OurTeamCareer = [
     heading: "Account Management",
   },
 ];
+export const nuport = [
+  {
+    title: "Monitor Sales",
+    description:
+      "Monitor sales productivity across a regionally distributed team.",
+  },
+  {
+    title: "Faster Strategic Decisions",
+    description:
+      "Make faster strategic decisions via automated performance reports of distribution channels.",
+  },
+  {
+    title: "Save Planning Time",
+    description:
+      "Save up to 85% of your planning time via automated route plans.",
+  },
+  {
+    title: "Expectations Timely",
+    description:
+      "Exceed customer expectations throughout timely status updates during the distribution process.",
+  },
+  {
+    title: "Easily Accommodate",
+    description:
+      "Easily accommodate last minute orders via Nuport’s dynamic dispatch planning tool.",
+  },
+];
+export const orderManage = [
+  {
+    title: "Multiple Data Points",
+    description:
+      "Geographically distributed sales force means multiple sources of data entry at various different times",
+  },
+  {
+    title: "Inefficient Inventory",
+    description:
+      "Uncategorized product lines contribute to slower order fulfillment process and high administration costs",
+  },
+  {
+    title: "Manual KPI Measurement",
+    description: "Difficult to effectively measure performance KPIs",
+  },
+];
+export const ourSolution = [
+  {
+    title: "Field Sales",
+    description:
+      "With Nuport, your field sales force is better equipped with an integrated, geolocation based order management system that records orders right from the source.",
+  },
+  {
+    title: "Quickly Approve",
+    description:
+      "Your office staff can quickly approve or flag orders instantly thereby speeding up fulfilment and avoiding costly mistakes.",
+  },
+  {
+    title: "Team's KPIs",
+    description:
+      "Tracking and evaluating your team's key performance indicators (KPIs) is a straightforward process, providing valuable insights for continuous improvement.",
+  },
+];
 export const videoContent = [
   {
     video: "/assets/video/video.mp4",
@@ -1294,5 +1339,41 @@ export const videoContent = [
     title:
       "Client Testimonial: Natural Nutrifood । Nuport কিভাবে ই-কমার্স বিজনেসের গ্রোথ নিশ্চিত করে?",
     time: "2:20m",
+  },
+];
+
+// open jobs
+export const openJobs = [
+  {
+    department: "Marketing",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
+  },
+  {
+    department: "Product",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
+  },
+  {
+    department: "UX Designer",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
+  },
+  {
+    department: "Developer",
+    post: "Full Stack Engineer",
+    location: " Banani, Dhaka, Bangladesh",
+    jobType: " Full-time, Remote",
+    vacancy: "2",
+    deadline: " Jul 25, 2023",
   },
 ];

@@ -10,14 +10,14 @@ const OurTeam = () => {
           what you’ll get
         </p>
         <h2 className=" text-[32px] !leading-[110%] text-center sm:text-4xl md:text-5xl lg:text-[52px] xl:text-7xl font-plus font-extrabold pt-3 text-white ">
-          Our <span className="text-garyMedium">teams</span>
+          Our <span className="text-garyMedium">talent community</span>
         </h2>
         <div className="lg:pt-[84px] pt-12 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6">
           {OurTeamCareer.map((value, index) => {
             return (
               <div
                 key={index}
-                className="w-full border border-darkGray bg-lightTeal rounded-xl md:p-6 p-5 md:h-[210px] h-[148px] flex flex-col justify-between"
+                className="w-full border border-darkGray bg-lightBlue rounded-xl md:p-6 p-5 md:h-[210px] h-[148px] flex flex-col justify-between"
               >
                 <div className="md:w-16 w-11 md:h-16 h-11 rounded-full border-tealBlue border flex justify-center items-center bg-tealBlue bg-opacity-[12%]">
                   {value.icon}
