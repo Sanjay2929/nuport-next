@@ -28,7 +28,7 @@ const AllTab = () => {
           <button
             key={index}
             onClick={() => setActiveTab(tab)}
-            className={`font-plus transition-all ease-in-out duration-300 font-medium text-base relative after:absolute after:contents-[''] after:h-[2px] after:bg-tealBlue after:start-0 after:bottom-[-20px] text-nowrap ${
+            className={`font-plus transition-all ease-in-out duration-300 font-medium text-base relative after:absolute after:contents-[''] after:h-[2px] after:bg-tealBlue after:start-0 hover:text-tealBlue after:bottom-[-20px] text-nowrap ${
               tab === activeTab
                 ? "text-tealBlue  after:w-full"
                 : "text-offWhite"
@@ -44,7 +44,7 @@ const AllTab = () => {
       <div className="flex flex-wrap items-start">
         {filteredCards.slice(0, displayedCards).map((value, index) => (
           <div
-            className={`lg:w-6/12 w-full ${
+            className={`lg:w-6/12 w-full sm:max-w-full max-w-[400px] sm:mx-0 mx-auto ${
               index % 2 === 0 ? "lg:pe-3" : "lg:ps-3"
             }`}
             key={index}
