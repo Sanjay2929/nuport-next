@@ -1,11 +1,11 @@
 import Navbar from "@/components/common/Navbar/Navbar";
-import SuccessFullStart from "@/components/homepage/SuccessFullStart";
+import SuccessFullStart from "@/components/home-page/SuccessFullStart";
 import Footer from "@/components/common/Footer";
 import BackToTop from "@/components/common/BackToTop";
-import Hero from "@/components/aboutpage/Hero";
-import MakeSomething from "@/components/aboutpage/MakeSomething";
-import Trusted from "@/components/aboutpage/Trusted";
-import ByNumber from "@/components/aboutpage/ByNumber";
+import Hero from "@/components/about-page/Hero";
+import MakeSomething from "@/components/about-page/MakeSomething";
+import Trusted from "@/components/about-page/Trusted";
+import ByNumber from "@/components/about-page/ByNumber";
 
 export default function Home() {
   return (
