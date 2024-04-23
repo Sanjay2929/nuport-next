@@ -39,7 +39,7 @@ const OurProduct = () => {
           {/* Product Image */}
           <Image
             className="absolute bottom-2.5 right-0 max-w-[120px] sm:max-w-[200px] lg:max-w-[340px] max-h-[132px] sm:max-h-[250px] z-[1] w-full"
-            src="/assets/images/homepage/our-product/e-commerce.png"
+            src="/assets/images/home-page/our-product/e-commerce.png"
             width={280}
             height={250}
             alt="e-commerce"
@@ -72,7 +72,7 @@ const OurProduct = () => {
           {/* Product Image */}
           <Image
             className="absolute bottom-2.5 right-0 max-w-[120px] sm:max-w-[200px] lg:max-w-[340px] max-h-[132px] sm:max-h-[250px] z-10"
-            src="/assets/images/homepage/our-product/enterprise-cloud.png"
+            src="/assets/images/home-page/our-product/enterprise-cloud.png"
             width={310}
             height={250}
             alt="enterprise"

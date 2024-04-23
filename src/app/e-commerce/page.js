@@ -1,6 +1,6 @@
 import DiscoverSolutions from "@/components/product/DiscoverSolutions";
 import DiscoverFaq from "@/components/product/DiscoverFaq";
-import SuccessFullStart from "@/components/homepage/SuccessFullStart";
+import SuccessFullStart from "@/components/home-page/SuccessFullStart";
 import Hero from "@/components/common/Hero";
 import TrustedByKnown from "@/components/product/TrustedByKnown";
 import {
@@ -27,7 +27,7 @@ export default function Home() {
         topbtn="Create happy customers"
       />
       <TrustedByKnown
-        laptopimg="/assets/images/productpage/trusted-by-known/mac-book-pro.webp"
+        laptopimg="/assets/images/product-page/trusted-by-known/mac-book-pro.webp"
         trustedpartners={trustedKnownPartners}
       />
       <DiscoverSolutions
