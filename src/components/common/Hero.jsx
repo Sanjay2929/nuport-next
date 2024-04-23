@@ -3,9 +3,18 @@ import React, { useState } from "react";
 import { ArrowUpward, CircleArrow, SearchIcon } from "./Icons";
 const Hero = ({ heading, description, topbtn, type }) => {
   const [isChecked, setIsChecked] = useState(false);
+  const [isInputFocused, setInputFocused] = useState(false);
 
   const toggleBtnHandler = () => {
     setIsChecked(!isChecked);
+  };
+
+  const handleFocus = () => {
+    setInputFocused(true);
+  };
+
+  const handleBlur = () => {
+    setInputFocused(false);
   };
   return (
     <div>
@@ -45,14 +54,18 @@ const Hero = ({ heading, description, topbtn, type }) => {
           ) : type === "search" ? (
             <label
               htmlFor="search"
-              className=" border border-gray rounded-full ps-5 flex items-center max-w-[400px] mb-[120px] w-full mt-12"
+              className={`border rounded-full ps-5 flex hover:border-tealBlue transition-all ease-in-out duration-300 items-center max-w-[400px] mb-[120px] w-full mt-12 ${
+                isInputFocused ? "border-tealBlue" : "border-gray"
+              }`}
             >
               <SearchIcon />
               <input
                 type="text"
-                className=" bg-transparent text-offWhite placeholder:text-offWhite font-plus w-full pe-3 font-normal text-sm border-0 focus-visible:outline-none ms-2 py-4"
+                className="bg-transparent text-offWhite placeholder-text-offWhite font-plus w-full pe-3 font-normal text-sm border-0 focus-visible:outline-none ms-2 py-4"
                 id="search"
                 placeholder="Search blog"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
               />
             </label>
           ) : (
