@@ -37,7 +37,7 @@ const Page = () => {
         }
         topbtn="Know us better"
       />
-      <AllTab />
+      <AllTab blogList={blogList} />
     </div>
   );
 };

@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import { blogTabHeading, tabCard } from "../common/Helper";
 import Revolution from "./Revolution";
 import LatestBlog from "./LatestBlog";
+import { useRouter } from "next/navigation";
 
-const AllTab = () => {
+const AllTab = ({ blogList }) => {
   const [activeTab, setActiveTab] = useState("All");
   const [showMore, setShowMore] = useState(false);
   const [displayedCards, setDisplayedCards] = useState(4);
+  const router = useRouter();
 
   // Filter cards based on active tab
   const filteredCards =
@@ -21,14 +23,29 @@ const AllTab = () => {
     setDisplayedCards(showMore ? 4 : filteredCards.length);
   };
 
+  const formatBlogDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = { month: "short", day: "2-digit", year: "numeric" };
+    return date.toLocaleDateString("en-US", options);
+  };
+  const handleClick = (tab) => {
+    setActiveTab(tab);
+    const formattedTab = tab.toLowerCase().replace(/\s+/g, "-");
+    // Construct the URL with the query parameter
+    const urlWithQueryParam = `/blogs?tab=${encodeURIComponent(formattedTab)}`;
+
+    // Redirect to the constructed URL
+    router.push(urlWithQueryParam);
+  };
+
   return (
     <div className="container 2xl:max-w-[1285px] px-5 2xl:px-0 mx-auto">
       <div className="flex items-center gap-10 py-5 overflow-scroll scrollbar_hidden">
         {blogTabHeading.map((tab, index) => (
           <button
             key={index}
-            onClick={() => setActiveTab(tab)}
-            className={`font-plus transition-all ease-in-out duration-300 font-medium text-base relative after:absolute after:contents-[''] after:h-[2px] after:bg-tealBlue after:start-0 hover:text-tealBlue after:bottom-[-20px] text-nowrap ${
+            onClick={() => handleClick(tab)}
+            className={`font-plus transition-all ease-in-out duration-300 font-medium text-base relative after:absolute after:h-[2px] after:bg-tealBlue after:start-0 hover:text-tealBlue after:bottom-[-20px] text-nowrap ${
               tab === activeTab
                 ? "text-tealBlue  after:w-full"
                 : "text-offWhite"
@@ -42,7 +59,7 @@ const AllTab = () => {
 
       <LatestBlog />
       <div className="flex flex-wrap items-start">
-        {filteredCards.slice(0, displayedCards).map((value, index) => (
+        {blogList.map((value, index) => (
           <div
             className={`lg:w-6/12 w-full sm:max-w-full max-w-[400px] sm:mx-0 mx-auto ${
               index % 2 === 0 ? "lg:pe-3" : "lg:ps-3"
@@ -50,10 +67,10 @@ const AllTab = () => {
             key={index}
           >
             <Revolution
-              date={value.date}
-              content={value.description}
-              btn={value.btn}
-              img={value.img}
+              date={formatBlogDate(value.created_at)} // Format the date here
+              content={value.title}
+              btn="Nuport"
+              img={value.feature_image}
             />
           </div>
         ))}
