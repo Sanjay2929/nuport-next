@@ -80,12 +80,12 @@ const Hero = () => {
             <div className="lg:w-1/2 w-full">
               <div className="flex lg:justify-end justify-center">
                 <Image
-                className=""
-                src="/assets/images/case-study/ifarmer.png"
-                height={691}
-                width={594}
-                alt="i farmer"
-              />
+                  className=""
+                  src="/assets/images/case-study/ifarmer.png"
+                  height={691}
+                  width={594}
+                  alt="i farmer"
+                />
               </div>
             </div>
           </div>
