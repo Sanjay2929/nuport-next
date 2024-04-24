@@ -6,7 +6,6 @@ import {
 import { GrayLeftArrow, GrayRightArrow } from "@/components/common/Icons";
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
-import IFarmerCard from "../IfarmerCard";
 import Ifarmer from "../Ifarmer";
 const MoreCase = () => {
   const [leftMargin, setLeftMargin] = useState(0);
