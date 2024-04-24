@@ -32,7 +32,8 @@ const Cards = () => {
                       /month
                     </span>
                   </p>
-                  <button className="lg:mt-7 mt-5 mb-3 bg-darkGray w-full flex justify-center items-center h-[52px] rounded-[100px] text-white font-plus font-bold text-base leading-[140%] group-hover:bg-tealBlue transition-all duration-300 ease-in-out relative z-10">
+                  <button className="lg:mt-7 mt-5 mb-3 bg-darkGray w-full flex justify-center items-center h-[52px] rounded-[100px] text-white font-plus font-bold text-base leading-[140%] 
+                  group-hover:bg-tealBlue transition-all duration-300 ease-in-out relative z-10">
                     {value.contact}
                   </button>
                   {value.features.map((subvalue, index) => {

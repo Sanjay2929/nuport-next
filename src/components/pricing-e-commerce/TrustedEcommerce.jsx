@@ -58,10 +58,10 @@ const TrustedEcommerce = () => {
   };
   return (
     <div className="">
-      <div className="container 2xl:max-w-[1380px] mx-auto pb-40">
+      <div className="container 2xl:max-w-[1380px] mx-auto pb-16 sm:pb-20 md:pb-24 lg:pb-32 xl:pb-40">
         <div className="overflow-hidden lg:pb-[83px] sm:pb-5">
           {/* Section title */}
-          <h2 className="text-center uppercase font-bold text-base text-gray tracking-[1.8px] pt-[72px] lg:pb-10 sm:pb-5 pb-2.5">
+          <h2 className="text-center uppercase font-bold text-base text-gray tracking-[1.8px] lg:pt-[72px] lg:pb-10 sm:pb-5 pb-2.5">
             TRUSTED BY known
           </h2>
           <div className="relative h-[60px] w-full">
