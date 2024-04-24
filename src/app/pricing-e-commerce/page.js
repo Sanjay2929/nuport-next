@@ -1,9 +1,10 @@
+import Cards from "@/components/pricing-e-commerce/Cards";
 import ChooseRightPlan from "@/components/pricing-e-commerce/ChooseRightPlan";
-import React from "react";
 
 const page = () => {
   return (
     <div>
+      <Cards />
       <ChooseRightPlan />
     </div>
   );
