@@ -2,10 +2,11 @@ import Hero from "@/components/common/Hero";
 import SuccessFullStart from "@/components/home-page/SuccessFullStart";
 import Cards from "@/components/pricing-e-commerce/Cards";
 import ChooseRightPlan from "@/components/pricing-e-commerce/ChooseRightPlan";
+import TrustedEcommerce from "@/components/pricing-e-commerce/TrustedEcommerce";
 
 const page = () => {
   return (
-    <div>
+    <>
       <Hero
         heading={
           <span className=" min-[1380px]:text-nowrap">
@@ -19,8 +20,9 @@ const page = () => {
       />
       <Cards />
       <ChooseRightPlan />
+      <TrustedEcommerce />
       <SuccessFullStart />
-    </div>
+    </>
   );
 };
 
