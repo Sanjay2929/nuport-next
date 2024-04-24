@@ -22,6 +22,7 @@ import {
   Facebook,
   FasterOrder,
   FinanceDollor,
+  IFarmer,
   IndianFlag,
   IndustrialSupplies,
   Industry,
@@ -1373,4 +1374,14 @@ export const valueSuggest = [
   "Values details goes here",
   "Values details goes here",
   "Values details goes here",
+];
+// moreCaseStudy
+export const moreCaseStudy = [
+  {
+    logo: <IFarmer />,
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
 ];
