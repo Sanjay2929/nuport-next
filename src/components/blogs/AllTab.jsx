@@ -54,7 +54,7 @@ const AllTab = ({ blogList }) => {
       </div>
       <div className="w-[200vw] bg-darkGray h-[1px]  mb-7 translate-x-[-26%]"></div>
 
-      <LatestBlog />
+      <LatestBlog blogList={blogList} />
       <div className="flex flex-wrap items-start">
         {blogList.map((value, index) => (
           <div

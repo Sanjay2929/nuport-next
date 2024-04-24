@@ -24,7 +24,6 @@ const Page = () => {
     fetchData();
   }, []);
 
-  console.log(blogList, "blogList"); // Log blogList for debugging
 
   return (
     <div className="bg-darkBlue overflow-hidden">
