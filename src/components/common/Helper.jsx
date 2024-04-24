@@ -1374,3 +1374,281 @@ export const valueSuggest = [
   "Values details goes here",
   "Values details goes here",
 ];
+
+export const choosePlan = [
+  {
+    heading: "Sales Orders Management",
+    benefit: [
+      {
+        title: "Up to 3000 Sales orders/ month",
+        basic: true,
+        pro: false,
+        advanced: false,
+      },
+      {
+        title: "From 3001 - 7500 orders/month",
+        basic: false,
+        pro: true,
+        advanced: false,
+      },
+      {
+        title: "From 7501 - 15,000 orders/month",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Purchase Orders Management",
+    benefit: [
+      {
+        title: "Up to 100 orders/month",
+        basic: false,
+        pro: true,
+        advanced: false,
+      },
+      {
+        title: "From 101-300 ordersmonth",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Users",
+    benefit: [
+      {
+        title: "Up to 8 users (Extra cost ৳200/user)",
+        basic: true,
+        pro: false,
+        advanced: false,
+      },
+      {
+        title: "Up to 20 users (Extra cost ৳200/user)",
+        basic: false,
+        pro: true,
+        advanced: false,
+      },
+      {
+        title: "Up to 35 users (Extra cost ৳200/user)",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Products SKUs",
+    benefit: [
+      {
+        title: "Up to 1000 SKUs",
+        basic: true,
+        pro: false,
+        advanced: false,
+      },
+      {
+        title: "Up to 5000 SKUs",
+        basic: false,
+        pro: true,
+        advanced: false,
+      },
+      {
+        title: "Advanced categorization",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+      {
+        title: "Individual product sales intelligence",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+      {
+        title: "Individual product sales recored",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Customer Portal",
+    benefit: [
+      {
+        title: "Add/Edit Customers",
+        basic: true,
+        pro: false,
+        advanced: false,
+      },
+      {
+        title: "Geocode Customers",
+        basic: true,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Add/Edit/Upload Customers",
+        basic: false,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Map view to monitor customer density",
+        basic: false,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Customer order pattern charts",
+        basic: false,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Customer notes with time log",
+        basic: false,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "CRM integrations upon request",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Basic data source imports & experts",
+    benefit: [
+      {
+        title: "Products",
+        basic: true,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Orders",
+        basic: false,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Customers",
+        basic: false,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Vendors",
+        basic: false,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Locations",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Inventory management",
+    benefit: [
+      {
+        title: "Standard Inventory to manage finished good inventory",
+        basic: true,
+        pro: false,
+        advanced: false,
+      },
+      {
+        title:
+          "Basic Inventory & Standard Inventory to manage raw material and finished good inventory",
+        basic: false,
+        pro: true,
+        advanced: false,
+      },
+      {
+        title:
+          "Basic Inventory, Standard Inventory & Advanced Inventory to manage batch with barcode inventory",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Expense management",
+    benefit: [
+      {
+        title: "Add expense",
+        basic: true,
+        pro: true,
+        advanced: true,
+      },
+      {
+        title: "Generate report",
+        basic: true,
+        pro: true,
+        advanced: true,
+      },
+    ],
+  },
+  {
+    heading: "Analytical reports",
+    benefit: [
+      {
+        title: "Sales report",
+        basic:true,
+        pro:true,
+        advanced:false,
+      },
+      {
+        title: "Customer reports",
+        basic:true,
+        pro:true,
+        advanced:false,
+      },
+      {
+        title: "Inventory reports",
+        basic:true,
+        pro:true,
+        advanced:false,
+      },
+      {
+        title: "Expense & margin",
+        basic:true,
+        pro:true,
+        advanced:false,
+      },
+      {
+        title: "Delivery partner report",
+        basic:false,
+        pro:true,
+        advanced:false,
+      },
+      {
+        title: "Order fulfillment report",
+        basic:false,
+        pro: false,
+        advanced: true,
+      },
+      {
+        title: "Pending order report",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+      {
+        title: "Traceability report",
+        basic: false,
+        pro: false,
+        advanced: true,
+      },
+    ],
+  },
+];
