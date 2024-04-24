@@ -12,14 +12,14 @@ const Ifarmer = ({ logo, title, description, path }) => {
         <Image src={logo} alt="logo" height={40} width={90} />
         <div className=" flex flex-col justify-end items-start">
           {" "}
-          <p className=" text-white font-plus font-bold text-4xl md:text-5xl lg:text-6xl tracking-[-2%] sm:mt-[132px] mt-10 mb-4">
+          <p className=" text-white font-plus font-bold text-4xl md:text-5xl lg:text-6xl tracking-[-2%] sm:mt-[112px] mt-10 mb-4">
             {title}
           </p>
           <p className="font-plus font-medium md:text-lg text-base text-lightGray mb-[30px]">
             {description}
           </p>
           <Link
-            href={path}
+            href="/case-study/detail"
             className="transition-all ease-in-out duration-300 font-plus  font-semibold md:text-base text-sm group-hover:text-moonstone text-lightGray flex items-center gap-[13px] group-hover:gap-4"
           >
             Read story <StoryArrow />

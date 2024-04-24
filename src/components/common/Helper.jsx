@@ -585,7 +585,7 @@ export const pricingNav = [
   {
     title: "E-commerce",
     paragraph: "Distribution and supply chain management",
-    url: "/",
+    url: "/pricing-e-commerce",
     icon: <ShoppingCart />,
   },
   {
@@ -1398,6 +1398,20 @@ export const moreCaseStudy = [
   },
   {
     logo: "/assets/images/case-study/eco.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/steel-transparent.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/steel-transparent.png",
     title: "1.3M",
     description:
       "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",

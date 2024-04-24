@@ -16,8 +16,9 @@ const page = () => {
           }
           description="Explore our library of informative videos showcasing e-commerce and enterprise solutions. Get insights, and success stories in action."
           topbtn="Get to know us through video resources"
+          toggleTitle="Enterprise"
         />
-        
+
         {/* Video section */}
         <Video />
       </div>

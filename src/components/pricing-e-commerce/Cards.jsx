@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <div className="bg-darkBlue">
       <div className="xl:max-w-[1324px] px-5 mx-auto container">
-        <div className="pt-[120px] pb-40">
+        <div className="pb-40">
           <div className="flex gap-6 justify-center items-center flex-wrap">
             {eCommerce.map((value, index) => (
               <div
