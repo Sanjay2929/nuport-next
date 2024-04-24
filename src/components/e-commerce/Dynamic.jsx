@@ -1,15 +1,14 @@
-"use client";
-import React, { useEffect } from "react";
-import Image from "next/image";
+// Import statements
+"use client"; // Specify client-side rendering
+import gsap from "gsap"; // Import GSAP library
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger plugin from GSAP
+import Image from "next/image"; // Import Image component from Next.js
+import { useEffect } from "react"; // Import React and useEffect hook
 import {
-  automateImage,
   dynamicImage,
-  dynamicOrder,
-  maximizingYourEfficiency,
+  dynamicOrder
 } from "../common/Helper";
-import { AutomatedArrow } from "../common/Icons";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const Dynamic = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);

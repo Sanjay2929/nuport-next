@@ -1,11 +1,10 @@
-"use client";
 import React from "react";
-import { trustedBrand, trustedPartners } from "../common/Helper";
 import Image from "next/image";
 import Slider from "react-slick";
+import { trustedBrand, trustedPartners } from "../common/Helper";
 
 const Trusted = () => {
-  //   SLIDER SETTINGS
+  // Slider settings for the Trusted Partners section
   var trusted = {
     slidesToShow: 7,
     slidesToScroll: 1,
@@ -56,11 +55,14 @@ const Trusted = () => {
       },
     ],
   };
+
   return (
     <div className=" md:mb-[120px] sm:mb-20 mb-10 md:pt-[160px] sm:pt-20 pt-10 container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5 border-b border-mischka md:pb-[120px]  sm:pb-20 pb-10 overflow-hidden">
       <div className=" flex flex-wrap justify-between items-center">
+        {/* Left side content */}
         <div className="lg:w-7/12 w-full">
           <div className="order-2 pt-12 md:pt-0">
+            {/* Title and description */}
             <p className="tracking-[12%] font-bold font-plus text-xs md:text-sm lg:text-base text-orangeDark uppercase">
               Brands We Serve
             </p>
@@ -74,7 +76,9 @@ const Trusted = () => {
             </p>
           </div>
         </div>
+        {/* Right side content */}
         <div className=" lg:w-5/12 w-full">
+          {/* Display trusted brand logos for larger screens */}
           <div className=" lg:flex hidden flex-wrap gap-y-4 h-full">
             {trustedBrand.map((value, index) => {
               return (
@@ -93,7 +97,7 @@ const Trusted = () => {
               );
             })}
           </div>
-
+          {/* Slider for trusted partners logos on smaller screens */}
           <div className="relative h-[60px] w-full lg:hidden mt-10">
             <Slider
               {...trusted}

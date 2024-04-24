@@ -11,6 +11,7 @@ import {
 import { openJobs } from "../common/Helper";
 import Image from "next/image";
 
+// Define location and department options
 const people = [
   {
     label: "Locations",
@@ -35,20 +36,21 @@ const people = [
 ];
 
 const OpenJobs = () => {
-  const [selectedLocation, setSelectedLocation] = useState(
-    people[0].options[0]
-  );
-  const [selectedDepartment, setSelectedDepartment] = useState(
-    people[1].options[0]
-  );
+  // State for selected location and department
+  const [selectedLocation, setSelectedLocation] = useState(people[0].options[0]);
+  const [selectedDepartment, setSelectedDepartment] = useState(people[1].options[0]);
+
+  // State for dropdown visibility
   const [isLocationDropdownOpen, setLocationDropdownOpen] = useState(false);
   const [isDepartmentDropdownOpen, setDepartmentDropdownOpen] = useState(false);
 
+  // Toggle location dropdown visibility
   const toggleLocationDropdown = () => {
     setLocationDropdownOpen(!isLocationDropdownOpen);
     setDepartmentDropdownOpen(false);
   };
 
+  // Toggle department dropdown visibility
   const toggleDepartmentDropdown = () => {
     setDepartmentDropdownOpen(!isDepartmentDropdownOpen);
     setLocationDropdownOpen(false);
@@ -56,6 +58,7 @@ const OpenJobs = () => {
 
   return (
     <div className="xl:max-w-[1324px] container px-5 py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 mx-auto">
+      {/* Title */}
       <p className="tracking-[2.5px] font-bold font-plus text-xs md:text-sm lg:text-base text-orangeDark uppercase text-center">
         all open job
       </p>
@@ -65,6 +68,7 @@ const OpenJobs = () => {
       <p className="text-center text-riverBed md:text-xl text-base font-normal md:pt-7 pt-5 md:pb-10 pb-7">
         We’re currently looking for help in the following areas:
       </p>
+      {/* Location and Department dropdowns */}
       <div className="flex items-center flex-row max-[500px]:flex-col max-w-[630px] mx-auto md:gap-6 gap-4 md:pb-[56px] pb-4">
         {people.map((category, index) => (
           <Listbox
@@ -73,30 +77,22 @@ const OpenJobs = () => {
             onChange={index === 0 ? setSelectedLocation : setSelectedDepartment}
           >
             <div className="relative mt-1 w-full">
+              {/* Dropdown button */}
               <Listbox.Button
                 className="relative w-full cursor-default rounded-lg bg-white py-4 pl-5 pr-10 text-left border border-mischka font-medium"
-                onClick={
-                  index === 0
-                    ? toggleLocationDropdown
-                    : toggleDepartmentDropdown
-                }
+                onClick={index === 0 ? toggleLocationDropdown : toggleDepartmentDropdown}
               >
                 <span className="block text-riverBed md:text-xl sm:text-lg text-base">
-                  {index === 0
-                    ? selectedLocation.name
-                    : selectedDepartment.name}
+                  {index === 0 ? selectedLocation.name : selectedDepartment.name}
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                   <DropdownArrowBlack />
                 </span>
               </Listbox.Button>
+              {/* Dropdown options */}
               <Transition
                 as={Fragment}
-                show={
-                  index === 0
-                    ? isLocationDropdownOpen
-                    : isDepartmentDropdownOpen
-                }
+                show={index === 0 ? isLocationDropdownOpen : isDepartmentDropdownOpen}
                 enter="transition ease-out duration-100"
                 enterFrom="opacity-0 scale-95"
                 enterTo="opacity-100 scale-100"
@@ -110,25 +106,17 @@ const OpenJobs = () => {
                       key={optionIdx}
                       className={({ active }) =>
                         `relative cursor-default select-none py-2 px-4 ${
-                          active
-                            ? "bg-tealBlue bg-opacity-15 text-tealBlue"
-                            : "text-gray-900"
+                          active ? "bg-tealBlue bg-opacity-15 text-tealBlue" : "text-gray-900"
                         }`
                       }
                       value={option}
                       onClick={() => {
-                        index === 0
-                          ? setLocationDropdownOpen(false)
-                          : setDepartmentDropdownOpen(false);
+                        index === 0 ? setLocationDropdownOpen(false) : setDepartmentDropdownOpen(false);
                       }}
                     >
                       {({ selected }) => (
                         <>
-                          <span
-                            className={`block truncate ${
-                              selected ? "font-medium" : "font-normal"
-                            }`}
-                          >
+                          <span className={`block truncate ${selected ? "font-medium" : "font-normal"}`}>
                             {option.name}
                           </span>
                           {selected && (
@@ -144,8 +132,10 @@ const OpenJobs = () => {
           </Listbox>
         ))}
       </div>
+      {/* Open job listings */}
       <div className="max-w-[1065px] mx-auto">
         {openJobs.length === 0 ? (
+          // If no open jobs
           <div className="max-w-[399px] mx-auto flex flex-col items-center md:pt-0 pt-14">
             <Image
               className="sm:w-[170px] w-[158px]"
@@ -158,22 +148,23 @@ const OpenJobs = () => {
               No job openings right now!
             </h3>
             <p className="text-center text-sm font-normal md:text-lg text-riverBed pb-[46px]">
-              Keep an eye on this space for updates or follow our linkedIn
-              profile to keep updated.
+              Keep an eye on this space for updates or follow our LinkedIn profile to keep updated.
             </p>
-            <button className="book_demo_btn bg-tealBlue flex items-center gap-2 px-7 lg:pt-2.5 py-3 lg:pb-3.5 rounded-full lg:text-base text-sm font-semibold text-white border-tealBlue  border duration-300">
+            <button className="book_demo_btn bg-tealBlue flex items-center gap-2 px-7 lg:pt-2.5 py-3 lg:pb-3.5 rounded-full lg:text-base text-sm font-semibold text-white border-tealBlue border duration-300">
               Visit LinkedIn Profile
             </button>
           </div>
         ) : (
+          // If there are open jobs
           openJobs.map((value, index) => (
             <div
               key={index}
               className="flex items-center justify-between sm:py-7 py-6 border-b border-mischka"
             >
               <div className="">
+                {/* Department */}
                 <span
-                  className={`px-2.5 py-[5px] rounded-md font-medium sm:text-sm text-xs text-offWhite inline-block  ${
+                  className={`px-2.5 py-[5px] rounded-md font-medium sm:text-sm text-xs text-offWhite inline-block ${
                     value.department == "Marketing" && "bg-blue"
                   } ${value.department == "Product" && "bg-teal"} ${
                     value.department == "UX Designer" && "bg-orange"
@@ -181,27 +172,33 @@ const OpenJobs = () => {
                 >
                   {value.department}
                 </span>
+                {/* Job title */}
                 <h2 className="font-bold md:text-[30px] sm:text-2xl text-xl text-shark pt-3 sm:pb-5 pb-3">
                   {value.post}
                 </h2>
+                {/* Office location */}
                 <div className="flex items-center gap-2 pb-2 font-medium text-sm">
                   <OfficeBuilding /> <p className="text-graynormal">Office:</p>{" "}
                   <p className="text-shark">{value.location}</p>
                 </div>
+                {/* Job type */}
                 <div className="flex items-center gap-2 pb-2 font-medium text-sm">
                   <Laptop /> <p className="text-graynormal">Job Type:</p>{" "}
                   <p className="text-shark">{value.jobType}</p>
                 </div>
+                {/* Vacancy */}
                 <div className="flex items-center gap-2 pb-2 font-medium text-sm">
                   <VacancyPeople /> <p className="text-graynormal">Vacancy:</p>{" "}
                   <p className="text-shark">{value.vacancy}</p>
                 </div>
+                {/* Deadline */}
                 <div className="flex items-center gap-2 font-medium text-sm">
                   <DeadlineClock /> <p className="text-graynormal">Deadline:</p>{" "}
                   <p className="text-shark">{value.deadline}</p>
                 </div>
               </div>
-              <button className="book_demo_btn max-[500px]:hidden bg-tealBlue flex items-center gap-2 px-7 lg:pt-2.5 py-3 lg:pb-3.5 rounded-full lg:text-base text-sm font-semibold text-white border-tealBlue  border duration-300">
+              {/* Apply button */}
+              <button className="book_demo_btn max-[500px]:hidden bg-tealBlue flex items-center gap-2 px-7 lg:pt-2.5 py-3 lg:pb-3.5 rounded-full lg:text-base text-sm font-semibold text-white border-tealBlue border duration-300">
                 Apply Now
               </button>
             </div>

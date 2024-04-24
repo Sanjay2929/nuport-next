@@ -16,10 +16,13 @@ const MobileNav = ({ setShowNavbar, scrollRemove }) => {
 
   return (
     <div className="w-full max-w-[600px] min-h-screen bg-white overflow-y-scroll">
+      {/* Mobile Navbar Header */}
       <div className="px-5 bg-darkBlue pt-[52px] pb-3.5 flex justify-between items-center">
+        {/* Nuport Logo */}
         <Link href="/">
           <NuportLogo />
         </Link>
+        {/* Close button */}
         <div
           onClick={() => {
             setShowNavbar(false), scrollRemove();
@@ -29,6 +32,7 @@ const MobileNav = ({ setShowNavbar, scrollRemove }) => {
           <Cross />
         </div>
       </div>
+      {/* Mobile Navbar Content */}
       <div className="px-5 overflow-y-auto h-[calc(100vh-76px)] ">
         {mobileNavbar.map((obj, index) => (
           <div key={index} className="">

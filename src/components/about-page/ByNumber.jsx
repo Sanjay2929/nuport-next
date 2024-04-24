@@ -1,12 +1,20 @@
+// Importing necessary dependencies
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { byNumberList } from "../common/Helper";
 
+// ByNumber component definition
 const ByNumber = () => {
+  // State to track whether the section is intersecting with the viewport
   const [isIntersecting, setIsIntersecting] = useState(false);
+
+  // State to store counts for each item
   const [counts, setCounts] = useState(byNumberList.map(() => 0));
+
+  // Reference to the section element
   const sectionRef = useRef(null);
 
+  // Effect to observe intersection of the section with the viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -26,6 +34,7 @@ const ByNumber = () => {
     };
   }, []);
 
+  // Effect to update counts when section is intersecting
   useEffect(() => {
     if (isIntersecting) {
       const interval = setInterval(() => {
@@ -46,7 +55,9 @@ const ByNumber = () => {
       return () => clearInterval(interval);
     }
   }, [isIntersecting]);
+
   return (
+    // Section container with a ref
     <div
       className=" md:mb-[160px] mb-20 container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5"
       ref={sectionRef}
@@ -54,6 +65,7 @@ const ByNumber = () => {
       <div className=" flex flex-wrap justify-between">
         <div className="lg:w-7/12 w-full">
           <div className="order-2 pt-12 md:pt-0">
+            {/* Section title and description */}
             <p className="tracking-[12%] font-bold font-plus text-xs md:text-sm lg:text-base text-orangeDark uppercase">
               Brands We Serve
             </p>
@@ -67,6 +79,7 @@ const ByNumber = () => {
         </div>
         <div className=" lg:w-5/12 w-full pt-[35px]">
           <div className=" flex flex-wrap sm:gap-y-[88px] gap-y-10 lg:gap-x-0 sm:gap-x-5 h-full">
+            {/* Rendering items with counts */}
             {byNumberList.map((value, index) => {
               return (
                 <div
@@ -81,9 +94,12 @@ const ByNumber = () => {
                 >
                   <div className={`sm:px-1`}>
                     <h3 className="text-[32px] min-w-[145px] text-start !leading-[110%] sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-plus text-shark">
+                      {/* Displaying count based on intersection */}
                       {isIntersecting ? counts[index] : 0}
+                      {/* Adding '+' after the first count */}
                       {index === 0 ? "+" : index === 1 ? "" : "K+"}
                     </h3>
+                    {/* Description of the item */}
                     <p className="text-start max-w-[190px] pt-3 md:pt-4 lg:pt-5 !leading-[140%] font-medium text-sm lg:text-base xl:text-lg text-riverBed">
                       {value.description}
                     </p>

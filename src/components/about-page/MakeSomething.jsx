@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
+
 const MakeSomething = () => {
   return (
+    // Main container with grid layout and overflow hidden
     <div className=" grid lg:gap-6 gap-3 row-auto col-auto container mx-auto 2xl:max-w-[1283px] 2xl:px-0 px-5 md:pb-[167px] sm:pb-[100px] pb-20 overflow-hidden relative rounded-xl">
-      {" "}
+      {/* Absolute positioned image for the background */}
       <Image
         className="w-full min-w-[405px] pointer-events-none absolute top-[50%] start-[50%] translate-x-[-50%] translate-y-[-50%]"
         src="/assets/images/about-page/make-something/shape.webp"
@@ -11,6 +13,7 @@ const MakeSomething = () => {
         width={455}
         height={511}
       />
+      {/* Images placed within the grid */}
       <Image
         className="w-full relative  hover:scale-95 transition-all duration-300 rounded-xl z-10 row-[1/4] col-[1/2]"
         src="/assets/images/about-page/make-something/man-1.webp"
@@ -24,14 +27,14 @@ const MakeSomething = () => {
         alt="man-1"
         width={412}
         height={204}
-      />{" "}
+      />
       <Image
         className="w-full relative  hover:scale-95 transition-all duration-300 rounded-xl z-10 sm:row-[1/2] row-[7/8] sm:col-[3/4] col-[1/2]"
         src="/assets/images/about-page/make-something/nuport-3.webp"
         alt="man-1"
         width={411}
         height={107}
-      />{" "}
+      />
       <Image
         className="w-full relative  hover:scale-95 transition-all duration-300 rounded-xl z-10 row-[4/7] col-[1/2]"
         src="/assets/images/about-page/make-something/man-bottom.webp"
@@ -59,14 +62,14 @@ const MakeSomething = () => {
         alt="man-1"
         width={412}
         height={204}
-      />{" "}
+      />
       <Image
         className="w-full relative  hover:scale-95 transition-all duration-300 rounded-xl z-10 sm:row-[6/7] row-[7/8] sm:col-[3/4] col-[2/4]"
         src="/assets/images/about-page/make-something/make-last.webp"
         alt="man-1"
         width={411}
         height={107}
-      />{" "}
+      />
     </div>
   );
 };

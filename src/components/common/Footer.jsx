@@ -1,19 +1,22 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"; // Importing Image component from Next.js for optimized image loading
+import Link from "next/link"; // Importing Link component from Next.js for client-side navigation
 import {
   footerCompanyList,
   footerSolutionList,
   socialIconList,
-} from "./Helper";
+} from "./Helper"; // Importing data from a Helper file
 
 const Footer = () => {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear(); // Getting the current year
+
   return (
     <>
+      {/* Top section of the footer */}
       <div className="bg-offWhite gradient_border border-t">
         <div className="xl:max-w-[1324px] container px-5 py-16 sm:py-20 md:py-24 lg:py-[100px] xl:pb-[118px] mx-auto">
           <div className="flex flex-col md:flex-row md:gap-6 justify-between">
+            {/* Left section containing company information */}
             <div className="md:w-4/12 lg:w-5/12">
               <Image
                 className="lg:w-[185px] w-[135px]"
@@ -22,7 +25,9 @@ const Footer = () => {
                 src="/assets/images/common/footer/footer-logo.png"
                 alt="logo"
               />
+              {/* Addresses for different locations */}
               <div className="pt-12 md:pt-8 lg:pt-[50px] grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Address for United States */}
                 <div className="gap-1.5 flex flex-col">
                   <p className="font-bold !leading-[140%] text-sm md:text-base text-shark uppercase">
                     United states
@@ -36,6 +41,7 @@ const Footer = () => {
                     2055 Limestone Road, Wilmington, Delaware 19808
                   </Link>
                 </div>
+                {/* Address for Dubai */}
                 <div className="gap-1.5 flex flex-col order-2 sm:order-1">
                   <p className="font-bold !leading-[140%] text-sm md:text-base text-shark uppercase">
                     Dubai
@@ -49,6 +55,7 @@ const Footer = () => {
                     Office 1902, 48 Burj Gate, Sheikh Zayed Road, Downtown Dubai
                   </Link>
                 </div>
+                {/* Address for Bangladesh */}
                 <div className="gap-1.5 flex flex-col xl:pt-1 order-1 sm:order-2">
                   <p className="font-bold !leading-[140%] text-sm md:text-base text-shark uppercase">
                     Bangladesh
@@ -67,19 +74,21 @@ const Footer = () => {
                     href="https://www.google.com/maps/search/+Level+6,+Erectors+House,+18+Kemal+Ataturk+Avenue,+Banani,+++++++++++++++++++++Dhaka+1213/@23.7937663,90.4012921,17z/data=!3m1!4b1?entry=ttu"
                     className="font-medium text-sm text-riverBed hover:text-darkBlue duration-300 !leading-[140%]"
                   >
-                    Level 6, Erectors House, 18 Kemal Ataturk Avenue, Banani,
-                    Dhaka 1213
+                    Level 6, Erectors House, 18 Kemal Ataturk Avenue, Banani, Dhaka 1213
                   </Link>
                 </div>
               </div>
             </div>
+            {/* Right section containing company links, solutions, and contact information */}
             <div className="md:w-8/12 lg:w-6/12 pt-6 sm:pt-8 md:pt-0">
               <div className="grid sm:grid-cols-3 gap-6 sm:gap-3 xl:gap-6">
+                {/* Company links */}
                 <div>
                   <p className="font-bold !leading-[140%] text-sm md:text-base text-shark pb-5 uppercase">
                     Company
                   </p>
                   <ul className="flex flex-col gap-[9px]">
+                    {/* Mapping over company links */}
                     {footerCompanyList.map((value, index) => {
                       return (
                         <li key={index}>
@@ -94,11 +103,13 @@ const Footer = () => {
                     })}
                   </ul>
                 </div>
+                {/* Solution links */}
                 <div>
                   <p className="font-bold !leading-[140%] text-sm md:text-base text-shark pb-5 uppercase">
                     Solution
                   </p>
                   <ul className="flex flex-col gap-[9px]">
+                    {/* Mapping over solution links */}
                     {footerSolutionList.map((value, index) => {
                       return (
                         <li key={index}>
@@ -113,6 +124,7 @@ const Footer = () => {
                     })}
                   </ul>
                 </div>
+                {/* Contact information */}
                 <div>
                   <p className="font-bold !leading-[140%] text-sm md:text-base text-shark pb-5 uppercase">
                     Contact us
@@ -140,7 +152,9 @@ const Footer = () => {
                   <p className="font-riverBed text-sm text-shark !leading-[140%] pt-5 md:pt-6 pb-1">
                     Follow us
                   </p>
+                  {/* Social media icons */}
                   <div className="flex gap-3 md:gap-1 xl:gap-3 pt-2">
+                    {/* Mapping over social media icons */}
                     {socialIconList.map((value, index) => {
                       return (
                         <Link
@@ -159,10 +173,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          {/* Bottom section of the footer */}
           <div className="flex flex-col sm:flex-row sm:justify-between mt-[21px] sm:mt-6 md:mt-9 lg:mt-12 xl:mt-[55px] py-6 md:py-8 lg:py-10 gradient_border border-y">
+            {/* Copyright information */}
             <p className="text-xs font-medium md:text-sm text-riverBed pb-6 sm:pb-0">
               Copyright {year} © Nuport Industrial Automation, Inc.
             </p>
+            {/* Links to Terms of Use and Privacy Policy */}
             <div className="flex flex-col sm:flex-row gap-6 md:gap-11">
               <Link
                 href={"/"}
@@ -178,6 +195,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
+          {/* Payment image section */}
           <div className="pt-7 md:pt-8 lg:pt-10">
             <Image
               className="max-w-[1178px] w-full mx-auto"

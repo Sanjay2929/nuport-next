@@ -1,8 +1,14 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom CSS */
+
+/* Styling for elements with class 'yellow_gradient' */
 .yellow_gradient {
   background: linear-gradient(
     270deg,
@@ -11,12 +17,14 @@
   );
 }
 
+/* Body and HTML styling */
 body,
 html {
   font-family: "Plus Jakarta Sans", sans-serif;
-  scroll-behavior: smooth !important  ;
+  scroll-behavior: smooth !important;
 }
-/* OUR PRODUCT  */
+
+/* Styling for elements with class 'product_gradient_shadow' */
 .product_gradient_shadow {
   background: linear-gradient(
     236.15deg,
@@ -24,37 +32,45 @@ html {
     rgba(133, 155, 232, 0.8) 66.46%
   );
 }
+
+/* Styling for elements with class 'bg_100' */
 .bg_100 {
   background-size: 100% 100%;
 }
+
+/* Styling for elements with class 'fast_decision_faq' */
 .fast_decision_faq {
   background: linear-gradient(180deg, #288ea5 0%, rgba(40, 142, 165, 0) 100%);
 }
 
-/* NETWORK SLIDER ARROW  */
+/* Styling for network slider arrow */
 .network_arrow:hover svg path {
   stroke: #464d61;
 }
-/* ACHIEVE SLIDER ARROW  */
+
+/* Styling for achieve slider arrow */
 .achieve_arrow:hover svg path {
   stroke: white;
 }
+
+/* Styling for elements with class 'gradient_border' */
 .gradient_border {
   border-image-source: radial-gradient(
     49.58% 266.85% at 50.42% 0%,
     #d3d8e3 0%,
     rgba(226, 230, 240, 0) 100%
   );
-  border-image-slice: 1; /* Ensure the entire border is covered */
-  border-image-repeat: stretch; /* Stretch the gradient to fill the border */
+  border-image-slice: 1;
+  border-image-repeat: stretch;
 }
+
+/* Styling for scrollbar in mobile navbar */
 .mobile_navbar ::-webkit-scrollbar {
   width: 6px !important;
   display: none;
 }
 
-/* BE PART OF OUR NETWORK SLIDER */
-
+/* Styling for network part slider */
 .network_part_slider .slick-track {
   display: flex !important;
   padding-top: 16px;
@@ -68,6 +84,7 @@ html {
   display: flex;
 }
 
+/* Styling for common button hover effect */
 .common_btn:hover,
 .common_btn:focus {
   animation: pulse 0.3s ease-in-out;
@@ -85,6 +102,8 @@ html {
     outline: 0px solid rgba(255, 166, 0, 0.116);
   }
 }
+
+/* Styling for book demo button hover effect */
 .book_demo_btn:hover {
   box-shadow: 0px 0px 10px 1px rgba(255, 117, 40, 0.5);
   animation: demobtn 0.2s ease-out;
@@ -100,7 +119,7 @@ html {
   }
 }
 
-/* GRADIENT TEXT STROKE */
+/* Styling for gradient text stroke */
 .gradient_text_stroke::after {
   position: absolute;
   left: 0;
@@ -111,13 +130,13 @@ html {
     rgba(24, 135, 159, 0.6) 17.19%,
     rgba(24, 135, 159, 0.06) 100%
   );
-
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px transparent;
   color: white;
 }
+
+/* Styling to hide scrollbar */
 .scrollbar_hidden::-webkit-scrollbar {
   display: none !important;
 }
-

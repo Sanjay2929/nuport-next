@@ -14,6 +14,7 @@ import DynamicResponsive from "@/components/e-commerce/DynamicResponsive";
 export default function Home() {
   return (
     <>
+      {/* Hero section */}
       <Hero
         heading={
           <>
@@ -26,10 +27,14 @@ export default function Home() {
         description="A platform that connects to every e-commerce entity, automates repetitive tasks, increases visibility, and speeds up transactions."
         topbtn="Create happy customers"
       />
+      
+      {/* TrustedByKnown section */}
       <TrustedByKnown
         laptopimg="/assets/images/product-page/trusted-by-known/mac-book-pro.webp"
         trustedpartners={trustedKnownPartners}
       />
+      
+      {/* DiscoverSolutions section */}
       <DiscoverSolutions
         heading={
           <>
@@ -39,15 +44,21 @@ export default function Home() {
         }
         solutionCards={empowerings}
       />
+      
+      {/* Dynamic section (visible on large screens) */}
       <div className=" lg:block hidden">
-        {" "}
         <Dynamic />
       </div>
+      
+      {/* DynamicResponsive section (visible on small screens) */}
       <div className=" lg:hidden bg-darkBlue">
-        {" "}
         <DynamicResponsive mapFunction={dynamicOrder} />
       </div>
+      
+      {/* DiscoverFaq section */}
       <DiscoverFaq />
+      
+      {/* SuccessFullStart section */}
       <SuccessFullStart />
     </>
   );

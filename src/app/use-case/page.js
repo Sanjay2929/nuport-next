@@ -6,6 +6,7 @@ import React from "react";
 const Page = () => {
   return (
     <>
+      {/* SimpleHero section */}
       <SimpleHero
         topBtn="Your business solution"
         heading={
@@ -14,9 +15,13 @@ const Page = () => {
             <span className=" text-garyMedium"> by use case</span>
           </>
         }
-        description="However you want to use Nuport for your manufacturing, distribution or warehousing business, we are here for you."
+        description="However you want to use Nuport for your manufacturing, distribution, or warehousing business, we are here for you."
       />
+      
+      {/* UseCaseSolution section */}
       <UseCaseSolution />
+      
+      {/* OurSolutions section */}
       <OurSolutions />
     </>
   );

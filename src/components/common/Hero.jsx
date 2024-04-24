@@ -1,31 +1,41 @@
-"use client";
-import React, { useState } from "react";
-import { ArrowUpward, CircleArrow, SearchIcon } from "./Icons";
+"use client"; // Indicating that this component will be used on the client side
+import React, { useState } from "react"; // Importing React and useState hook
+import { ArrowUpward, CircleArrow, SearchIcon } from "./Icons"; // Importing custom icons
+
+// Hero component with props: heading, description, topbtn, type
 const Hero = ({ heading, description, topbtn, type }) => {
+  // State variables for toggle button and input focus
   const [isChecked, setIsChecked] = useState(false);
   const [isInputFocused, setInputFocused] = useState(false);
 
+  // Handler for toggling the button state
   const toggleBtnHandler = () => {
     setIsChecked(!isChecked);
   };
 
+  // Handler for input focus
   const handleFocus = () => {
     setInputFocused(true);
   };
 
+  // Handler for input blur
   const handleBlur = () => {
     setInputFocused(false);
   };
+
   return (
     <div>
       <div className="overflow-hidden bg-darkBlue">
         <div className="container 2xl:max-w-[1380px] mx-auto flex justify-center items-center flex-col 2xl:px-0 px-5 2xl:pt-40 md:pt-24 pt-[72px] relative">
+          {/* Top button section */}
           <div className="ps-5 pe-2 flex gap-2.5 items-center py-1.5 md:text-base text-xs yellow_gradient rounded-full border border-orangeDark text-white">
             {topbtn} <CircleArrow />
           </div>
+          {/* Heading */}
           <h1 className="font-extrabold xl:text-[96px] lg:text-[80px] sm:text-5xl text-garyMedium text-[36px] text-center max-w-[1141px] mx-auto leading-[110%] pt-4">
             {heading}
           </h1>
+          {/* Description */}
           {description === undefined ? (
             ""
           ) : (
@@ -33,7 +43,9 @@ const Hero = ({ heading, description, topbtn, type }) => {
               {description}
             </p>
           )}
+          {/* Render based on type */}
           {type === "toggle" ? (
+            // Toggle button section
             <div className=" flex items-center justify-center mt-[-12px] md:mb-[120px] mb-20 gap-3">
               <p className=" font-plus font-medium text-xl text-center text-offWhite">
                 Enterprise
@@ -52,6 +64,7 @@ const Hero = ({ heading, description, topbtn, type }) => {
               </div>
             </div>
           ) : type === "search" ? (
+            // Search input section
             <label
               htmlFor="search"
               className={`border rounded-full ps-5 flex hover:border-tealBlue transition-all ease-in-out duration-300 items-center max-w-[400px] mb-[120px] w-full mt-12 ${
@@ -69,6 +82,7 @@ const Hero = ({ heading, description, topbtn, type }) => {
               />
             </label>
           ) : (
+            // Default section with button and text
             <div className="flex items-center sm:flex-row flex-col md:gap-6 gap-4 lg:pb-[415px] sm:pb-[200px] pb-32">
               <button className="bg-tealBlue flex items-center gap-2 px-5 pt-3.5 pb-4 rounded-full md:text-base text-sm font-semibold group text-white hover:border-tealBlue group hover:text-tealBlue border border-transparent duration-300 hover:bg-transparent">
                 Schedule a Demo <ArrowUpward />
@@ -84,4 +98,4 @@ const Hero = ({ heading, description, topbtn, type }) => {
   );
 };
 
-export default Hero;
+export default Hero; // Exporting the Hero component

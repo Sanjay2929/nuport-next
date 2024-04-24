@@ -15,6 +15,7 @@ import WorkProcess from "@/components/product/WorkProcess";
 const page = () => {
   return (
     <>
+      {/* Hero section */}
       <Hero
         heading={
           <>
@@ -27,10 +28,14 @@ const page = () => {
         description="Nuport automates delivery planning, stock transfers, warehouse optimization, SKU tracing, geolocation-based orders, and fleet monitoring."
         topbtn="Elevate your supply chain experience"
       />
+      
+      {/* TrustedByKnown section */}
       <TrustedByKnown
         laptopimg="/assets/images/enterprise/mac-book.webp"
         trustedpartners={enterprisePartners}
       />
+      
+      {/* DiscoverSolutions section */}
       <DiscoverSolutions
         heading={
           <>
@@ -40,16 +45,24 @@ const page = () => {
         }
         solutionCards={enterpriseSolutions}
       />
+      
+      {/* AutomatedInventory section (visible on large screens) */}
       <div className=" lg:block hidden">
-        {" "}
         <AutomatedInventory />
       </div>
+      
+      {/* AutomativeResponsive section (visible on small screens) */}
       <div className=" lg:hidden bg-darkBlue">
-        {" "}
         <AutomativeResponsive mapFunction={maximizingYourEfficiency} />
       </div>
+      
+      {/* WorkProcess section */}
       <WorkProcess />
+      
+      {/* DiscoverFaq section */}
       <DiscoverFaq />
+      
+      {/* SuccessFullStart section */}
       <SuccessFullStart />
     </>
   );

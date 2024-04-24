@@ -1,11 +1,12 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { fastDecisionFaq } from "../common/Helper";
-import Image from "next/image";
-import BookDemo from "../common/BookDemo";
+"use client"; // Indicating client-side code
+import React, { useEffect, useState } from "react"; // Importing React and useEffect, useState hooks
+import { fastDecisionFaq } from "../common/Helper"; // Importing fastDecisionFaq from Helper
+import Image from "next/image"; // Importing Image component from Next.js
+import BookDemo from "../common/BookDemo"; // Importing BookDemo component
 
+// FasterDecision component definition
 const FasterDecision = () => {
-  const [expandedIndex, setExpandedIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(0); // State to track expanded accordion item index
 
   // Function to toggle accordion items
   const toggleAccordion = (index) => {
@@ -22,12 +23,14 @@ const FasterDecision = () => {
   return (
     <div className="bg-darkBlue lg:py-[160px] sm:py-24 py-[60px] ">
       <div className="container xl:max-w-[1285px] mx-auto 2xl:px-0 px-5">
+        {/* Section title */}
         <p
           className="tracking-[2.5px] font-bold font-plus text-xs md:text-sm lg:text-base text-orangeDark uppercase"
           data-aos="fade-up"
         >
           Make faster decisions
         </p>
+        {/* Main heading */}
         <h2
           className=" text-[32px] !leading-[110%] md:max-w-[500px] lg:max-w-[731px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-plus font-extrabold pt-3 text-white lg:pb-16 pb-12"
           data-aos="fade-up"
@@ -35,11 +38,13 @@ const FasterDecision = () => {
           <span className="text-garyMedium">Increase</span> throughput &
           visibility
         </h2>
+        {/* Main content */}
         <div
           className="flex justify-between items-center flex-col lg:flex-row"
           data-aos="fade-right"
         >
           <div className="lg:w-1/2 max-w-[800px]">
+            {/* Mapping over fastDecisionFaq to render individual accordion items */}
             {fastDecisionFaq.map((obj, index) => {
               return (
                 <div
@@ -87,7 +92,6 @@ const FasterDecision = () => {
                           : "grid-rows-[0fr] opacity-0"
                       }`}
                     >
-                      {" "}
                       <div className="overflow-hidden">
                         <p className="font-medium pt-3 md:pt-4 lg:pt-[18px] text-sm md:text-base lg:text-lg !leading-[140%] text-lightGray ps-[30px] sm:ps-[43px] xl:pe-[45px]">
                           {obj.description}
@@ -99,6 +103,7 @@ const FasterDecision = () => {
               );
             })}
             <div className="pt-5">
+              {/* Rendering BookDemo component */}
               <BookDemo />
             </div>
           </div>
@@ -106,6 +111,7 @@ const FasterDecision = () => {
             className="2xl:w-[40%] w-full max-w-[521px] lg:w-1/2 2xl:ps-0 lg:ps-10 xl:ps-14 lg:pt-0 pt-12"
             data-aos="fade-left"
           >
+            {/* Mapping over fastDecisionFaq to render images */}
             {fastDecisionFaq.map((value, index) => {
               return (
                 <Image
@@ -128,4 +134,4 @@ const FasterDecision = () => {
   );
 };
 
-export default FasterDecision;
+export default FasterDecision; // Exporting FasterDecision component
