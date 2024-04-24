@@ -1,8 +1,12 @@
 "use client";
-import { AchieveBusinessGoalsCards } from "@/components/common/Helper";
+import {
+  AchieveBusinessGoalsCards,
+  moreCaseStudy,
+} from "@/components/common/Helper";
 import { GrayLeftArrow, GrayRightArrow } from "@/components/common/Icons";
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
+import IFarmerCard from "../IfarmerCard";
 const MoreCase = () => {
   const [leftMargin, setLeftMargin] = useState(0);
   //   CUSTOM MARGIN LEFT
@@ -100,22 +104,14 @@ const MoreCase = () => {
       >
         {/* SLIDER CARDS */}
         <Slider ref={slider} {...settings}>
-          {AchieveBusinessGoalsCards.map((value, index) => (
-            <div key={index} className="pl-1 pr-5 sm:px-3 mt-6 sm:mt-0">
-              <div className="border-[1.5px] border-darkGray rounded-[20px] px-7 py-8 sm:p-7 md:pb-[37.6px] sm:h-[350px] md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[440px] flex flex-col justify-between hover:border-white duration-300">
-                <span className="max-w-[40px] md:max-w-[56px]">
-                  {value.icon}
-                </span>
-                <div className="pt-[103px] sm:pt-0">
-                  <p className="text-2xl lg:text-3xl font-bold !leading-[140%] md:!leading-[36px] lg:leading-[38px] text-white max-w-[298px]">
-                    <span className="text-moonstone">{value.range}</span>{" "}
-                    {value.title}
-                  </p>
-                  <p className="!leading-[140%] text-sm md:text-base lg:text-lg font-medium text-lightGray mt-3 md:mt-4">
-                    {value.description}
-                  </p>
-                </div>
-              </div>
+          {moreCaseStudy.map((value, index) => (
+            <div key={index} className="px-3 sm:my-0 my-5">
+              <IFarmerCard
+                title={value.title}
+                logo={value.logo}
+                description={value.description}
+                path={value.path}
+              />
             </div>
           ))}
         </Slider>

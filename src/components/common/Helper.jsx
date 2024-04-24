@@ -17,11 +17,14 @@ import {
   DeliveryTruck,
   Design,
   Documentation,
+  Eco,
   Ecommerce,
   Enterprise,
   Facebook,
+  Fashol,
   FasterOrder,
   FinanceDollor,
+  IFarmer,
   IndianFlag,
   IndustrialSupplies,
   Industry,
@@ -1373,4 +1376,35 @@ export const valueSuggest = [
   "Values details goes here",
   "Values details goes here",
   "Values details goes here",
+];
+// moreCaseStudy
+export const moreCaseStudy = [
+  {
+    logo: "/assets/images/case-study/i-farmer.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/fashol-transparent.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/eco.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/steel-transparent.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
 ];
