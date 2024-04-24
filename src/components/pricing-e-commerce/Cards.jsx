@@ -6,13 +6,13 @@ const Cards = () => {
     <div className="bg-darkBlue">
       <div className="xl:max-w-[1324px] px-5 mx-auto container">
         <div className="pb-40">
-          <div className="flex gap-6 justify-center items-center flex-wrap">
+          <div className="grid xl:grid-cols-3 grid-cols-2 gap-6">
             {eCommerce.map((value, index) => (
               <div
                 key={index}
                 className="p-[1.5px] bg-darkBlue hover:bg-[linear-gradient(180deg,_#288EA5_0%,_rgba(40,_142,_165,_0)_73.92%)]  rounded-[20px] transition-all ease-in-out duration-300 group"
               >
-                <div className="w-[412px] h-[652px]  bg-darkBlue rounded-[20px] border border-darkGray p-7 relative overflow-hidden">
+                <div className="h-[652px]  bg-darkBlue rounded-[20px] border border-darkGray p-7 relative overflow-hidden">
                   <div className="w-full max-h-[300px] h-full blur-[190px] bg-transparent group-hover:bg-moonstone transition-all ease-in-out duration-300  absolute end-0 top-0 rounded-full"></div>
                   <div className="w-[95px] h-[80px] relative z-10">
                     {value.icon}
