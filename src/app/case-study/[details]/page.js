@@ -14,7 +14,7 @@ const page = () => {
       <Profile />
 
       {/* Introduction section */}
-      <div className="bg-darkBlue pt-[73px] pb-[143px]">
+      <div className="bg-darkBlue pt-[73px] md:pb-[143px] pb-20">
         <Introduction />
         <MoreCase />
       </div>

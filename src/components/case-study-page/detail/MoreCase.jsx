@@ -71,7 +71,7 @@ const MoreCase = () => {
   };
 
   return (
-    <div className="bg-darkBlue mt-[143px] overflow-hidden">
+    <div className="bg-darkBlue md:mt-[143px] mt-20 overflow-hidden">
       <div
         className="xl:max-w-[1324px] container px-5 mx-auto flex items-end justify-between"
         ref={containerRef}
