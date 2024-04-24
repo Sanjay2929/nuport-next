@@ -17,9 +17,11 @@ import {
   DeliveryTruck,
   Design,
   Documentation,
+  Eco,
   Ecommerce,
   Enterprise,
   Facebook,
+  Fashol,
   FasterOrder,
   FinanceDollor,
   IFarmer,
@@ -1378,42 +1380,28 @@ export const valueSuggest = [
 // moreCaseStudy
 export const moreCaseStudy = [
   {
-    logo: <IFarmer />,
+    logo: "/assets/images/case-study/i-farmer.png",
     title: "1.3M",
     description:
       "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
     path: "/",
   },
   {
-    logo: <IFarmer />,
+    logo: "/assets/images/case-study/fashol-transparent.png",
     title: "1.3M",
     description:
       "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
     path: "/",
   },
   {
-    logo: <IFarmer />,
+    logo: "/assets/images/case-study/eco.png",
     title: "1.3M",
     description:
       "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
     path: "/",
   },
   {
-    logo: <IFarmer />,
-    title: "1.3M",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
-    path: "/",
-  },
-  {
-    logo: <IFarmer />,
-    title: "1.3M",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
-    path: "/",
-  },
-  {
-    logo: <IFarmer />,
+    logo: "/assets/images/case-study/steel-transparent.png",
     title: "1.3M",
     description:
       "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",

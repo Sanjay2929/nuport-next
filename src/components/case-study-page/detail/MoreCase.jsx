@@ -105,7 +105,7 @@ const MoreCase = () => {
         {/* SLIDER CARDS */}
         <Slider ref={slider} {...settings}>
           {moreCaseStudy.map((value, index) => (
-            <div key={index} className="">
+            <div key={index} className="px-3 sm:my-0 my-5">
               <IFarmerCard
                 title={value.title}
                 logo={value.logo}
