@@ -582,7 +582,7 @@ export const pricingNav = [
   {
     title: "E-commerce",
     paragraph: "Distribution and supply chain management",
-    url: "/",
+    url: "/pricing-e-commerce",
     icon: <ShoppingCart />,
   },
   {

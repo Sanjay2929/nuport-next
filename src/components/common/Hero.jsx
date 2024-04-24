@@ -1,9 +1,10 @@
 "use client"; // Indicating that this component will be used on the client side
 import React, { useState } from "react"; // Importing React and useState hook
 import { ArrowUpward, CircleArrow, SearchIcon } from "./Icons"; // Importing custom icons
+import Image from "next/image";
 
 // Hero component with props: heading, description, topbtn, type
-const Hero = ({ heading, description, topbtn, type }) => {
+const Hero = ({ heading, description, topbtn, type, toggleTitle }) => {
   // State variables for toggle button and input focus
   const [isChecked, setIsChecked] = useState(false);
   const [isInputFocused, setInputFocused] = useState(false);
@@ -48,7 +49,7 @@ const Hero = ({ heading, description, topbtn, type }) => {
             // Toggle button section
             <div className=" flex items-center justify-center mt-[-12px] md:mb-[120px] mb-20 gap-3">
               <p className=" font-plus font-medium text-xl text-center text-offWhite">
-                Enterprise
+                {toggleTitle}
               </p>
               <div
                 className={`w-12 h-6 rounded-xl bg-easternBlue p-1 relative ${
@@ -62,6 +63,14 @@ const Hero = ({ heading, description, topbtn, type }) => {
                   }`}
                 ></div>
               </div>
+              {toggleTitle === "Yearly" && (
+                <Image
+                  src="/assets/images/pricing/save20.png"
+                  width={88}
+                  height={59}
+                  alt="save20"
+                />
+              )}
             </div>
           ) : type === "search" ? (
             // Search input section
