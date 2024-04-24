@@ -140,3 +140,13 @@ html {
 .scrollbar_hidden::-webkit-scrollbar {
   display: none !important;
 }
+.more_slider .slick-track {
+  display: flex !important;
+}
+
+.more_slider .slick-slide {
+  height: inherit !important;
+}
+.more_slider .slick-slide div {
+  height: 100% !important;
+}

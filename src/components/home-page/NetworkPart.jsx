@@ -97,8 +97,8 @@ const NetworkPart = () => {
       id="blog"
       className="overflow-hidden pb-[124px] sm:pb-[130px] md:pb-[160px] relative network_part_slider"
     >
+      {/* Slider navigation arrows */}
       <div className="absolute flex items-center gap-5 bottom-[64px] left-1/2 -translate-x-1/2 lg:hidden">
-        {/* Slider navigation arrows */}
         <span
           onClick={() => slider?.current?.slickPrev()}
           className="cursor-pointer network_arrow"
@@ -112,6 +112,7 @@ const NetworkPart = () => {
           <GrayRightArrow strokeColor={"#B1B7C7"} />
         </span>
       </div>
+      {/* Container */}
       <div
         className="xl:max-w-[1324px] container px-5 mx-auto"
         data-aos="fade-up"

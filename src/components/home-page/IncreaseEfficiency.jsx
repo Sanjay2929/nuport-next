@@ -1,25 +1,29 @@
-import React from "react";
-import BookDemo from "../common/BookDemo";
-import { increaseEfficiency } from "../common/Helper";
+import React from "react"; // Importing React
+import BookDemo from "../common/BookDemo"; // Importing BookDemo component
+import { increaseEfficiency } from "../common/Helper"; // Importing data for increaseEfficiency from Helper
 
+// IncreaseEfficiency component definition
 const IncreaseEfficiency = () => {
   return (
     <div className="xl:max-w-[1324px] container px-5 py-16 sm:py-20 md:py-28 lg:py-40 mx-auto ">
+      {/* Main container */}
       <div
         className="flex flex-col md:flex-row md:justify-between md:gap-4"
         data-aos="fade-up"
       >
+        {/* Left side content */}
         <div className="p-0">
           {/* Title for Increase Efficiency section */}
           <p className="tracking-[2.5px] font-bold font-plus text-xs md:text-sm lg:text-base text-orangeDark uppercase">
             Steps to smooth delivery
           </p>
+          {/* Main heading */}
           <h2 className=" text-[32px] !leading-[110%] max-w-[336px] md:max-w-[500px] lg:max-w-[731px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-plus font-extrabold pt-3 text-shark ">
             Increase efficiency with&nbsp;
             <span className="text-garyMedium">3 easy steps</span>
           </h2>
         </div>
-        {/* Booking demo component */}
+        {/* Right side content (Booking demo component) */}
         <div className="flex items-end pt-10 md:pt-0">
           <BookDemo />
         </div>
@@ -52,4 +56,4 @@ const IncreaseEfficiency = () => {
   );
 };
 
-export default IncreaseEfficiency;
+export default IncreaseEfficiency; // Exporting IncreaseEfficiency component

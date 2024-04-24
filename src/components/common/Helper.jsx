@@ -17,11 +17,14 @@ import {
   DeliveryTruck,
   Design,
   Documentation,
+  Eco,
   Ecommerce,
   Enterprise,
   Facebook,
+  Fashol,
   FasterOrder,
   FinanceDollor,
+  IFarmer,
   IndianFlag,
   IndustrialSupplies,
   Industry,
@@ -1374,6 +1377,37 @@ export const valueSuggest = [
   "Values details goes here",
   "Values details goes here",
 ];
+// moreCaseStudy
+export const moreCaseStudy = [
+  {
+    logo: "/assets/images/case-study/i-farmer.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/fashol-transparent.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/eco.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+  {
+    logo: "/assets/images/case-study/steel-transparent.png",
+    title: "1.3M",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Purus eleifend sit feugiat vivamus. Nisi orci iaculis leo arcu mauris eget felis mauris.",
+    path: "/",
+  },
+];
 
 export const choosePlan = [
   {
@@ -1603,37 +1637,37 @@ export const choosePlan = [
     benefit: [
       {
         title: "Sales report",
-        basic:true,
-        pro:true,
-        advanced:false,
+        basic: true,
+        pro: true,
+        advanced: false,
       },
       {
         title: "Customer reports",
-        basic:true,
-        pro:true,
-        advanced:false,
+        basic: true,
+        pro: true,
+        advanced: false,
       },
       {
         title: "Inventory reports",
-        basic:true,
-        pro:true,
-        advanced:false,
+        basic: true,
+        pro: true,
+        advanced: false,
       },
       {
         title: "Expense & margin",
-        basic:true,
-        pro:true,
-        advanced:false,
+        basic: true,
+        pro: true,
+        advanced: false,
       },
       {
         title: "Delivery partner report",
-        basic:false,
-        pro:true,
-        advanced:false,
+        basic: false,
+        pro: true,
+        advanced: false,
       },
       {
         title: "Order fulfillment report",
-        basic:false,
+        basic: false,
         pro: false,
         advanced: true,
       },

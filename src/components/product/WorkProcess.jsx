@@ -1,24 +1,31 @@
 import React from "react";
 import { workProcess } from "../common/Helper";
+
 const WorkProcess = () => {
   return (
     <div className="container 2xl:max-w-[1285px] px-5 2xl:px-0 mx-auto mt-[59px]">
+      {/* Section title */}
       <p className="text-base font-bold font-plus text-orangeDark mb-3 uppercase text-center">
         work process
       </p>
       <h2 className="font-plus text-gray-900 text-[32px] lg:text-5xl xl:text-7xl font-extrabold max-w-[848px] mx-auto text-center">
         How it <span className="text-garyMedium"> works </span>
       </h2>
-      <div className=" flex flex-wrap lg:justify-between justify-center mt-10 lg:mt-[84px] gap-x-6 gap-y-8">
+      {/* Work process cards */}
+      <div className="flex flex-wrap lg:justify-between justify-center mt-10 lg:mt-[84px] gap-x-6 gap-y-8">
+        {/* Mapping over the workProcess array to render each process card */}
         {workProcess.map((value, index) => (
           <div
             key={index}
-            className=" w-full sm:w-[calc(50%-12px)] lg:max-w-[calc(33.3%-16px)] transition-all ease-in-out duration-300 hover:-translate-y-2"
+            className="w-full sm:w-[calc(50%-12px)] lg:max-w-[calc(33.3%-16px)] transition-all ease-in-out duration-300 hover:-translate-y-2"
           >
-            <div className=" sm:max-w-[412px] mx-auto sm:mx-0 rounded-2xl flex flex-col justify-between">
+            {/* Individual work process card */}
+            <div className="sm:max-w-[412px] mx-auto sm:mx-0 rounded-2xl flex flex-col justify-between">
+              {/* Icon */}
               <div className="flex justify-center items-center w-[64px] h-[64px] rounded-full border border-tealBlue bg-tealBlue bg-opacity-[12%]">
                 {value.icon}
               </div>
+              {/* Title and description */}
               <div>
                 <h3
                   className={`!leading-[142%] text-xl lg:text-2xl text-shark  font-plus font-bold mb-4 xl:pt-9 pt-5 ${value.widthTitle}`}
