@@ -1,19 +1,23 @@
-import React from "react";
-import Image from "next/image";
-import { ArrowUpward, CircleArrow } from "../common/Icons";
+import React from "react"; // Importing React
+import Image from "next/image"; // Importing Image component from Next.js
+import { ArrowUpward, CircleArrow } from "../common/Icons"; // Importing ArrowUpward and CircleArrow icons
 
+// Hero component definition
 const Hero = () => {
   return (
-    <div className="overflow-hidden bg-darkBlue">
-      <div className="container 2xl:max-w-[1380px] mx-auto flex justify-center items-center flex-col 2xl:px-0 px-5 2xl:pt-40 md:pt-24 pt-[72px] relative">
+    <div className="overflow-hidden bg-darkBlue"> {/* Main container */}
+      <div className="container 2xl:max-w-[1380px] mx-auto flex justify-center items-center flex-col 2xl:px-0 px-5 2xl:pt-40 md:pt-24 pt-[72px] relative"> {/* Inner container */}
+        {/* Information banner */}
         <div className="ps-5 pe-2 flex gap-2.5 items-center py-1.5 md:text-base text-xs yellow_gradient rounded-full border border-orangeDark text-white">
           Integrate, automate and scale. <CircleArrow />
         </div>
+        {/* Main heading */}
         <h1 className="font-extrabold 2xl:text-[116px] xl:text-[100px] lg:text-[80px] sm:text-5xl text-[36px] text-white text-center max-w-[1141px] mx-auto !leading-[110%] pt-4">
           Cloud supply chain for{" "}
           <span className="text-garyMedium">e-commerce</span> &{" "}
           <span className="text-garyMedium">enterprise</span>
         </h1>
+        {/* Subtitle */}
         <p className="max-w-[747px] mx-auto md:text-xl text-base font-medium text-center text-lightGray md:pt-7 pt-3 md:pb-14 pb-10">
           Increase throughput and grow sales with an optimized and integrated
           supply chain ecosystem.{" "}
@@ -21,6 +25,7 @@ const Hero = () => {
             Trusted by 500+ businesses.
           </span>
         </p>
+        {/* CTA section */}
         <div className="flex items-center sm:flex-row flex-col md:gap-6 gap-4 lg:pb-[415px] sm:pb-[200px] pb-32">
           <button className="common_btn bg-tealBlue flex items-center gap-2 px-5 lg:pt-3.5 lg:pb-4 py-3 rounded-full md:text-base text-sm font-semibold group text-white hover:border-tealBlue group border border-tealBlue duration-300 hover:bg-orange-400">
             Get Started <ArrowUpward />
@@ -29,6 +34,7 @@ const Hero = () => {
             No credit card required
           </p>
         </div>
+        {/* Absolute positioned images */}
         <Image
           className="absolute 3xl:right-auto lg:w-[80px] sm:w-[60px] w-10  lg:right-0 right-7  3xl:left-full sm:top-[57%] top-[60%]"
           width={80}
@@ -69,4 +75,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero; // Exporting Hero component

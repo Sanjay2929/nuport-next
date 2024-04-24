@@ -14,8 +14,10 @@ import Integration from "./Integration";
 import OrderManagment from "./OrderManagment";
 
 const UseCaseSolution = () => {
-  const [activeTab, setActiveTab] = useState(0); // State to track active tab
+  // State to track active tab
+  const [activeTab, setActiveTab] = useState(0);
 
+  // Data for each use case solution
   const useCaseSolution = [
     {
       title: "Order Management",
@@ -45,10 +47,15 @@ const UseCaseSolution = () => {
   ];
 
   return (
+    // Container with dark blue background
     <div className="bg-darkBlue mt-[-1px]">
+      {/* Container with maximum width and padding */}
       <div className="xl:max-w-[1324px] container px-5 pb-16 sm:pb-20 md:pb-24 lg:pb-32 xl:pb-40 mx-auto">
+        {/* Overflow container for tabs */}
         <div className="xl:overflow-hidden overflow-scroll">
-          <div className="flex gap-2  md:min-w-[1240px] min-w-[1050px]">
+          {/* Flex container for tabs */}
+          <div className="flex gap-2 md:min-w-[1240px] min-w-[1050px]">
+            {/* Mapping through use case solutions */}
             {useCaseSolution.map((tab, index) => (
               <div
                 key={index}
@@ -58,6 +65,7 @@ const UseCaseSolution = () => {
                 }`}
               >
                 <span>{tab.icons}</span>
+                {/* Title of the tab */}
                 <p className="font-plus font-semibold text-white text-base lg:text-lg xl:text-xl !leading-[140%] md:max-w-[158px]">
                   {tab.title}
                 </p>

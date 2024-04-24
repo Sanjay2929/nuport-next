@@ -1,9 +1,9 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 
 const TrustedByKnown = ({ laptopimg, trustedpartners }) => {
+  // Slider settings for different breakpoints
   var settings = {
     slidesToShow: 7,
     slidesToScroll: 1,
@@ -54,9 +54,11 @@ const TrustedByKnown = ({ laptopimg, trustedpartners }) => {
       },
     ],
   };
+
   return (
     <div className="">
       <div className="container 2xl:max-w-[1380px] mx-auto">
+        {/* Laptop image */}
         <Image
           width={1380}
           height={841}
@@ -67,18 +69,20 @@ const TrustedByKnown = ({ laptopimg, trustedpartners }) => {
           alt="laptop"
         />
         <div className="overflow-hidden lg:pb-[72px] sm:pb-5">
+          {/* Section title */}
           <h2 className="text-center uppercase font-bold text-base text-gray tracking-[1.8px] lg:pt-[120px] pt-[52px] lg:pb-10 sm:pb-5 pb-2.5">
             TRUSTED BY known
           </h2>
           <div className="relative h-[60px] w-full">
+            {/* Slider for trusted partners */}
             <Slider
               {...settings}
               className="flex justify-between lg:gap-x-8 gap-x-3 items-center"
             >
-              {/*  Mapping over the trustedPartners array to render each partner's image */}
+              {/* Mapping over the trustedPartners array to render each partner's image */}
               {trustedpartners.map((value, index) => {
                 return (
-                  <div key={index} className=" !flex justify-center">
+                  <div key={index} className="flex justify-center">
                     <Image
                       className={`w-[80px] sm:w-[120px] object-contain h-[40px] sm:h-[50px] ${value.customWidth}`}
                       width={value.width}

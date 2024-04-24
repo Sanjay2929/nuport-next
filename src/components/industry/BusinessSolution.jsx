@@ -14,26 +14,27 @@ import {
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0); // State to track active tab
 
+  // Array containing tab information
   const solution = [
     {
       title: "FMCG",
       content: <Fmcg />,
-      icons: <Location activeTab={activeTab} />,
+      icons: <Location activeTab={activeTab} />, // Icon component for FMCG tab
     },
     {
       title: "Industrial Supply",
       content: <IndustrialSupply />,
-      icons: <IndustrialSupplies activeTab={activeTab} />,
+      icons: <IndustrialSupplies activeTab={activeTab} />, // Icon component for Industrial Supply tab
     },
     {
       title: "E-Commerce",
       content: <ECommerce />,
-      icons: <Ecommerce activeTab={activeTab} />,
+      icons: <Ecommerce activeTab={activeTab} />, // Icon component for E-Commerce tab
     },
     {
       title: "Last Mile Delivery",
       content: <LastMileDelivery />,
-      icons: <LastDelivery activeTab={activeTab} />,
+      icons: <LastDelivery activeTab={activeTab} />, // Icon component for Last Mile Delivery tab
     },
   ];
 
@@ -42,6 +43,7 @@ const Tabs = () => {
       <div className="xl:max-w-[1324px] container px-5 pb-16 sm:pb-20 md:pb-24 lg:pb-32 xl:pb-40 mx-auto">
         <div className="xl:overflow-hidden overflow-scroll">
           <div className="flex gap-2  md:min-w-[1240px] min-w-[900px]">
+            {/* Render tabs */}
             {solution.map((tab, index) => (
               <div
                 key={index}
