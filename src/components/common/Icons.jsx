@@ -1805,9 +1805,9 @@ export const StoryArrow = () => {
         d="M1 8H15M15 8L8 1M15 8L8 15"
         stroke="#8892A8"
         className="group-hover:stroke-moonstone transition-all ease-in-out duration-300"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
