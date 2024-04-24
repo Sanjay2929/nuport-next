@@ -270,6 +270,50 @@ export const trustedPartners = [
     width: 140,
   },
 ];
+export const casePartner = [
+  {
+    image: "/assets/images/case-study/confidence.png",
+    title: "confidence",
+    width: 182,
+    customWidth: "xl:w-[182px]",
+  },
+  {
+    image: "/assets/images/case-study/steel.png",
+    title: "steel",
+    customWidth: "xl:w-[117px]",
+    width: 117,
+  },
+  {
+    image: "/assets/images/case-study/fashol.png",
+    title: "fashol",
+    width: 119,
+    customWidth: "xl:w-[118px]",
+  },
+  {
+    image: "/assets/images/case-study/british.png",
+    title: "british",
+    customWidth: "xl:w-[83px]",
+    width: 83,
+  },
+  {
+    image: "/assets/images/case-study/lg.png",
+    title: "lg",
+    customWidth: "xl:w-[123px]",
+    width: 123,
+  },
+  {
+    image: "/assets/images/case-study/confidence.png",
+    title: "confidence",
+    width: 182,
+    customWidth: "xl:w-[182px]",
+  },
+  {
+    image: "/assets/images/case-study/s-steel.png",
+    title: "s-steel",
+    width: 148,
+    customWidth: "xl:w-[148px]",
+  },
+];
 export const trustedBrand = [
   {
     image: "/assets/images/home-page/trusted-by/british-american.png",

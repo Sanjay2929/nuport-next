@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 
-const TrustedByKnown = ({ laptopimg , trustedpartners }) => {
+const TrustedByKnown = ({ laptopimg, trustedpartners }) => {
   var settings = {
     slidesToShow: 7,
     slidesToScroll: 1,
@@ -60,7 +60,9 @@ const TrustedByKnown = ({ laptopimg , trustedpartners }) => {
         <Image
           width={1380}
           height={841}
-          className="w-full 2xl:px-0 px-5 max-w-[1380px] lg:mt-[-330px] sm:mt-[-150px] mt-[-100px] relative z-30"
+          className={`w-full 2xl:px-0 px-5 max-w-[1380px] lg:mt-[-330px] sm:mt-[-150px] mt-[-100px] relative z-30 ${
+            laptopimg === undefined && "hidden"
+          }`}
           src={laptopimg}
           alt="laptop"
         />
