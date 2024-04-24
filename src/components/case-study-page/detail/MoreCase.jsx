@@ -7,6 +7,7 @@ import { GrayLeftArrow, GrayRightArrow } from "@/components/common/Icons";
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import IFarmerCard from "../IfarmerCard";
+import Ifarmer from "../Ifarmer";
 const MoreCase = () => {
   const [leftMargin, setLeftMargin] = useState(0);
   //   CUSTOM MARGIN LEFT
@@ -99,14 +100,14 @@ const MoreCase = () => {
         </div>
       </div>
       <div
-        className="mt-7 sm:mt-8 md:mt-10 lg:mt-14 xl:mt-[84px] overflow-hidden"
+        className="mt-7 sm:mt-8 md:mt-10 lg:mt-14 xl:mt-[84px] overflow-hidden more_slider"
         style={{ marginLeft: `${leftMargin + 16}px` }}
       >
         {/* SLIDER CARDS */}
         <Slider ref={slider} {...settings}>
           {moreCaseStudy.map((value, index) => (
-            <div key={index} className="px-3 sm:my-0 my-5">
-              <IFarmerCard
+            <div key={index} className="sm:px-3 pe-4 sm:my-0 my-5">
+              <Ifarmer
                 title={value.title}
                 logo={value.logo}
                 description={value.description}
