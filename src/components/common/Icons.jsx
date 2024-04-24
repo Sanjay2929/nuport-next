@@ -1752,6 +1752,7 @@ export const RightArrow = () => {
 export const CircleCheck = () => {
   return (
     <svg
+      className="w-5 sm:w-[24px] md:w-[30px] h-auto"
       width="30"
       height="30"
       viewBox="0 0 30 30"
@@ -1769,6 +1770,7 @@ export const CircleCheck = () => {
 export const CircleCross = () => {
   return (
     <svg
+      className="w-5 sm:w-[24px] md:w-[30px] h-auto"
       width="30"
       height="30"
       viewBox="0 0 30 30"
