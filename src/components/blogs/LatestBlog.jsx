@@ -7,7 +7,7 @@ import { WhiteArrow } from "../common/Icons";
 // and it contains the data you provided earlier
 const formatBlogDate = (dateString) => {
   const date = new Date(dateString);
-  const options = { month: "short", day: "2-digit", year: "numeric" };
+  const options = { month: "long", day: "2-digit", year: "numeric" };
   return date.toLocaleDateString("en-US", options);
 };
 const LatestBlog = ({ blogList }) => {
@@ -31,7 +31,7 @@ const LatestBlog = ({ blogList }) => {
   console.log(latestPost, "latestPost");
   return (
     <div className="mb-6">
-      <div className="w-full rounded-xl bg-tealBlue flex flex-wrap overflow-hidden">
+      <div className="w-full rounded-xl justify-between bg-tealBlue flex flex-wrap overflow-hidden border border-darkGray">
         <div className="lg:w-7/12 w-full md:p-10 p-5">
           <div className="flex items-center justify-between mb-8">
             <span className="bg-transparent border-offWhite border rounded-lg font-plus text-offWhite md:text-base text-sm font-semibold py-2 px-[26px]">
@@ -56,7 +56,7 @@ const LatestBlog = ({ blogList }) => {
         <div className="lg:w-5/12 w-full">
           <Image
             src={feature_image}
-            className="lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg:max-w-[559px] w-full h-full lg:max-h-[100%] max-h-[435px] object-cover"
+            className="lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg:max-w-[559px] w-full h-full lg:max-h-[100%] max-h-[435px] object-cover xl:object-right object-[90%]"
             width={559}
             height={429}
             alt="Latest Blog Image"
