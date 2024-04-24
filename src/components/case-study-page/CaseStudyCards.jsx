@@ -17,7 +17,7 @@ const CaseStudyCards = () => {
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 lg:pt-[84px] sm:pt-12 pt-6 sm:gap-y-6">
         {moreCaseStudy.map((value, index) => (
-          <div key={index} className="sm:px-3 pe-4 sm:my-0 my-5">
+          <div key={index} className="sm:px-3 sm:my-0 my-5">
             <Ifarmer
               title={value.title}
               logo={value.logo}
