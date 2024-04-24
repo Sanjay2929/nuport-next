@@ -1,4 +1,5 @@
 import Hero from "@/components/common/Hero";
+import SuccessFullStart from "@/components/home-page/SuccessFullStart";
 import ChooseRightPlan from "@/components/pricing-e-commerce/ChooseRightPlan";
 import React from "react";
 
@@ -18,6 +19,7 @@ const page = () => {
         toggleTitle="Yearly"
       />
       <ChooseRightPlan />
+      <SuccessFullStart />
     </div>
   );
 };
