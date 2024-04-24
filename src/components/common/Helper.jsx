@@ -19,6 +19,9 @@ import {
   Documentation,
   Eco,
   Ecommerce,
+  EcommerceAdvanced,
+  EcommerceBasic,
+  EcommercePro,
   Enterprise,
   Facebook,
   Fashol,
@@ -1697,6 +1700,47 @@ export const choosePlan = [
         pro: false,
         advanced: true,
       },
+    ],
+  },
+];
+export const eCommerce = [
+  {
+    icon: <EcommerceBasic />,
+    title: "Basic",
+    description: "For starters",
+    months: "5,000",
+    contact: "Contact Sales",
+    features: [
+      " Up to 3000 Sales orders/ month",
+      "Up to 1000 SKU’s",
+      "Up to 8 users (Extra cost   200/user)",
+      
+    ],
+  },
+  {
+    icon: <EcommercePro />,
+    title: "Pro",
+    description: "For growing businesses",
+    months: "10,000",
+    contact: "Contact Sales",
+    features: [
+      "3001 - 7500 sales orders/month",
+      "Up to 100 purchase orders/month",
+      "Up to 5000 SKU’s",
+      "Up to 20 users (Extra cost   200/user)",
+    ],
+  },
+  {
+    icon: <EcommerceAdvanced />,
+    title: "Advanced",
+    description: "For large distributed teams",
+    months: "15,000",
+    contact: "Contact Sales",
+    features: [
+      "7500 - 15,000 sales orders/month",
+      "101 - 300 purchase orders/month",
+      "Advanced categorization",
+      "Up to 35 users (Extra cost   200/user)",
     ],
   },
 ];
